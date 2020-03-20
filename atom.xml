@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>WNXY&#39;S BLOG</title>
+  <title>Wnxy&#39;s Blog</title>
   
-  <subtitle>往事经过的地方，美丽得惆怅</subtitle>
+  <subtitle>Launch and learn. Everything is progress.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wnxy.xyz/"/>
-  <updated>2019-12-31T06:52:48.960Z</updated>
+  <updated>2020-03-20T07:35:48.607Z</updated>
   <id>http://www.wnxy.xyz/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>C++十进制与二进制的互相转换</title>
+    <link href="http://www.wnxy.xyz/2020/03/19/C++_decimal-and-binary-conversion/"/>
+    <id>http://www.wnxy.xyz/2020/03/19/C++_decimal-and-binary-conversion/</id>
+    <published>2020-03-19T10:01:40.635Z</published>
+    <updated>2020-03-20T07:35:48.607Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="http://www.wnxy.xyz/categories/C-C/"/>
+    
+    
+      <category term="C/C++" scheme="http://www.wnxy.xyz/tags/C-C/"/>
+    
+      <category term="进制转换" scheme="http://www.wnxy.xyz/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++动态数组</title>
+    <link href="http://www.wnxy.xyz/2020/03/19/C&amp;C++_dynamic-array/"/>
+    <id>http://www.wnxy.xyz/2020/03/19/C&amp;C++_dynamic-array/</id>
+    <published>2020-03-19T04:30:40.165Z</published>
+    <updated>2020-03-20T07:10:57.399Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 进来刷题，遇到好几道题目需要动态数组解决，现在整理一下。C++中动态开辟一维、二维数组很常见，也很实用。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;h5 id=&quot;动态开辟一维数组&quot;&gt;&lt;a href=&quot;#动态开辟一维数组&quot; class=&quot;headerlink&quot; title=&quot;动态开辟一维数组&quot;&gt;&lt;/a&gt;动态开辟一维数组&lt;/h5&gt;&lt;p&gt;动态开辟一维数组简单，不多啥直接贴代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;DynamicCreate1Array&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; len;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;cin&lt;/span&gt;&amp;gt;&amp;gt;len;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; *p = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[len];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; len; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;cin&lt;/span&gt;&amp;gt;&amp;gt;p[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;delete&lt;/span&gt;[] p;         &lt;span class=&quot;comment&quot;&gt;//动态数组使用完一定要释放&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="http://www.wnxy.xyz/categories/C-C/"/>
+    
+    
+      <category term="C/C++" scheme="http://www.wnxy.xyz/tags/C-C/"/>
+    
+      <category term="动态数组" scheme="http://www.wnxy.xyz/tags/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux  socket 通信编程</title>
-    <link href="http://www.wnxy.xyz/2019/12/26/Linux%20%20socket%E9%80%9A%E4%BF%A1%E7%BC%96%E7%A8%8B/"/>
-    <id>http://www.wnxy.xyz/2019/12/26/Linux%20%20socket%E9%80%9A%E4%BF%A1%E7%BC%96%E7%A8%8B/</id>
+    <link href="http://www.wnxy.xyz/2019/12/26/Linux-socket-communication-programming/"/>
+    <id>http://www.wnxy.xyz/2019/12/26/Linux-socket-communication-programming/</id>
     <published>2019-12-26T13:22:59.226Z</published>
-    <updated>2019-12-31T06:52:48.960Z</updated>
+    <updated>2020-03-20T06:56:06.619Z</updated>
     
     <summary type="html">
     
@@ -41,15 +96,15 @@
   
   <entry>
     <title>服务器基础知识与配置</title>
-    <link href="http://www.wnxy.xyz/2019/06/10/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    <id>http://www.wnxy.xyz/2019/06/10/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%B8%8E%E9%85%8D%E7%BD%AE/</id>
+    <link href="http://www.wnxy.xyz/2019/06/10/Server-basics-and-configuration/"/>
+    <id>http://www.wnxy.xyz/2019/06/10/Server-basics-and-configuration/</id>
     <published>2019-06-10T07:25:54.000Z</published>
-    <updated>2019-07-03T05:30:17.678Z</updated>
+    <updated>2020-03-19T05:24:03.370Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;1、什么是守护进程？守护进程的类型和作用有哪些？&lt;/p&gt;
-&lt;p&gt;Linux 服务器在启动时需要启动很多系统服务，它们向本地和网络用户提供了Linux的系统功能接口，直接面向应用程序和用户。提供这些服务的程序是由运行在后台的守护进程来执行的。
+&lt;p&gt;Linux 服务器在启动时需要启动很多系统服务，它们向本地和网络用户提供了Linux的系统功能接口，直接面向应用程序和用户。提供这些服务的程序是由运行在后台的守护进程来执行的。守护进程是生存期长的一种进程。它们独立于控制终端并且周期性的执行某种任务或等待处理某些发生的事件。他们常常在系统引导装入时启动，在系统关闭时终止。linux系统有很多守护进程，大多数服务器都是用守护进程实现的。同时，守护进程完成许多系统任务，比如，作业规划进程crond、打印进程lqd等。&lt;/p&gt;
     
     </summary>
     
@@ -65,10 +120,10 @@
   
   <entry>
     <title>Linux 编程实例</title>
-    <link href="http://www.wnxy.xyz/2019/06/03/Linux%20%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/"/>
-    <id>http://www.wnxy.xyz/2019/06/03/Linux%20%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/</id>
+    <link href="http://www.wnxy.xyz/2019/06/03/Linux-programming-examples/"/>
+    <id>http://www.wnxy.xyz/2019/06/03/Linux-programming-examples/</id>
     <published>2019-06-03T05:17:24.000Z</published>
-    <updated>2019-07-03T05:20:36.830Z</updated>
+    <updated>2020-03-19T05:23:24.026Z</updated>
     
     <summary type="html">
     
@@ -88,8 +143,8 @@
   
   <entry>
     <title>面向对象语言的缺点和问题</title>
-    <link href="http://www.wnxy.xyz/2019/01/01/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AF%AD%E8%A8%80%E7%9A%84%E7%BC%BA%E7%82%B9%E5%92%8C%E9%97%AE%E9%A2%98/"/>
-    <id>http://www.wnxy.xyz/2019/01/01/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AF%AD%E8%A8%80%E7%9A%84%E7%BC%BA%E7%82%B9%E5%92%8C%E9%97%AE%E9%A2%98/</id>
+    <link href="http://www.wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/"/>
+    <id>http://www.wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/</id>
     <published>2019-01-01T13:18:20.000Z</published>
     <updated>2019-07-04T06:48:58.182Z</updated>
     
@@ -110,6 +165,39 @@
       <category term="C++" scheme="http://www.wnxy.xyz/tags/C/"/>
     
       <category term="Java" scheme="http://www.wnxy.xyz/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>入坑</title>
+    <link href="http://www.wnxy.xyz/2017/02/01/Begin-Hexo/"/>
+    <id>http://www.wnxy.xyz/2017/02/01/Begin-Hexo/</id>
+    <published>2017-02-01T07:22:37.000Z</published>
+    <updated>2020-03-19T05:24:56.950Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="搭建博客" scheme="http://www.wnxy.xyz/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="hexo" scheme="http://www.wnxy.xyz/tags/hexo/"/>
+    
+      <category term="github" scheme="http://www.wnxy.xyz/tags/github/"/>
+    
+      <category term="npm" scheme="http://www.wnxy.xyz/tags/npm/"/>
+    
+      <category term="基础" scheme="http://www.wnxy.xyz/tags/%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
@@ -135,39 +223,6 @@
       <category term="github" scheme="http://www.wnxy.xyz/tags/github/"/>
     
       <category term="npm" scheme="http://www.wnxy.xyz/tags/npm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>原上二把刀</title>
-    <link href="http://www.wnxy.xyz/2017/02/01/%E4%BD%A0%E5%A5%BD-Hexo/"/>
-    <id>http://www.wnxy.xyz/2017/02/01/%E4%BD%A0%E5%A5%BD-Hexo/</id>
-    <published>2017-02-01T07:22:37.000Z</published>
-    <updated>2019-07-10T04:17:03.942Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-      <category term="搭建博客" scheme="http://www.wnxy.xyz/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="hexo" scheme="http://www.wnxy.xyz/tags/hexo/"/>
-    
-      <category term="github" scheme="http://www.wnxy.xyz/tags/github/"/>
-    
-      <category term="npm" scheme="http://www.wnxy.xyz/tags/npm/"/>
-    
-      <category term="基础" scheme="http://www.wnxy.xyz/tags/%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
