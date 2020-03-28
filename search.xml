@@ -128,9 +128,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
+            <tag> C/C++ </tag>
             
-            <tag> C语言 </tag>
+            <tag> Linux </tag>
             
         </tags>
       
@@ -155,11 +155,11 @@
       
         <tags>
             
+            <tag> C/C++ </tag>
+            
             <tag> 程序设计语言原理 </tag>
             
             <tag> 面向对象 </tag>
-            
-            <tag> C++ </tag>
             
             <tag> Java </tag>
             
@@ -179,7 +179,7 @@
       
       <categories>
           
-          <category> 搭建博客 </category>
+          <category> 博客搭建 </category>
           
       </categories>
       
