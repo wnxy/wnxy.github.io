@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.wnxy.xyz/2020/03/19/C&C++_dynamic-array/</loc>
+    
+    <lastmod>2020-04-01T06:15:22.394Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.wnxy.xyz/2019/06/03/Linux-programming-examples/</loc>
     
     <lastmod>2020-03-28T03:48:42.391Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://www.wnxy.xyz/2020/03/19/C++_decimal-and-binary-conversion/</loc>
     
     <lastmod>2020-03-20T07:35:48.607Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wnxy.xyz/2020/03/19/C&C++_dynamic-array/</loc>
-    
-    <lastmod>2020-03-20T07:10:57.399Z</lastmod>
     
   </url>
   
