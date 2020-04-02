@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="css/resume_style.css">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
+
+		<title>Resume</title>
+		
+	</head>
+	<body>
+		<h1 class="title">RESUME</h1>
+		<!--<p class="title1">RESUME</p>-->
+		<div class="border"></div>
+		<div class="nav">
+			<div class="btn"><a href="">个人简历</a></div>
+			<div class="btn"><a href="./src/Timeline.html" target="_blank">时间轴Demo</a></div>
+			<div class="btn"><a href="./src/FlexAlbum.html" target="_blank">相册Demo</a></div>
+			<div class="btn"><a href="./src/Learning.html" target="_blank">学习经历Demo</a></div>
+			<div class="btn"><a href="./src/Film&Novels.html" target="_blank">影视.小说Demo</a></div>
+			<div class="btn"><a href="./src/MessageWall.html" target="_blank">留言板Demo</a></div>
+			<div class="btn"><a href="./src/Footprint.html" target="_blank">足迹</a></div>
+		</div>
+		
+	    <div id="aplayer" class="aplayer"></div>
+	    
+	</body>
+</html>
+<script type="text/javascript">
+   const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    autoplay: false,
+    listFolded: true,
+    fixed: true,
+    audio: [
+        {
+            name: 'The Sounds Of Silence',
+            artist: 'Bandari',
+            url: './mp3/Bandari - The Sounds Of Silence.mp3',
+            cover: './images/cover_01.jpg',
+            theme: '#ebd0c2'
+        },
+        {
+            name: '明镜菩提',
+            artist: '月之门',
+            url: './mp3/月之门音乐文化 - 明镜菩提.mp3',
+            cover: './images/cover_02.jpg',
+            theme: '#46718b'
+        },
+        {
+            name: 'Windy Hill',
+            artist: '羽肿',
+            url: './mp3/Windy Hill - 羽肿.mp3',
+            cover: './images/cover_03.jpg',
+            theme: '#46718b'
+        },
+        {
+            name: '半城夏味',
+            artist: '张斯函',
+            url: './mp3/张斯函 - 半城夏味.mp3',
+            cover: './images/cover_04.jpg',
+            theme: '#46718b'
+        },
+        {
+            name: '花火が瞬く夜に',
+            artist: '羽肿',
+            url: './mp3/羽肿 - 花火が瞬く夜に.mp3',
+            cover: './images/cover_05.jpg',
+            theme: '#46718b'
+        }
+    
+    ]
+});
+
+const colorThief = new ColorThief();
+const setTheme = (index) => {
+    if (!ap.list.audios[index].theme) {
+        colorThief.getColorAsync(ap.list.audios[index].cover, function (color) {
+            ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+        });
+    }
+};
+setTheme(ap.list.index);
+ap.on('listswitch', (index) => {
+    setTheme(index);
+});
+</script>

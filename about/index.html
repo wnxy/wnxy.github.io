@@ -1,150 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Login</title>
-		<style>
-			* {
-				font-family: 'montserrat', sans-serif;
-			}
-			body {
-				margin: 0;
-				padding: 0;
-				background: #333;
-			}
-			.login-box {
-				position: absolute;
-				top: 0;
-				left: -100%;
-				width: 100%;
-				height: 100vh; /* vh 视口高度 viewport height 百分比单位*/
-				background-image: linear-gradient(
-					45deg,
-					#9fbaa8,
-					#31354c
-				); /*设置颜色渐变 方向(0deg垂直向上) 起点颜色 终点颜色*/
-				transition: 0.4s; /*过度效果  property duration timing-function delay 默认属性:all 0 ease 0*/
-			}
-			.login-form {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%); /*定义 2D 转换8 */
-				color: white;
-				text-align: center;
-			}
-			.login-form h1 {
-				font-weight: 400;
-				margin-top: 0;
-			}
-			.txtb {
-				display: block;
-				box-sizing: border-box;
-				width: 240px;
-				background: #ffffff28;
-				border: 1px solid white;
-				padding: 10px 20px;
-				color: white;
-				outline: none;
-				margin: 10px 0;
-				border-radius: 6px;
-				text-align: center;
-			}
-			.login-btn {
-				width: 240px;
-				background: #2c3e50;
-				border: 0;
-				color: white;
-				padding: 10px;
-				border-radius: 6px;
-				cursor: pointer;
-			}
-			.hide-login-btn {
-				color: #000;
-				position: absolute;
-				top: 40px;
-				right: 40px;
-				cursor: pointer;
-				font-size: 30px;
-				opacity: 0.7;
-				transform: rotate(45deg); /*定义 2D 转换8 */
-			}
-			.show-login-btn {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				color: white;
-				border: 2px solid;
-				padding: 10px;
-				cursor: pointer;
-			}
-			.showed {
-				left: 0;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="show-login-btn">
-			-> Show Login Form
-		</div>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Footprint</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="./css/jquery-jvectormap-2.0.2.css" media="screen">
 
-		<div class="login-box">
-			<div class="hide-login-btn">
-				+
-			</div>
-			<form action="src/resume.html" method="get" class="login-form">
-				<h1>Welcome</h1>
-				<input class="txtb" id="uname" type="text" name="" placeholder="Username" />
-				<input class="txtb" id="pwd" type="password" name="" placeholder="Password" />
-				<input class="login-btn" type="submit" name="" value="Login" onclick="return checkuser()"/>
-			</form>
-		</div>
-		<script type="text/javascript">
-			function hasClass(element, clssname) {
-				return element.className.match(new RegExp('(\\s|^)' + clssname + '(\\s|$)'))
-			}
-			function addClass(element, clssname) {
-				if (!this.hasClass(element, clssname)) element.className += ' ' + clssname
-			}
-			function removeClass(element, clssname) {
-				if (hasClass(element, clssname)) {
-					var reg = new RegExp('(\\s|^)' + clssname + '(\\s|$)')
-					element.className = element.className.replace(reg, ' ')
-				}
-			}
-			function toggleClass(element, clssname) {
-				if (hasClass(element, clssname)) {
-					removeClass(element, clssname)
-				} else {
-					addClass(element, clssname)
-				}
-			}
-			var loginBox = document.getElementsByClassName('login-box')
-			var showBtn = document.getElementsByClassName('show-login-btn')
-			var hideBtn = document.getElementsByClassName('hide-login-btn')
-			showBtn[0].addEventListener('click', function() {
-				toggleClass(loginBox[0], 'showed')
-			})
-			hideBtn[0].addEventListener('click', function() {
-				toggleClass(loginBox[0], 'showed')
-			})
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
 
-			/*登录验证*/
-			function getValue(id) { 
-        		return document.getElementById(id).value; 
-   			} 
-    		function checkuser() { 
-        		if(getValue('uname') == "muzhiRain" && getValue('pwd') == "123") { 
-            	return true; 
-        		}
-	        	else { 
-	            	alert("登录名或密码错误！")
-	            	return false; 
-	        		} 
-    		} 
-		</script>
-	</body>
+<style type="text/css">
+/*body{margin:0;padding:0;}*/
+	*{
+		font-family: 'montserrat', sans-serif;
+		box-sizing: border-box;
+	}
+	html,body {
+	        width: 100%;
+	        height: 100%;
+	        margin: 0;
+	        padding: 0;
+	        background: #f1f1f1;
+	    }
+	.map{
+		position:relative;
+		background-color: #353535;
+		width:700px;
+		height: 500px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top: 20px;
+		margin-bottom: 100px;
+
+	}
+	.map-container{
+		width:700px;
+		height:500px;
+		/*margin-top:20px;*/
+		overflow: hidden;
+	}
+	/*.letter{
+		position: relative;
+		margin-left: 405px;
+		margin-top: 90px;
+	}*/
+	/*.title{
+		font-family: '宋体';
+		font-size: 32px;
+	}*/
+	.lab1,.lab2{
+		/*width: 600px;
+		height: 5px;*/
+		margin-left: 405px;
+		/*font-family: '宋体';*/
+		font-size: 17px;
+	}
+	.lab1{
+		margin-top: 60px;
+	}
+	.lab2{
+		margin-top: 25px;
+	}
+	h1{
+		/*text-decoration: none;*/
+		margin-top: 60px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #333;
+	}
+	.border {
+		width: 235px;
+		height: 4px;
+		background: #333;
+		margin: 0px auto;
+	}
+
+</style>
+</head>
+
+<body>
+
+	<div class="letter">
+		<h1 class="title">MY FOOTPRINT</h1>
+		<div class="border"></div>
+		<p class="lab1">愿一切的美好都能如约而至，喜欢的都能拥有!</p>
+		<p class="lab2">人生没有白走的路，每一步都算数!</p>
+	</div>
+	<div class="map">
+	  <div class="map-container"></div>
+	</div>
+
+	<div id="aplayer" class="aplayer"></div>
+
+</body>
 </html>
+
+<script type="text/javascript" src="./js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="./js/jquery-jvectormap-2.0.2.min.js"></script>
+<script type="text/javascript" src="./js/jquery-jvectormap-china.js"></script>
+<script type="text/javascript">
+$(function(){
+
+  $(".map-container").vectorMap({
+		map: "china",
+		backgroundColor: 'transparent',
+			zoomMin: 0.9, // 鼠标缩放时的最小比例
+			zoomMax: 2.4, // 鼠标缩放时的最大比例
+			focusOn: {
+				x: 0.55,
+				y: 2,
+				scale: 0.9
+			},
+			regionStyle: {
+				initial: {
+					fill: '#e5e5e5',   // 地图颜色
+					"fill-opacity": 1, // 省份（州）是否隐藏，鼠标滑动时显示; 1：显示，2：隐藏。
+					stroke: 'none',
+					"stroke-width": 0,
+					"stroke-opacity": 1
+				},
+				hover: {
+					fill: '#ccc',  // 鼠标滑动至某省份的高亮颜色。
+					"fill-opacity": 0.8
+				},
+				selected: {
+					fill: 'yellow'
+				},
+				selectedHover: {}
+			},
+			markerStyle: {
+		        initial: {
+		            fill: '#fd8888', // 足迹位置的填充颜色
+		            stroke: '#fff'   // 足迹位置的描边颜色
+		        },
+				hover: {
+					fill: '#fd2020', // 鼠标滑动至足迹位置后的填充颜色
+					stroke: '#fff',  // 鼠标滑动至足迹位置后的描边颜色
+					"fill-opacity": 0.8
+				},
+		    },
+		    regionsSelectable: false, 
+			markers: [ // 足迹位置
+
+				// {latLng: [经度（保留两位小数）, 纬度（保留两位小数）], name: '城市名称'},
+				// 推荐查询经纬度网站：http://www.gpsspg.com/maps.htm
+
+		        {latLng: [35.57, 104.61], name: '甘肃 - 定西'},
+		        {latLng: [34.79, 114.30], name: '河南 - 开封'},
+		        {latLng: [36.19, 117.08], name: '山东 - 泰安'},
+		        {latLng: [34.59, 119.22], name: '江苏 - 连云港'},
+		        {latLng: [33.34, 120.16], name: '江苏 - 盐城'},
+		        {latLng: [34.20, 117.28], name: '江苏 - 徐州'},
+		        {latLng: [39.73, 98.49], name: '甘肃 - 酒泉'},
+		        {latLng: [34.58, 105.72], name: '甘肃 - 天水'}
+		    ]
+  });
+})
+
+
+//aplayer音乐控件
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    autoplay: false,
+    listFolded: true,
+    fixed: true,
+    audio: [
+        {
+            name: 'The Sounds Of Silence',
+            artist: 'Bandari',
+            url: './mp3/Bandari - The Sounds Of Silence.mp3',
+            cover: './images/cover_01.jpg',
+            theme: '#ebd0c2'
+        },
+        {
+            name: '明镜菩提',
+            artist: '月之门',
+            url: './mp3/月之门音乐文化 - 明镜菩提.mp3',
+            cover: './images/cover_02.jpg',
+            theme: '#46718b'
+        },
+        {
+            name: 'Windy Hill',
+            artist: '羽肿',
+            url: './mp3/Windy Hill - 羽肿.mp3',
+            cover: './images/cover_03.jpg',
+            theme: '#46718b'
+        },
+        {
+            name: '半城夏味',
+            artist: '张斯函',
+            url: './mp3/张斯函 - 半城夏味.mp3',
+            cover: './images/cover_04.jpg',
+            theme: '#46718b'
+        },
+        {
+            name: '花火が瞬く夜に',
+            artist: '羽肿',
+            url: './mp3/羽肿 - 花火が瞬く夜に.mp3',
+            cover: './images/cover_05.jpg',
+            theme: '#46718b'
+        }
+    
+    ]
+});
+
+const colorThief = new ColorThief();
+const setTheme = (index) => {
+    if (!ap.list.audios[index].theme) {
+        colorThief.getColorAsync(ap.list.audios[index].cover, function (color) {
+            ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+        });
+    }
+};
+setTheme(ap.list.index);
+ap.on('listswitch', (index) => {
+    setTheme(index);
+});
+//aplayer音乐控件
+
+</script>
+
