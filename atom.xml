@@ -18,8 +18,8 @@
   
   <entry>
     <title>二叉树构建与遍历——前序和中序确定二叉树</title>
-    <link href="http://www.wnxy.xyz/2020/03/25/page/"/>
-    <id>http://www.wnxy.xyz/2020/03/25/page/</id>
+    <link href="http://www.wnxy.xyz/2020/03/25/Binary-tree-construction-and-traversal/"/>
+    <id>http://www.wnxy.xyz/2020/03/25/Binary-tree-construction-and-traversal/</id>
     <published>2020-03-25T14:58:14.000Z</published>
     <updated>2020-04-03T15:26:48.605Z</updated>
     
@@ -46,10 +46,10 @@
   
   <entry>
     <title>C++十进制与二进制的互相转换</title>
-    <link href="http://www.wnxy.xyz/2020/03/19/C++_decimal-and-binary-conversion/"/>
-    <id>http://www.wnxy.xyz/2020/03/19/C++_decimal-and-binary-conversion/</id>
-    <published>2020-03-19T10:01:40.635Z</published>
-    <updated>2020-03-20T07:35:48.607Z</updated>
+    <link href="http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/"/>
+    <id>http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/</id>
+    <published>2020-02-10T10:04:20.000Z</published>
+    <updated>2020-04-03T15:43:25.552Z</updated>
     
     <summary type="html">
     
@@ -75,10 +75,10 @@
   
   <entry>
     <title>C++动态数组</title>
-    <link href="http://www.wnxy.xyz/2020/03/19/C&amp;C++_dynamic-array/"/>
-    <id>http://www.wnxy.xyz/2020/03/19/C&amp;C++_dynamic-array/</id>
-    <published>2020-03-19T04:30:40.165Z</published>
-    <updated>2020-04-03T09:11:05.794Z</updated>
+    <link href="http://www.wnxy.xyz/2020/01/10/C&amp;C++_dynamic-array/"/>
+    <id>http://www.wnxy.xyz/2020/01/10/C&amp;C++_dynamic-array/</id>
+    <published>2020-01-10T04:32:20.000Z</published>
+    <updated>2020-04-03T15:43:13.174Z</updated>
     
     <summary type="html">
     
