@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wnxy.xyz/"/>
-  <updated>2020-04-04T03:37:39.938Z</updated>
+  <updated>2020-04-04T06:42:10.084Z</updated>
   <id>http://www.wnxy.xyz/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>栈的应用——括号匹配</title>
+    <link href="http://www.wnxy.xyz/2020/03/27/Stack-application-bracket-matching/"/>
+    <id>http://www.wnxy.xyz/2020/03/27/Stack-application-bracket-matching/</id>
+    <published>2020-03-27T06:28:06.000Z</published>
+    <updated>2020-04-04T06:42:10.084Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;题目描述：编写程序，判定给定表达式中的括号是否匹配，表达式中的合法括号位 “(”，“)”，“[”，“]”，“{”，“}”，括号可按任意次序嵌套使用。&lt;/p&gt;
+&lt;p&gt;输入说明：有多个表达式，出入数据第一行是表达式的数目，每个表达式占一行。&lt;/p&gt;
+&lt;p&gt;输出说明：对每个表达式，若其括号匹配则输出“Yes”，否则输出“No”。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="http://www.wnxy.xyz/categories/C-C/"/>
+    
+    
+      <category term="C/C++" scheme="http://www.wnxy.xyz/tags/C-C/"/>
+    
+      <category term="栈" scheme="http://www.wnxy.xyz/tags/%E6%A0%88/"/>
+    
+      <category term="括号匹配" scheme="http://www.wnxy.xyz/tags/%E6%8B%AC%E5%8F%B7%E5%8C%B9%E9%85%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>栈和队列的定义与使用</title>
+    <link href="http://www.wnxy.xyz/2020/03/26/Definition-and-use-of-stacks-and-queues/"/>
+    <id>http://www.wnxy.xyz/2020/03/26/Definition-and-use-of-stacks-and-queues/</id>
+    <published>2020-03-26T05:05:54.000Z</published>
+    <updated>2020-04-04T06:27:41.490Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h3&gt;&lt;p&gt;栈（Stack）：只允许在一端进行插入或删除操作的线性表。&lt;/p&gt;
+&lt;p&gt;队列（Queue）：只允许在表的一端进行插入，而在表的另一端进行删除的线性表。&lt;/p&gt;
+&lt;p&gt;栈的基本操作：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s.empty()               若栈为空返回true，否则返回false&lt;/code&gt;&lt;br&gt;&lt;code&gt;s.size()                   返回栈中元素的个数&lt;/code&gt;&lt;br&gt;&lt;code&gt;s.pop()                   弹出栈顶元素但不返回其值&lt;/code&gt;&lt;br&gt;&lt;code&gt;s.top()                    若栈s非空，返回栈顶的元素&lt;/code&gt;&lt;br&gt;&lt;code&gt;s.push()                 在栈顶压入新元素&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;队列的基本操作：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;q.empty()               若队列为空返回true，否则返回false&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.size()                   返回队列中元素的个数&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.pop()                    弹出队列首元素但不返回其值&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.front()                   返回队首元素的值，但不删除该元素&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.push()                  在队尾压入新元素&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.back()                  返回队列尾元素的值，但不删除该元素&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h3&gt;&lt;p&gt;引入头文件：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#include&amp;lt;stack&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#include&amp;lt;queue&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;定义栈：&lt;code&gt;stack&amp;lt;int&amp;gt; s;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;定义队列：&lt;code&gt;queue&amp;lt;int&amp;gt; q;&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="http://www.wnxy.xyz/categories/C-C/"/>
+    
+    
+      <category term="C/C++" scheme="http://www.wnxy.xyz/tags/C-C/"/>
+    
+      <category term="栈" scheme="http://www.wnxy.xyz/tags/%E6%A0%88/"/>
+    
+      <category term="队列" scheme="http://www.wnxy.xyz/tags/%E9%98%9F%E5%88%97/"/>
+    
+  </entry>
   
   <entry>
     <title>二叉树构建与遍历——前序和中序或中序和后序确定二叉树</title>
