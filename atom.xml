@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wnxy.xyz/"/>
-  <updated>2020-04-04T03:17:38.899Z</updated>
+  <updated>2020-04-04T03:37:39.938Z</updated>
   <id>http://www.wnxy.xyz/</id>
   
   <author>
@@ -17,23 +17,22 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>二叉树构建与遍历——前序和中序确定二叉树</title>
+    <title>二叉树构建与遍历——前序和中序或中序和后序确定二叉树</title>
     <link href="http://www.wnxy.xyz/2020/03/25/Bitree-construction-and-traversal/"/>
     <id>http://www.wnxy.xyz/2020/03/25/Bitree-construction-and-traversal/</id>
     <published>2020-03-25T14:58:14.000Z</published>
-    <updated>2020-04-04T03:17:38.899Z</updated>
+    <updated>2020-04-04T03:37:39.938Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;二叉树测试用例：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s1.ax1x.com/2020/04/04/GdqXuD.png&quot; alt=&quot;GdqXuD.png&quot;&gt;&lt;/p&gt;
+      &lt;h3 id=&quot;二叉树测试用例：&quot;&gt;&lt;a href=&quot;#二叉树测试用例：&quot; class=&quot;headerlink&quot; title=&quot;二叉树测试用例：&quot;&gt;&lt;/a&gt;二叉树测试用例：&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://s1.ax1x.com/2020/04/04/GdqXuD.png&quot; alt=&quot;二叉树&quot;&gt;&lt;/p&gt;
 &lt;p&gt;preOrder: ABDGCEFH&lt;br&gt;inOrder: DGBAECHF&lt;br&gt;postOrder: GDBEHFCA&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;已知二叉树前序遍历序列和中序遍历序列可以确定一颗二叉树。&lt;/li&gt;
 &lt;li&gt;已知二叉树中序遍历序列和后序遍历序列可以确定一颗二叉树。&lt;/li&gt;
-&lt;li&gt;*&lt;u&gt;已知二叉树前序遍历序列和后序遍历序列不能确定一颗二叉树。&lt;/u&gt;*&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;已知二叉树前序遍历序列和后序遍历序列不能确定一颗二叉树。&lt;/u&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;已知二叉树前序和中序遍历序列，构造二叉树，C++实现：&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;已知二叉树前序和中序遍历序列，构造二叉树，C-实现：&quot;&gt;&lt;a href=&quot;#已知二叉树前序和中序遍历序列，构造二叉树，C-实现：&quot; class=&quot;headerlink&quot; title=&quot;已知二叉树前序和中序遍历序列，构造二叉树，C++实现：&quot;&gt;&lt;/a&gt;已知二叉树前序和中序遍历序列，构造二叉树，C++实现：&lt;/h3&gt;
     
     </summary>
     
