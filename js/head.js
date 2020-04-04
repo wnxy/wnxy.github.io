@@ -8,7 +8,7 @@ $(function () {
         .velocity('transition.slideUpOut', { duration: 300 })
     }
   })
-  $(document).on('click', function (e) {
+  $(document).on('click touchstart', function (e) {
     var flag = $('.menus')[0].contains(e.target) || $('.toggle-menu')[0].contains(e.target)
     if (!flag && $('.toggle-menu').is(':visible')) {
       $('.menus').velocity('stop')
@@ -24,19 +24,3 @@ $(function () {
     }
   })
 })
-
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
