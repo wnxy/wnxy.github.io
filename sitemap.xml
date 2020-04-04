@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/</loc>
+    <loc>http://www.wnxy.xyz/2019/07/01/Linux-socket-communication-programming/</loc>
     
-    <lastmod>2020-04-04T08:36:17.870Z</lastmod>
+    <lastmod>2020-04-04T11:03:45.389Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.wnxy.xyz/2019/07/01/Linux-socket-communication-programming/</loc>
+    <loc>http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/</loc>
     
-    <lastmod>2020-04-04T07:34:13.182Z</lastmod>
+    <lastmod>2020-04-04T10:59:12.835Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wnxy.xyz/2020/01/10/C&C++_dynamic-array/</loc>
+    
+    <lastmod>2020-04-04T10:53:58.117Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/</loc>
+    
+    <lastmod>2020-04-04T10:49:50.356Z</lastmod>
     
   </url>
   
@@ -37,23 +51,9 @@
   </url>
   
   <url>
-    <loc>http://www.wnxy.xyz/2020/01/10/C&C++_dynamic-array/</loc>
-    
-    <lastmod>2020-04-03T15:43:13.174Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.wnxy.xyz/2019/06/03/Linux-programming-examples/</loc>
     
     <lastmod>2020-03-28T03:48:42.391Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/</loc>
-    
-    <lastmod>2020-03-28T03:48:19.570Z</lastmod>
     
   </url>
   

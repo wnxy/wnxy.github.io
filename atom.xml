@@ -112,8 +112,8 @@
     <title>C++十进制与二进制的互相转换</title>
     <link href="http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/"/>
     <id>http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/</id>
-    <published>2020-02-10T10:04:20.000Z</published>
-    <updated>2020-04-04T08:36:17.870Z</updated>
+    <published>2020-02-10T10:54:47.000Z</published>
+    <updated>2020-04-04T10:59:12.835Z</updated>
     
     <summary type="html">
     
@@ -141,12 +141,12 @@
     <title>C++动态数组</title>
     <link href="http://www.wnxy.xyz/2020/01/10/C&amp;C++_dynamic-array/"/>
     <id>http://www.wnxy.xyz/2020/01/10/C&amp;C++_dynamic-array/</id>
-    <published>2020-01-10T04:32:20.000Z</published>
-    <updated>2020-04-03T15:43:13.174Z</updated>
+    <published>2020-01-10T10:45:25.000Z</published>
+    <updated>2020-04-04T10:53:58.117Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt; 近来刷题，遇到好几道题目需要动态数组解决，现在整理一下。C++中动态开辟一维、二维数组很常见，也很实用。&lt;/p&gt;
+      &lt;p&gt;近来刷题，遇到好几道题目需要动态数组解决，现在整理一下。C++中动态开辟一维、二维数组很常见，也很实用。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;h5 id=&quot;动态开辟一维数组&quot;&gt;&lt;a href=&quot;#动态开辟一维数组&quot; class=&quot;headerlink&quot; title=&quot;动态开辟一维数组&quot;&gt;&lt;/a&gt;动态开辟一维数组&lt;/h5&gt;&lt;p&gt;动态开辟一维数组简单，代码实现：&lt;/p&gt;
 &lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;DynamicCreate1Array&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; len;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;cin&lt;/span&gt;&amp;gt;&amp;gt;len;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; *p = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[len];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; len; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;cin&lt;/span&gt;&amp;gt;&amp;gt;p[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;delete&lt;/span&gt;[] p;         &lt;span class=&quot;comment&quot;&gt;//动态数组使用完一定要释放&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -164,11 +164,11 @@
   </entry>
   
   <entry>
-    <title>Linux  socket 通信编程</title>
+    <title>Linux socket通信编程</title>
     <link href="http://www.wnxy.xyz/2019/07/01/Linux-socket-communication-programming/"/>
     <id>http://www.wnxy.xyz/2019/07/01/Linux-socket-communication-programming/</id>
-    <published>2019-07-01T02:55:20.000Z</published>
-    <updated>2020-04-04T07:34:13.182Z</updated>
+    <published>2019-07-01T11:00:03.000Z</published>
+    <updated>2020-04-04T11:03:45.389Z</updated>
     
     <summary type="html">
     
@@ -177,7 +177,7 @@
     </summary>
     
     
-      <category term="Linux 学习" scheme="http://www.wnxy.xyz/categories/Linux-%E5%AD%A6%E4%B9%A0/"/>
+      <category term="Linux学习" scheme="http://www.wnxy.xyz/categories/Linux%E5%AD%A6%E4%B9%A0/"/>
     
     
       <category term="Linux" scheme="http://www.wnxy.xyz/tags/Linux/"/>
@@ -238,7 +238,7 @@
     <link href="http://www.wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/"/>
     <id>http://www.wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/</id>
     <published>2019-01-01T13:18:20.000Z</published>
-    <updated>2020-03-28T03:48:19.570Z</updated>
+    <updated>2020-04-04T10:49:50.356Z</updated>
     
     <summary type="html">
     
