@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.wnxy.xyz/2020/03/25/Bitree-construction-and-traversal-preorder-and-inorder/</loc>
+    
+    <lastmod>2020-04-04T03:18:58.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wnxy.xyz/2020/03/25/Bitree-construction-and-traversal/</loc>
+    
+    <lastmod>2020-04-04T03:17:38.899Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/</loc>
     
     <lastmod>2020-04-03T15:43:25.552Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://www.wnxy.xyz/2020/01/10/C&C++_dynamic-array/</loc>
     
     <lastmod>2020-04-03T15:43:13.174Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wnxy.xyz/2020/03/25/Binary-tree-construction-and-traversal/</loc>
-    
-    <lastmod>2020-04-03T15:26:48.605Z</lastmod>
     
   </url>
   

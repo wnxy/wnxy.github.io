@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.wnxy.xyz/2020/03/25/Bitree-construction-and-traversal-preorder-and-inorder/</loc>
+    <lastmod>2020-04-04</lastmod>
+  </url>  <url>
+    <loc>http://www.wnxy.xyz/2020/03/25/Bitree-construction-and-traversal/</loc>
+    <lastmod>2020-04-04</lastmod>
+  </url>  <url>
     <loc>http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/</loc>
     <lastmod>2020-04-03</lastmod>
   </url>  <url>
     <loc>http://www.wnxy.xyz/2020/01/10/C&C++_dynamic-array/</loc>
-    <lastmod>2020-04-03</lastmod>
-  </url>  <url>
-    <loc>http://www.wnxy.xyz/2020/03/25/Binary-tree-construction-and-traversal/</loc>
     <lastmod>2020-04-03</lastmod>
   </url>  <url>
     <loc>http://www.wnxy.xyz/2019/06/03/Linux-programming-examples/</loc>
