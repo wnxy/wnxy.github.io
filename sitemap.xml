@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.wnxy.xyz/404.html</loc>
+    
+    <lastmod>2020-04-06T03:59:35.701Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.wnxy.xyz/2019/07/01/Linux-socket-communication-programming/</loc>
     
     <lastmod>2020-04-04T11:03:45.389Z</lastmod>
