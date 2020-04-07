@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wnxy.xyz/"/>
-  <updated>2020-04-04T07:31:32.927Z</updated>
+  <updated>2020-04-07T10:13:06.063Z</updated>
   <id>http://www.wnxy.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>随笔</title>
+    <link href="http://www.wnxy.xyz/2020/04/07/pages/"/>
+    <id>http://www.wnxy.xyz/2020/04/07/pages/</id>
+    <published>2020-04-07T10:09:54.000Z</published>
+    <updated>2020-04-07T10:13:06.063Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="随笔/杂谈" scheme="http://www.wnxy.xyz/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="影音" scheme="http://www.wnxy.xyz/tags/%E5%BD%B1%E9%9F%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>栈的应用——括号匹配</title>
@@ -238,7 +265,7 @@
     <link href="http://www.wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/"/>
     <id>http://www.wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/</id>
     <published>2019-01-01T13:18:20.000Z</published>
-    <updated>2020-04-04T10:49:50.356Z</updated>
+    <updated>2020-04-07T10:14:32.938Z</updated>
     
     <summary type="html">
     
@@ -247,7 +274,7 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://www.wnxy.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔/杂谈" scheme="http://www.wnxy.xyz/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
     
     
       <category term="C/C++" scheme="http://www.wnxy.xyz/tags/C-C/"/>

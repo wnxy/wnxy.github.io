@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>随笔</title>
+      <link href="/2020/04/07/pages/"/>
+      <url>/2020/04/07/pages/</url>
+      
+        <content type="html"><![CDATA[<p>想看的电影：等待黎明</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔/杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 影音 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>栈的应用——括号匹配</title>
       <link href="/2020/03/27/Stack-application-bracket-matching/"/>
       <url>/2020/03/27/Stack-application-bracket-matching/</url>
@@ -233,7 +258,7 @@
       
       <categories>
           
-          <category> 随笔 </category>
+          <category> 随笔/杂谈 </category>
           
       </categories>
       
