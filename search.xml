@@ -89,7 +89,7 @@
     
     
     <entry>
-      <title>随笔</title>
+      <title>心情日记</title>
       <link href="/2020/03/25/The-movie-is-recommended/"/>
       <url>/2020/03/25/The-movie-is-recommended/</url>
       
@@ -143,7 +143,7 @@
       <link href="/2020/03/20/Jincheng-lanzhou/"/>
       <url>/2020/03/20/Jincheng-lanzhou/</url>
       
-        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"hotkey":true,"preload":"metadata","video":{"url":"http://lc-lWKWF223.cn-n1.lcfile.com/ff02348dff0ea70e03fd/mmexport1586261438093.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"hotkey":true,"preload":"metadata","video":{"url":"http://lc-lWKWF223.cn-n1.lcfile.com/ff02348dff0ea70e03fd/mmexport1586261438093.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
       
       
       <categories>
