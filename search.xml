@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>随笔</title>
-      <link href="/2020/04/07/pages/"/>
-      <url>/2020/04/07/pages/</url>
-      
-        <content type="html"><![CDATA[<p>想看的电影：等待黎明</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 随笔/杂谈 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 影音 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>栈的应用——括号匹配</title>
       <link href="/2020/03/27/Stack-application-bracket-matching/"/>
       <url>/2020/03/27/Stack-application-bracket-matching/</url>
@@ -62,7 +37,7 @@
       <link href="/2020/03/26/Definition-and-use-of-stacks-and-queues/"/>
       <url>/2020/03/26/Definition-and-use-of-stacks-and-queues/</url>
       
-        <content type="html"><![CDATA[<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>栈（Stack）：只允许在一端进行插入或删除操作的线性表。</p><p>队列（Queue）：只允许在表的一端进行插入，而在表的另一端进行删除的线性表。</p><p>栈的基本操作：</p><p><code>s.empty()               若栈为空返回true，否则返回false</code><br><code>s.size()                   返回栈中元素的个数</code><br><code>s.pop()                   弹出栈顶元素但不返回其值</code><br><code>s.top()                    若栈s非空，返回栈顶的元素</code><br><code>s.push()                 在栈顶压入新元素</code></p><p>队列的基本操作：</p><p><code>q.empty()               若队列为空返回true，否则返回false</code><br><code>q.size()                   返回队列中元素的个数</code><br><code>q.pop()                    弹出队列首元素但不返回其值</code><br><code>q.front()                   返回队首元素的值，但不删除该元素</code><br><code>q.push()                  在队尾压入新元素</code><br><code>q.back()                  返回队列尾元素的值，但不删除该元素</code></p><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>引入头文件：</p><p><code>#include&lt;stack&gt;</code></p><p><code>#include&lt;queue&gt;</code></p><p>定义栈：<code>stack&lt;int&gt; s;</code></p><p>定义队列：<code>queue&lt;int&gt; q;</code></p><a id="more"></a><p>举例：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stack&gt;  </span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt;s;<span class="comment">//定义一个栈  </span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">s.push(i);</span><br><span class="line"><span class="keyword">while</span> (!s.empty())</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; s.top() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">s.pop();</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="string">"栈内的元素的个数为："</span> &lt;&lt; s.<span class="built_in">size</span>() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/tham_/article/details/44733101" target="_blank" rel="noopener">更多参考</a></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>栈（Stack）：只允许在一端进行插入或删除操作的线性表。</p><p>队列（Queue）：只允许在表的一端进行插入，而在表的另一端进行删除的线性表。</p><p>栈的基本操作：</p><p><code>s.empty()               若栈为空返回true，否则返回false</code><br><code>s.size()                   返回栈中元素的个数</code><br><code>s.pop()                   弹出栈顶元素但不返回其值</code><br><code>s.top()                    若栈s非空，返回栈顶的元素</code><br><code>s.push()                 在栈顶压入新元素</code></p><a id="more"></a><p>队列的基本操作：</p><p><code>q.empty()               若队列为空返回true，否则返回false</code><br><code>q.size()                   返回队列中元素的个数</code><br><code>q.pop()                    弹出队列首元素但不返回其值</code><br><code>q.front()                   返回队首元素的值，但不删除该元素</code><br><code>q.push()                  在队尾压入新元素</code><br><code>q.back()                  返回队列尾元素的值，但不删除该元素</code></p><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>引入头文件：</p><p><code>#include&lt;stack&gt;</code></p><p><code>#include&lt;queue&gt;</code></p><p>定义栈：<code>stack&lt;int&gt; s;</code></p><p>定义队列：<code>queue&lt;int&gt; q;</code></p><p>举例：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stack&gt;  </span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt;s;<span class="comment">//定义一个栈  </span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">s.push(i);</span><br><span class="line"><span class="keyword">while</span> (!s.empty())</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; s.top() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">s.pop();</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="string">"栈内的元素的个数为："</span> &lt;&lt; s.<span class="built_in">size</span>() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/tham_/article/details/44733101" target="_blank" rel="noopener">更多参考</a></p>]]></content>
       
       
       <categories>
@@ -114,11 +89,86 @@
     
     
     <entry>
+      <title>随笔</title>
+      <link href="/2020/03/25/The-movie-is-recommended/"/>
+      <url>/2020/03/25/The-movie-is-recommended/</url>
+      
+        <content type="html"><![CDATA[<p>想看的电影：等待黎明</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔/杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 影音 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>矿大航拍</title>
+      <link href="/2020/03/21/Cumt-aerial/"/>
+      <url>/2020/03/21/Cumt-aerial/</url>
+      
+        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"hotkey":true,"preload":"metadata","video":{"url":"http://lc-lWKWF223.cn-n1.lcfile.com/fe1a1b07e467cf206948/003825Lglx07y0sh6Ac801041201pTWV0E010.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔/杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 影音视频 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>金城兰州</title>
+      <link href="/2020/03/20/Jincheng-lanzhou/"/>
+      <url>/2020/03/20/Jincheng-lanzhou/</url>
+      
+        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"hotkey":true,"preload":"metadata","video":{"url":"http://lc-lWKWF223.cn-n1.lcfile.com/ff02348dff0ea70e03fd/mmexport1586261438093.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔/杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 影音视频 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C++十进制与二进制的互相转换</title>
       <link href="/2020/02/10/C++_decimal-and-binary-conversion/"/>
       <url>/2020/02/10/C++_decimal-and-binary-conversion/</url>
       
-        <content type="html"><![CDATA[<p>手动实现进制转换</p><p>十进制转换为二进制：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">decTobin</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> h,w=<span class="number">1</span>,sum=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (n)</span><br><span class="line">&#123;</span><br><span class="line">h = n % <span class="number">2</span>;</span><br><span class="line">sum += h * w;</span><br><span class="line">w *= <span class="number">10</span>;</span><br><span class="line">n = n / <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>二进制转换为十进制：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">binTodec</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> h,w=<span class="number">1</span>,sum=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (n)</span><br><span class="line">&#123;</span><br><span class="line">h = n % <span class="number">10</span>;</span><br><span class="line">sum += h * w;</span><br><span class="line">w *= <span class="number">2</span>;</span><br><span class="line">n = n / <span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>手动实现进制转换</p><p>十进制转换为二进制：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">decTobin</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> h,w=<span class="number">1</span>,sum=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (n)</span><br><span class="line">&#123;</span><br><span class="line">h = n % <span class="number">2</span>;</span><br><span class="line">sum += h * w;</span><br><span class="line">w *= <span class="number">10</span>;</span><br><span class="line">n = n / <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><a id="more"></a><p>二进制转换为十进制：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">binTodec</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> h,w=<span class="number">1</span>,sum=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (n)</span><br><span class="line">&#123;</span><br><span class="line">h = n % <span class="number">10</span>;</span><br><span class="line">sum += h * w;</span><br><span class="line">w *= <span class="number">2</span>;</span><br><span class="line">n = n / <span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wnxy.xyz/"/>
-  <updated>2020-04-07T10:13:06.063Z</updated>
+  <updated>2020-04-04T07:31:32.927Z</updated>
   <id>http://www.wnxy.xyz/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>随笔</title>
-    <link href="http://www.wnxy.xyz/2020/04/07/pages/"/>
-    <id>http://www.wnxy.xyz/2020/04/07/pages/</id>
-    <published>2020-04-07T10:09:54.000Z</published>
-    <updated>2020-04-07T10:13:06.063Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-      <category term="随笔/杂谈" scheme="http://www.wnxy.xyz/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="影音" scheme="http://www.wnxy.xyz/tags/%E5%BD%B1%E9%9F%B3/"/>
-    
-  </entry>
   
   <entry>
     <title>栈的应用——括号匹配</title>
@@ -75,7 +48,7 @@
     <link href="http://www.wnxy.xyz/2020/03/26/Definition-and-use-of-stacks-and-queues/"/>
     <id>http://www.wnxy.xyz/2020/03/26/Definition-and-use-of-stacks-and-queues/</id>
     <published>2020-03-26T05:05:54.000Z</published>
-    <updated>2020-04-04T07:31:52.598Z</updated>
+    <updated>2020-04-07T13:08:47.057Z</updated>
     
     <summary type="html">
     
@@ -83,13 +56,6 @@
 &lt;p&gt;队列（Queue）：只允许在表的一端进行插入，而在表的另一端进行删除的线性表。&lt;/p&gt;
 &lt;p&gt;栈的基本操作：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;s.empty()               若栈为空返回true，否则返回false&lt;/code&gt;&lt;br&gt;&lt;code&gt;s.size()                   返回栈中元素的个数&lt;/code&gt;&lt;br&gt;&lt;code&gt;s.pop()                   弹出栈顶元素但不返回其值&lt;/code&gt;&lt;br&gt;&lt;code&gt;s.top()                    若栈s非空，返回栈顶的元素&lt;/code&gt;&lt;br&gt;&lt;code&gt;s.push()                 在栈顶压入新元素&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;队列的基本操作：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;q.empty()               若队列为空返回true，否则返回false&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.size()                   返回队列中元素的个数&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.pop()                    弹出队列首元素但不返回其值&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.front()                   返回队首元素的值，但不删除该元素&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.push()                  在队尾压入新元素&lt;/code&gt;&lt;br&gt;&lt;code&gt;q.back()                  返回队列尾元素的值，但不删除该元素&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h3&gt;&lt;p&gt;引入头文件：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#include&amp;lt;stack&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;#include&amp;lt;queue&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;定义栈：&lt;code&gt;stack&amp;lt;int&amp;gt; s;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;定义队列：&lt;code&gt;queue&amp;lt;int&amp;gt; q;&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
@@ -136,11 +102,11 @@
   </entry>
   
   <entry>
-    <title>C++十进制与二进制的互相转换</title>
-    <link href="http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/"/>
-    <id>http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/</id>
-    <published>2020-02-10T10:54:47.000Z</published>
-    <updated>2020-04-04T10:59:12.835Z</updated>
+    <title>随笔</title>
+    <link href="http://www.wnxy.xyz/2020/03/25/The-movie-is-recommended/"/>
+    <id>http://www.wnxy.xyz/2020/03/25/The-movie-is-recommended/</id>
+    <published>2020-03-25T10:09:54.000Z</published>
+    <updated>2020-04-07T12:14:35.305Z</updated>
     
     <summary type="html">
     
@@ -151,6 +117,83 @@
           
         
       
+    
+    </summary>
+    
+    
+      <category term="随笔/杂谈" scheme="http://www.wnxy.xyz/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="影音" scheme="http://www.wnxy.xyz/tags/%E5%BD%B1%E9%9F%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>矿大航拍</title>
+    <link href="http://www.wnxy.xyz/2020/03/21/Cumt-aerial/"/>
+    <id>http://www.wnxy.xyz/2020/03/21/Cumt-aerial/</id>
+    <published>2020-03-21T12:11:54.000Z</published>
+    <updated>2020-04-07T13:01:33.999Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="随笔/杂谈" scheme="http://www.wnxy.xyz/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="影音视频" scheme="http://www.wnxy.xyz/tags/%E5%BD%B1%E9%9F%B3%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>金城兰州</title>
+    <link href="http://www.wnxy.xyz/2020/03/20/Jincheng-lanzhou/"/>
+    <id>http://www.wnxy.xyz/2020/03/20/Jincheng-lanzhou/</id>
+    <published>2020-03-20T12:42:32.000Z</published>
+    <updated>2020-04-07T13:07:01.815Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="随笔/杂谈" scheme="http://www.wnxy.xyz/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="影音视频" scheme="http://www.wnxy.xyz/tags/%E5%BD%B1%E9%9F%B3%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++十进制与二进制的互相转换</title>
+    <link href="http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/"/>
+    <id>http://www.wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/</id>
+    <published>2020-02-10T10:54:47.000Z</published>
+    <updated>2020-04-07T13:10:01.340Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;手动实现进制转换&lt;/p&gt;
+&lt;p&gt;十进制转换为二进制：&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;decTobin&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; h,w=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,sum=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (n)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		h = n % &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		sum += h * w;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		w *= &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		n = n / &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sum;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
