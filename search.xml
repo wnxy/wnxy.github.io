@@ -118,7 +118,7 @@
       <link href="/2020/03/21/Cumt-aerial/"/>
       <url>/2020/03/21/Cumt-aerial/</url>
       
-        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"hotkey":true,"preload":"metadata","video":{"url":"http://lc-lWKWF223.cn-n1.lcfile.com/fe1a1b07e467cf206948/003825Lglx07y0sh6Ac801041201pTWV0E010.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><iframe style='width: 900px;height: 506px' frameborder='no' allowfullscreen mozallowfullscreen webkitallowfullscreen src='http://share.polyv.net/front/video/preview?vid=8bb758cd63a75137b984b867c33dce10_8'></iframe>]]></content>
       
       
       <categories>
@@ -143,7 +143,7 @@
       <link href="/2020/03/20/Jincheng-lanzhou/"/>
       <url>/2020/03/20/Jincheng-lanzhou/</url>
       
-        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"hotkey":true,"preload":"metadata","video":{"url":"http://lc-lWKWF223.cn-n1.lcfile.com/ff02348dff0ea70e03fd/mmexport1586261438093.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><iframe style='width: 900px;height: 506px' frameborder='no' allowfullscreen mozallowfullscreen webkitallowfullscreen src='http://share.polyv.net/front/video/preview?vid=8bb758cd63e385239d8290fedb7e5dd7_8'></iframe>]]></content>
       
       
       <categories>
@@ -227,7 +227,7 @@
       
       <categories>
           
-          <category> Linux学习 </category>
+          <category> Linux 学习 </category>
           
       </categories>
       
