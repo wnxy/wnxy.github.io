@@ -118,7 +118,7 @@
       <link href="/2020/03/21/Cumt-aerial/"/>
       <url>/2020/03/21/Cumt-aerial/</url>
       
-        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><iframe style='width: 900px;height: 506px' frameborder='no' allowfullscreen mozallowfullscreen webkitallowfullscreen src='http://share.polyv.net/front/video/preview?vid=8bb758cd63a75137b984b867c33dce10_8'></iframe>]]></content>
+        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><script src='//player.polyv.net/script/polyvplayer.min.js'></script><div id='plv_8bb758cd63a75137b984b867c33dce10_8'></div><script>var player = polyvObject('#plv_8bb758cd63a75137b984b867c33dce10_8').videoPlayer({    'width':'900',  'height':'506',    'vid' : '8bb758cd63a75137b984b867c33dce10_8' , 'forceH5':true });</script>]]></content>
       
       
       <categories>
@@ -143,7 +143,7 @@
       <link href="/2020/03/20/Jincheng-lanzhou/"/>
       <url>/2020/03/20/Jincheng-lanzhou/</url>
       
-        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><iframe style='width: 900px;height: 506px' frameborder='no' allowfullscreen mozallowfullscreen webkitallowfullscreen src='http://share.polyv.net/front/video/preview?vid=8bb758cd63e385239d8290fedb7e5dd7_8'></iframe>]]></content>
+        <content type="html"><![CDATA[<p><strong>声明：视频资源来自网络，因为喜欢，所以上传到博客，如有侵权，请联系删除！</strong></p><script src='//player.polyv.net/script/polyvplayer.min.js'></script><div id='plv_8bb758cd63e385239d8290fedb7e5dd7_8'></div><script>var player = polyvObject('#plv_8bb758cd63e385239d8290fedb7e5dd7_8').videoPlayer({    'width':'900',  'height':'506',    'vid' : '8bb758cd63e385239d8290fedb7e5dd7_8' , 'forceH5':true });</script>]]></content>
       
       
       <categories>
