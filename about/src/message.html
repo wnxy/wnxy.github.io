@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<title>About</title>
+    <!--网页标题左侧显示-->
+    <link rel="icon" href="../images/melody-favicon2.ico" type="image/x-icon">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="../images/melody-favicon2.ico" type="image/x-icon">
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <link rel="stylesheet" media="screen" href="../css/index.css" />
+    <link rel="stylesheet" media="screen" href="../css/nav_style.css" />
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="footprint.html">Footprint</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="#">Message</a></li>
+            <li><a href="../index.html">Resume</a></li>
+        </ul>
+    </div>
+    
+    <div id="text">
+        <h1>留言墙</h1>
+        <p>有什么想说的留言看看！</p>
+        <p>记得留联系方式我才能回复呀！</p>
+    </div>
+    <div id="vcomments">
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'lWKWF223ky98Yds4FmXljUld-gzGzoHsz',
+            appKey: 'qUI8kNFhEm8VI3uXcwf5y79J'
+        })
+    </script>
+    </div>
+</body>
+</html>

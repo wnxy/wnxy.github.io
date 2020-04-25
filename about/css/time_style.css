@@ -19,25 +19,6 @@ a:hover {
   text-decoration: none;
 }
 
-.example-header {
-  background: #3D4351;
-  color: #FFF;
-  font-weight: 300;
-  padding: 3em 1em;
-  text-align: center;
-}
-.example-header h1 {
-  color: #FFF;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
-.example-header p {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 700;
-}
-
 .container-fluid .row {
   padding: 0 0 4em 0;
 }
@@ -135,6 +116,9 @@ a:hover {
 /*----- TIMELINE CONTENT -----*/
 .timeline-content {
   padding-bottom: 40px;
+}
+.timeline-content p{
+  margin-top: 15px;
 }
 .timeline-content p:last-child {
   margin-bottom: 0;
