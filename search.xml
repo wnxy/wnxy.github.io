@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>车辆轨迹追踪系统开发文档</title>
+      <link href="/2020/04/29/Development-document-of-vehicle-trajectory-tracking-system/"/>
+      <url>/2020/04/29/Development-document-of-vehicle-trajectory-tracking-system/</url>
+      
+        <content type="html"><![CDATA[<p>车辆大规模GPS数据采集预处理系统</p><p>终端管理API接口：</p><table><thead><tr><th>模块</th><th>接口名称</th><th>功能说明</th></tr></thead><tbody><tr><td>entity</td><td>add</td><td>创建entity</td></tr><tr><td></td><td>update</td><td>更新entity</td></tr><tr><td></td><td>delete</td><td>删除entity</td></tr><tr><td></td><td>list</td><td>检索符合过滤条件的entity，返回entity属性信息和最新位置，可用于列出entity，也可用于批量查询多个entity的位置。</td></tr></tbody></table><p>API接口总览：<a href="http://lbsyun.baidu.com/index.php?title=yingyan/api/v3/entity" target="_blank" rel="noopener">http://lbsyun.baidu.com/index.php?title=yingyan/api/v3/entity</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>栈的应用——括号匹配</title>
       <link href="/2020/03/27/Stack-application-bracket-matching/"/>
       <url>/2020/03/27/Stack-application-bracket-matching/</url>
