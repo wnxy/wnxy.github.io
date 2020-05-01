@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2020-04-29T13:57:00.623Z</updated>
+  <updated>2020-05-01T06:06:35.661Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C/C++二维数组参数传递</title>
+    <link href="https://wnxy.github.io/2020/05/01/C&amp;C++_two-dimensional-array-parameter-transfer/"/>
+    <id>https://wnxy.github.io/2020/05/01/C&amp;C++_two-dimensional-array-parameter-transfer/</id>
+    <published>2020-05-01T05:28:51.000Z</published>
+    <updated>2020-05-01T06:06:35.661Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;C-C-语言中二维数组参数传递常用三种方法：&quot;&gt;&lt;a href=&quot;#C-C-语言中二维数组参数传递常用三种方法：&quot; class=&quot;headerlink&quot; title=&quot;C/C++语言中二维数组参数传递常用三种方法：&quot;&gt;&lt;/a&gt;C/C++语言中二维数组参数传递常用三种方法：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;方法一：形参为二维数组并给出第二维的大小&lt;/p&gt;
+&lt;p&gt;如：&lt;code&gt;void sum(int a[][3])&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/tags/C-C/"/>
+    
+      <category term="二维数组" scheme="https://wnxy.github.io/tags/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>车辆轨迹追踪系统开发文档</title>
