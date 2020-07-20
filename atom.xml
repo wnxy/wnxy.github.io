@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wnxy.xyz/"/>
-  <updated>2020-07-09T14:54:12.597Z</updated>
+  <updated>2020-07-20T03:56:48.127Z</updated>
   <id>http://www.wnxy.xyz/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github-readme-stats制作个性GitHub简介page</title>
+    <link href="http://www.wnxy.xyz/2020/07/20/github-readme-stats-Make-a-personalized-GitHub-profile-page/"/>
+    <id>http://www.wnxy.xyz/2020/07/20/github-readme-stats-Make-a-personalized-GitHub-profile-page/</id>
+    <published>2020-07-20T02:59:37.000Z</published>
+    <updated>2020-07-20T03:56:48.127Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="GitHub" scheme="http://www.wnxy.xyz/categories/GitHub/"/>
+    
+    
+      <category term="Git" scheme="http://www.wnxy.xyz/tags/Git/"/>
+    
+      <category term="GitHub" scheme="http://www.wnxy.xyz/tags/GitHub/"/>
+    
+      <category term="开源" scheme="http://www.wnxy.xyz/tags/%E5%BC%80%E6%BA%90/"/>
+    
+  </entry>
   
   <entry>
     <title>毕业季——大学路1号的时光</title>

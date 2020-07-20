@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>github-readme-stats制作个性GitHub简介page</title>
+      <link href="/2020/07/20/github-readme-stats-Make-a-personalized-GitHub-profile-page/"/>
+      <url>/2020/07/20/github-readme-stats-Make-a-personalized-GitHub-profile-page/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在GitHub创建一个跟用户名一样的项目，最终会在自己的GitHub首页生成一个个性介绍板块。</p><blockquote><p>You found a secret! <strong>nxyrain/nxyrain</strong>is a ✨<em>special</em> ✨ repository that you can use to add a <code>README.md</code> to your GitHub profile. Make sure it’s public and initialize it with a <strong>README</strong> to get started.</p></blockquote><h3 id="一、创建项目"><a href="#一、创建项目" class="headerlink" title="一、创建项目"></a>一、创建项目</h3><p><a href="https://imgchr.com/i/UfzoAx" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/07/20/UfzoAx.md.png" alt="创建项目"></a></p><p><strong>注意：</strong></p><p><strong>1、项目名和用户名要一致。</strong></p><p><strong>2、项目要公开，勾选Public。</strong></p><p><strong>3、项目需要初始化，勾选创建README。</strong></p><p>个人首页最上面就出现了个性介绍板块。</p><p><a href="https://imgchr.com/i/UhC2I1" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/07/20/UhC2I1.md.png" alt="Hi there"></a></p><h3 id="二、编辑个性介绍板块"><a href="#二、编辑个性介绍板块" class="headerlink" title="二、编辑个性介绍板块"></a>二、编辑个性介绍板块</h3><p><a href="https://imgchr.com/i/UhFGrD" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/07/20/UhFGrD.md.png" alt=""></a></p><p>添加内容</p><p><a href="https://imgchr.com/i/UhknOS" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/07/20/UhknOS.md.png" alt=""></a></p><p>README支持Markdown语法，编辑完成点击Preview Changes预览编辑效果，编辑完成提交修改即可看见个性介绍页效果。</p><p>最后，安利一个GitHub Readme Stats项目，用来在你的 README 中 获取动态生成的GitHub统计信息！<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noopener">项目地址</a></p><p>实现效果：</p><p><img src="https://s1.ax1x.com/2020/07/20/UhEmVg.png" alt=""></p><p><img src="https://s1.ax1x.com/2020/07/20/UhEu5j.png" alt=""></p><p><img src="https://s1.ax1x.com/2020/07/20/UhEnaQ.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> GitHub </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+            <tag> GitHub </tag>
+            
+            <tag> 开源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>毕业季——大学路1号的时光</title>
       <link href="/2020/06/22/Graduation-season-Time-at-No.1-University-Road/"/>
       <url>/2020/06/22/Graduation-season-Time-at-No.1-University-Road/</url>
