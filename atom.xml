@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wnxy.xyz/"/>
-  <updated>2020-08-11T14:07:41.316Z</updated>
+  <updated>2020-09-19T06:29:35.502Z</updated>
   <id>http://www.wnxy.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo melody博客不蒜子统计无法显示问题解决</title>
+    <link href="http://www.wnxy.xyz/2020/09/19/Hexo-melody-blog-beautification1/"/>
+    <id>http://www.wnxy.xyz/2020/09/19/Hexo-melody-blog-beautification1/</id>
+    <published>2020-09-19T05:57:34.000Z</published>
+    <updated>2020-09-19T06:29:35.502Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;参考文章：&lt;a href=&quot;https://www.jianshu.com/p/0befb34dce16&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jianshu.com/p/0befb34dce16&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;存在问题：已发布的hexo melody主题博客不蒜子统计不能显示&lt;/p&gt;
+&lt;p&gt;解决：修改\themes\melody\layout\includes\count路径下busuanzi.pug文件&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo博客搭建" scheme="http://www.wnxy.xyz/categories/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="hexo" scheme="http://www.wnxy.xyz/tags/hexo/"/>
+    
+      <category term="melody" scheme="http://www.wnxy.xyz/tags/melody/"/>
+    
+      <category term="博客美化" scheme="http://www.wnxy.xyz/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>星光不负赶路人...</title>
@@ -497,33 +524,6 @@
       <category term="面向对象" scheme="http://www.wnxy.xyz/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
       <category term="Java" scheme="http://www.wnxy.xyz/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>入坑</title>
-    <link href="http://www.wnxy.xyz/2017/02/01/Begin-Hexo/"/>
-    <id>http://www.wnxy.xyz/2017/02/01/Begin-Hexo/</id>
-    <published>2017-02-01T07:22:37.000Z</published>
-    <updated>2020-09-16T02:47:10.881Z</updated>
-    
-    <summary type="html">
-    
-      莞尔日记，不能看哦！！！
-    
-    </summary>
-    
-    
-      <category term="博客搭建" scheme="http://www.wnxy.xyz/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="hexo" scheme="http://www.wnxy.xyz/tags/hexo/"/>
-    
-      <category term="github" scheme="http://www.wnxy.xyz/tags/github/"/>
-    
-      <category term="npm" scheme="http://www.wnxy.xyz/tags/npm/"/>
-    
-      <category term="基础" scheme="http://www.wnxy.xyz/tags/%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
