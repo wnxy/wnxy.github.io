@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.wnxy.xyz/links/index.html</loc>
+    
+    <lastmod>2020-09-19T12:32:07.686Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.wnxy.xyz/about/index.html</loc>
     
-    <lastmod>2020-09-19T07:53:43.638Z</lastmod>
+    <lastmod>2020-09-19T11:10:03.369Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://www.wnxy.xyz/2020/09/19/Hexo-melody-blog-beautification1/</loc>
     
     <lastmod>2020-09-19T06:29:35.502Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wnxy.xyz/links/index.html</loc>
-    
-    <lastmod>2020-09-19T03:29:37.526Z</lastmod>
     
   </url>
   
