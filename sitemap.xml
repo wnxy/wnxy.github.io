@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.wnxy.xyz/about/index.html</loc>
+    
+    <lastmod>2020-09-30T07:18:22.538Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.wnxy.xyz/links/index.html</loc>
     
-    <lastmod>2020-09-27T09:12:28.036Z</lastmod>
+    <lastmod>2020-09-28T02:15:02.282Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>http://www.wnxy.xyz/google85949087cc957523.html</loc>
     
     <lastmod>2020-09-20T01:11:35.555Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wnxy.xyz/about/index.html</loc>
-    
-    <lastmod>2020-09-19T12:43:06.137Z</lastmod>
     
   </url>
   
