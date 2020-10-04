@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>python函数存储在模块中的函数调用</title>
+      <link href="/2020/10/04/Python-function-call-and-module/"/>
+      <url>/2020/10/04/Python-function-call-and-module/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>python中常见将函数存储在被称为模块的独立文件中，再将模块导入到主程序中，import语句实现当前运行的程序文件中导入模块中的代码。</p><p>要让函数是可导入的，得先创建模块。模块是扩展名为.py的文件，包含要导入到程序中的代码。</p><h2 id="1-导入整个模块"><a href="#1-导入整个模块" class="headerlink" title="1.导入整个模块"></a>1.导入整个模块</h2><p>语法规则：</p><p>module_name.function_name()</p><h2 id="2-导入特定的函数"><a href="#2-导入特定的函数" class="headerlink" title="2.导入特定的函数"></a>2.导入特定的函数</h2><p>语法规则：</p><p>from module_name import function_name</p><p>通过用逗号分隔函数名，可根据需要从模块中导入任意数量的函数：</p><p>from module_name import function_0, function_1, function_2</p><h2 id="3-使用as给函数指定别名"><a href="#3-使用as给函数指定别名" class="headerlink" title="3.使用as给函数指定别名"></a>3.使用as给函数指定别名</h2><p>语法规则：</p><p>from module_name import function_name as fn</p><h2 id="4-使用as给模块指定别名"><a href="#4-使用as给模块指定别名" class="headerlink" title="4.使用as给模块指定别名"></a>4.使用as给模块指定别名</h2><p>语法规则：</p><p>import module_name as mn</p><h2 id="5-导入模块中的所有函数"><a href="#5-导入模块中的所有函数" class="headerlink" title="5.导入模块中的所有函数"></a>5.导入模块中的所有函数</h2><p>语法规则：</p><p>from module_name import * </p><p>（不建议使用此方法）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> 函数调用 </tag>
+            
+            <tag> 模块 </tag>
+            
+            <tag> import </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo melody博客不蒜子统计无法显示问题解决</title>
       <link href="/2020/09/19/Hexo-melody-blog-beautification1/"/>
       <url>/2020/09/19/Hexo-melody-blog-beautification1/</url>
