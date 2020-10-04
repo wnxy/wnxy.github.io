@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wnxy.xyz/"/>
-  <updated>2020-10-04T13:13:25.530Z</updated>
+  <updated>2020-09-19T06:29:35.502Z</updated>
   <id>http://www.wnxy.xyz/</id>
   
   <author>
@@ -15,41 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>python函数存储在模块中的函数调用</title>
-    <link href="http://www.wnxy.xyz/2020/10/04/Python-function-call-and-module/"/>
-    <id>http://www.wnxy.xyz/2020/10/04/Python-function-call-and-module/</id>
-    <published>2020-10-04T12:51:41.000Z</published>
-    <updated>2020-10-04T13:13:25.530Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="http://www.wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="python" scheme="http://www.wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/"/>
-    
-    
-      <category term="python" scheme="http://www.wnxy.xyz/tags/python/"/>
-    
-      <category term="函数调用" scheme="http://www.wnxy.xyz/tags/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/"/>
-    
-      <category term="模块" scheme="http://www.wnxy.xyz/tags/%E6%A8%A1%E5%9D%97/"/>
-    
-      <category term="import" scheme="http://www.wnxy.xyz/tags/import/"/>
-    
-  </entry>
   
   <entry>
     <title>hexo melody博客不蒜子统计无法显示问题解决</title>
@@ -462,6 +427,36 @@
       <category term="C/C++" scheme="http://www.wnxy.xyz/tags/C-C/"/>
     
       <category term="动态数组" scheme="http://www.wnxy.xyz/tags/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python函数存储在模块中的函数调用</title>
+    <link href="http://www.wnxy.xyz/2019/10/04/Python-function-call-and-module/"/>
+    <id>http://www.wnxy.xyz/2019/10/04/Python-function-call-and-module/</id>
+    <published>2019-10-04T12:51:41.000Z</published>
+    <updated>2020-10-04T13:49:20.548Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;python中常见将函数存储在被称为模块的独立文件中，再将模块导入到主程序中，import语句实现当前运行的程序文件中导入模块中的代码。&lt;/p&gt;
+&lt;p&gt;要让函数是可导入的，得先创建模块。模块是扩展名为.py的文件，包含要导入到程序中的代码。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://www.wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="python" scheme="http://www.wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/"/>
+    
+    
+      <category term="python" scheme="http://www.wnxy.xyz/tags/python/"/>
+    
+      <category term="函数调用" scheme="http://www.wnxy.xyz/tags/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/"/>
+    
+      <category term="模块" scheme="http://www.wnxy.xyz/tags/%E6%A8%A1%E5%9D%97/"/>
+    
+      <category term="import" scheme="http://www.wnxy.xyz/tags/import/"/>
     
   </entry>
   
