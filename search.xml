@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>python数据可视化——函数图像绘制</title>
+      <link href="/2020/10/09/Python-data-visualization/"/>
+      <url>/2020/10/09/Python-data-visualization/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>利用python的matplotlib库进行数据可视化，绘制定义函数的图像。</p><p>以机器学习逻辑回归的sigmoid函数为例：</p><p><a href="https://www.codecogs.com/eqnedit.php?latex=g\left&space;(&space;z&space;\right&space;)=\frac{1}{1&plus;e^{-z}}" target="_blank"><img src="/loading.gif" data-original="https://latex.codecogs.com/gif.latex?g\left&space;(&space;z&space;\right&space;)=\frac{1}{1&plus;e^{-z}}" title="g\left ( z \right )=\frac{1}{1+e^{-z}}" /></a></p><p>python代码实现：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#定义sigmoid函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(z)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>/(<span class="number">1</span>+np.exp(-z))</span><br></pre></td></tr></table></figure><a id="more"></a><p>函数图像为：</p><p><img src="/loading.gif" data-original="https://cdn.jsdelivr.net/gh/wnxy/wnxy_pic@master/img/sigmoid.png" alt=""></p><p>以下对python matplotlib库绘制函数图像做简单描述：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment">#定义sigmoid函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(z)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>/(<span class="number">1</span>+np.exp(-z))</span><br><span class="line"></span><br><span class="line"><span class="comment">#在-10到10之间生成1000个x值</span></span><br><span class="line">x=np.linspace(<span class="number">-10</span>,<span class="number">10</span>,<span class="number">1000</span>)</span><br><span class="line">y=sigmoid(x)</span><br><span class="line"></span><br><span class="line"><span class="comment">#获取当前的坐标轴, gca = get current axis</span></span><br><span class="line">ax=plt.gca()</span><br><span class="line"><span class="comment">#设置右边框和上边框</span></span><br><span class="line">ax.spines[<span class="string">'right'</span>].set_color(<span class="string">'none'</span>)</span><br><span class="line">ax.spines[<span class="string">'top'</span>].set_color(<span class="string">'none'</span>)</span><br><span class="line"><span class="comment">#设置x坐标轴为下边框</span></span><br><span class="line">ax.xaxis.set_ticks_position(<span class="string">'bottom'</span>)</span><br><span class="line"><span class="comment">#设置y坐标轴为左边框</span></span><br><span class="line">ax.yaxis.set_ticks_position(<span class="string">'left'</span>)</span><br><span class="line"><span class="comment">#设置x轴, y周在(0, 0)的位置</span></span><br><span class="line">ax.spines[<span class="string">'bottom'</span>].set_position((<span class="string">'data'</span>, <span class="number">0</span>))</span><br><span class="line">ax.spines[<span class="string">'left'</span>].set_position((<span class="string">'data'</span>, <span class="number">0</span>))</span><br><span class="line"></span><br><span class="line">plt.plot(x,y)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 机器学习 </tag>
+            
+            <tag> 函数图像 </tag>
+            
+            <tag> Machine-Learning </tag>
+            
+            <tag> Python </tag>
+            
+            <tag> Matplotlib </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo melody博客不蒜子统计无法显示问题解决</title>
       <link href="/2020/09/19/Hexo-melody-blog-beautification1/"/>
       <url>/2020/09/19/Hexo-melody-blog-beautification1/</url>
@@ -431,20 +466,20 @@
           
           <category> 学习笔记 </category>
           
-          <category> python </category>
+          <category> Python </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 函数调用 </tag>
             
             <tag> 模块 </tag>
             
             <tag> import </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -569,7 +604,7 @@
       <link href="/2017/02/01/Begin-Hexo/"/>
       <url>/2017/02/01/Begin-Hexo/</url>
       
-        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="9cb9d268d3faef9d2fb18280b95a41030dc5c82ef323239a4005eebc7ddb3b30">04b96cf03f1b5d00286d72390b6bf2e0817acbfddb7147d2fcc01912c7f5c0f9713c9c317ba53b9347fde83c930f8c77af411014f8ec84eef7465f6027f6e56361da453a696c51ea2cf726ce74f4d1f870ba487ed6f2d242104af5c0877116b7f14bfb7a90c5973d12ee403d2035f9933239ae2447ed66790333bdf54ffb591262e25fa12dbcf137d44c19a6cd948ebafb15e73fa6eff6dc060b9040f5fe74ceda47dc32b97d576023487f051b3ba548d6ba50e2b500f2040aef18f59839ab6e1e75f19b19b2197541d212a3b8a50be74d4dcb775f19746dc5f65bb1d14038106d809a8f516785e6e320975209525d369518b3e93b5bec268679dda1396e30afe69c8f882a0bd5eacf54f501c1e3d2ec58973665cbdc705880cfedeefa76d56bd6b4ab39b57f20385c394e0a9f27a4b6efdb9b0d07b6e839a55776cac4519674d196c6bb30d534cb09e8fec812ae5911002cdbcc1596c0653025794b0953aa17a44cbcebef81af4a47ef46818446f6733e42a1746cfb5511a489bbeffde03cec00437b371f45d6f17d9555eec363194930b263dca128918a357273dfb492ff3bca3a2e4f74df16de6fad592f53a2db652915b9a5c97e1bebe08e75325225b34a4a5a3d7b47ad2169cc4e0cbcce4551d9496ac0b9523dbb54683d638a7197d9616bc50858176a2cba06f151f30772fd3d015bf3b3e29f126ce920f1d7c218e0f0283d38b326c95e61f11f344a583e0483a074405fa3b15343dc080645b41ca873f4b679f02976f506603dcb02ce2bf51c8e6a2ceb193ada051f0586db37fc443d21168c2eb432253f94be229f21cde71622b4ed009d7b9b3471fc5398928434d44e192f0dbcaff26f922585ecb9aa86865bb16cf0745fde385901ab5d10c86660230fd7311b0ed6bb64fa1648907b2e154a6c67ea45a1dc3d5847cd72d31de4e86bb17197bb68191c684249114942266b242a940200753dde2166ff6b4435522d</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="6f243a2e385d84d5ccc11900fcb31266158822ebce9a6a801ddb57f32c6608e4">d0d703fa332139beb12ceb85f23df7fc2dd2ad6c1e2d88c79a07ca82a4c752383c4b274b70abf24c2627b91511ca38c6827a85fb24bb1d405ef366f63d449475cc7e7021b2f42aea7973805ef690a099be12a8caa2ffdf6dbc9f6212144592fad5a584f16d9cbcc534663cce7d13c5205693b5799467cdca4f31b1eb3da117c4464e9d65e8d2ea086423bfac557b55b88f807ccf0b25016324b2051db850900f99f12708a26a6549e44778d76c46ce31d1a6d64c5e9d8db63da0630457acc014c67941c9a3f8ca646afc155801e88b3509b175e7ac010b442778b88935322dc16758351f90281084ecfd1b06f21cb5a1c4e1255c460c67ea328840963b1ad7b1f852cafe5fdc6953ede3c0673d806bfabe27886bcda6e231bc5cd1f5cb677b296f51da1bb1989bfaa6cf0b0660f35891bbd99b26a0896e78d57842dee264d016baceb99e3f13092237c93684670c6e88cfff33da6d7349a6cf40be699e8284ef10b4eb241453682469c77ad2f090a4e373b2180742907a573045ec4249741ead90025684de14d2c211fe00e6607198734334ea439dae591f201d9490b798cbfd6d3587ac9b9ad81396def3061e6a23e6c7f9ccdbb7275a2809aef139d0a9c9778d50c2180804a2063d7974f0290a762bdb2f9ab0a607f00dc611f48b6c45ad7a18fb4b0531aafa273afa651a226af26f05b880027af884671dec90c608d7654df07ed93288cb5ef405b58fd5836a91aeba11d07a72696ca368791b14474e45a25ee9c4d515f02b78b4bff644290ac0cffe4cf1ef6c1dd1e44107ebabe897fe81d6288a1a427bae0728eead5416c712ebadf1518b2d30149d7e0dc4b75fecb6994f618f69f0c2c45338af3e35f7cf2e3acbba3222363f11403d04e2fbd73ea3ed57170c8a5d1038d5d9c2b314a05e4b2793aa3cec2ed7e22ef6ea5bcef5b4121fc3b2383c08c835fa47d03ba9715ccbe2eb07d83a91eca74a3ef651e17c1f55e1</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       
       
       <categories>

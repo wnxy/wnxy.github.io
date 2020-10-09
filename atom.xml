@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.wnxy.xyz/"/>
-  <updated>2020-09-19T06:29:35.502Z</updated>
+  <updated>2020-10-09T04:19:21.003Z</updated>
   <id>http://www.wnxy.xyz/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python数据可视化——函数图像绘制</title>
+    <link href="http://www.wnxy.xyz/2020/10/09/Python-data-visualization/"/>
+    <id>http://www.wnxy.xyz/2020/10/09/Python-data-visualization/</id>
+    <published>2020-10-09T02:08:31.000Z</published>
+    <updated>2020-10-09T04:19:21.003Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;利用python的matplotlib库进行数据可视化，绘制定义函数的图像。&lt;/p&gt;
+&lt;p&gt;以机器学习逻辑回归的sigmoid函数为例：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.codecogs.com/eqnedit.php?latex=g\left&amp;space;(&amp;space;z&amp;space;\right&amp;space;)=\frac{1}{1&amp;plus;e^{-z}}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://latex.codecogs.com/gif.latex?g\left&amp;space;(&amp;space;z&amp;space;\right&amp;space;)=\frac{1}{1&amp;plus;e^{-z}}&quot; title=&quot;g\left ( z \right )=\frac{1}{1+e^{-z}}&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;python代码实现：&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#定义sigmoid函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sigmoid&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(z)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;/(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;+np.exp(-z))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://www.wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Python" scheme="http://www.wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
+    
+    
+      <category term="机器学习" scheme="http://www.wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="函数图像" scheme="http://www.wnxy.xyz/tags/%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F/"/>
+    
+      <category term="Machine-Learning" scheme="http://www.wnxy.xyz/tags/Machine-Learning/"/>
+    
+      <category term="Python" scheme="http://www.wnxy.xyz/tags/Python/"/>
+    
+      <category term="Matplotlib" scheme="http://www.wnxy.xyz/tags/Matplotlib/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo melody博客不蒜子统计无法显示问题解决</title>
@@ -435,7 +470,7 @@
     <link href="http://www.wnxy.xyz/2019/10/04/Python-function-call-and-module/"/>
     <id>http://www.wnxy.xyz/2019/10/04/Python-function-call-and-module/</id>
     <published>2019-10-04T12:51:41.000Z</published>
-    <updated>2020-10-04T13:49:20.548Z</updated>
+    <updated>2020-10-09T04:20:18.660Z</updated>
     
     <summary type="html">
     
@@ -447,16 +482,16 @@
     
       <category term="学习笔记" scheme="http://www.wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="python" scheme="http://www.wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/"/>
+      <category term="Python" scheme="http://www.wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
     
-    
-      <category term="python" scheme="http://www.wnxy.xyz/tags/python/"/>
     
       <category term="函数调用" scheme="http://www.wnxy.xyz/tags/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/"/>
     
       <category term="模块" scheme="http://www.wnxy.xyz/tags/%E6%A8%A1%E5%9D%97/"/>
     
       <category term="import" scheme="http://www.wnxy.xyz/tags/import/"/>
+    
+      <category term="Python" scheme="http://www.wnxy.xyz/tags/Python/"/>
     
   </entry>
   
@@ -504,29 +539,6 @@
       <category term="Linux" scheme="http://www.wnxy.xyz/tags/Linux/"/>
     
       <category term="服务器" scheme="http://www.wnxy.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 编程实例</title>
-    <link href="http://www.wnxy.xyz/2019/06/03/Linux-programming-examples/"/>
-    <id>http://www.wnxy.xyz/2019/06/03/Linux-programming-examples/</id>
-    <published>2019-06-03T05:17:24.000Z</published>
-    <updated>2020-03-28T03:48:42.391Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;示例：用C语言编写一个从键盘输入10名学生的姓名、性别、学号和家庭住址，然后按照学号排序，并将排序后的结果在屏幕上按对齐的方式打印输出的程序。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux 学习" scheme="http://www.wnxy.xyz/categories/Linux-%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="C/C++" scheme="http://www.wnxy.xyz/tags/C-C/"/>
-    
-      <category term="Linux" scheme="http://www.wnxy.xyz/tags/Linux/"/>
     
   </entry>
   
