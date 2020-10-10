@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wnxy.xyz/about/index.html</loc>
+    
+    <lastmod>2020-10-10T01:50:35.131Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wnxy.xyz/interest/index.html</loc>
     
     <lastmod>2020-10-09T11:21:30.145Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://wnxy.xyz/2017/02/01/Begin-Hexo/</loc>
     
     <lastmod>2020-10-05T00:39:35.746Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wnxy.xyz/about/index.html</loc>
-    
-    <lastmod>2020-09-30T07:18:22.538Z</lastmod>
     
   </url>
   
