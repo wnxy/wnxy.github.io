@@ -39,15 +39,15 @@
       <category term="Python" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
     
     
-      <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
     
-      <category term="函数图像" scheme="https://wnxy.xyz/tags/%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F/"/>
+      <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Machine-Learning" scheme="https://wnxy.xyz/tags/Machine-Learning/"/>
     
-      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
-    
       <category term="Matplotlib" scheme="https://wnxy.xyz/tags/Matplotlib/"/>
+    
+      <category term="函数图像" scheme="https://wnxy.xyz/tags/%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F/"/>
     
   </entry>
   
@@ -431,13 +431,13 @@
       <category term="Python" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
     
     
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
       <category term="函数调用" scheme="https://wnxy.xyz/tags/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/"/>
     
       <category term="模块" scheme="https://wnxy.xyz/tags/%E6%A8%A1%E5%9D%97/"/>
     
       <category term="import" scheme="https://wnxy.xyz/tags/import/"/>
-    
-      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
     
   </entry>
   
