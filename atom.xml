@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.xyz/"/>
-  <updated>2020-10-09T04:19:21.003Z</updated>
+  <updated>2020-10-12T08:21:22.477Z</updated>
   <id>https://wnxy.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>机器学习之逻辑回归算法（Logistic Regression）</title>
+    <link href="https://wnxy.xyz/2020/10/11/page/"/>
+    <id>https://wnxy.xyz/2020/10/11/page/</id>
+    <published>2020-10-11T10:57:20.000Z</published>
+    <updated>2020-10-12T08:21:22.477Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Machine Learning" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Machine-Learning/"/>
+    
+    
+      <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Machine-Learning" scheme="https://wnxy.xyz/tags/Machine-Learning/"/>
+    
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>python数据可视化——函数图像绘制</title>
@@ -508,33 +541,6 @@
       <category term="C/C++" scheme="https://wnxy.xyz/tags/C-C/"/>
     
       <category term="Linux" scheme="https://wnxy.xyz/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面向对象语言的缺点和问题</title>
-    <link href="https://wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/"/>
-    <id>https://wnxy.xyz/2019/01/01/Disadvantages-and-problems-of-object-oriented-languages/</id>
-    <published>2019-01-01T13:18:20.000Z</published>
-    <updated>2020-04-07T10:14:32.938Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;面向对象编程是一种计算机编程架构。面向对象编程的一条基本原则是计算机程序是由单个能够起到子程序作用的单元或对象组合而成。面向对象编程达到了软件工程的三个主要目标：重用性、灵活性和扩展性。为了实现整体运算，每个对象都能够接收信息、处理数据和向其它对象发送信息。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔/杂谈" scheme="https://wnxy.xyz/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.xyz/tags/C-C/"/>
-    
-      <category term="程序设计语言原理" scheme="https://wnxy.xyz/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E5%8E%9F%E7%90%86/"/>
-    
-      <category term="面向对象" scheme="https://wnxy.xyz/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
-    
-      <category term="Java" scheme="https://wnxy.xyz/tags/Java/"/>
     
   </entry>
   
