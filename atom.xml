@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.xyz/"/>
-  <updated>2020-10-12T08:21:22.477Z</updated>
+  <updated>2020-10-12T11:51:31.486Z</updated>
   <id>https://wnxy.xyz/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>机器学习之逻辑回归算法（Logistic Regression）</title>
-    <link href="https://wnxy.xyz/2020/10/11/page/"/>
-    <id>https://wnxy.xyz/2020/10/11/page/</id>
+    <title>page1</title>
+    <link href="https://wnxy.xyz/2020/10/12/page1/"/>
+    <id>https://wnxy.xyz/2020/10/12/page1/</id>
+    <published>2020-10-12T11:49:07.000Z</published>
+    <updated>2020-10-12T11:51:31.486Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习——逻辑回归算法（Logistic Regression）思想及算法实现</title>
+    <link href="https://wnxy.xyz/2020/10/11/Machine-learning-logistic-regression-algorithm/"/>
+    <id>https://wnxy.xyz/2020/10/11/Machine-learning-logistic-regression-algorithm/</id>
     <published>2020-10-11T10:57:20.000Z</published>
-    <updated>2020-10-12T08:21:22.477Z</updated>
+    <updated>2020-10-12T11:47:22.712Z</updated>
     
     <summary type="html">
     
@@ -41,11 +64,11 @@
       <category term="Machine Learning" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Machine-Learning/"/>
     
     
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
       <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Machine-Learning" scheme="https://wnxy.xyz/tags/Machine-Learning/"/>
-    
-      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
     
   </entry>
   
@@ -72,11 +95,11 @@
       <category term="Python" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
     
     
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
       <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="Machine-Learning" scheme="https://wnxy.xyz/tags/Machine-Learning/"/>
-    
-      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
     
       <category term="Matplotlib" scheme="https://wnxy.xyz/tags/Matplotlib/"/>
     
@@ -518,29 +541,6 @@
       <category term="Linux" scheme="https://wnxy.xyz/tags/Linux/"/>
     
       <category term="服务器" scheme="https://wnxy.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 编程实例</title>
-    <link href="https://wnxy.xyz/2019/06/03/Linux-programming-examples/"/>
-    <id>https://wnxy.xyz/2019/06/03/Linux-programming-examples/</id>
-    <published>2019-06-03T05:17:24.000Z</published>
-    <updated>2020-03-28T03:48:42.391Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;示例：用C语言编写一个从键盘输入10名学生的姓名、性别、学号和家庭住址，然后按照学号排序，并将排序后的结果在屏幕上按对齐的方式打印输出的程序。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux 学习" scheme="https://wnxy.xyz/categories/Linux-%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.xyz/tags/C-C/"/>
-    
-      <category term="Linux" scheme="https://wnxy.xyz/tags/Linux/"/>
     
   </entry>
   
