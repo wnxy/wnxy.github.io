@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>机器学习之逻辑回归实现MNIST手写字识别</title>
+      <link href="/2020/10/19/Logistic-regression-realizes-MNIST-handwriting-recognition/"/>
+      <url>/2020/10/19/Logistic-regression-realizes-MNIST-handwriting-recognition/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> Machine Learning </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> Machine-Learning </tag>
+            
+            <tag> 机器学习 </tag>
+            
+            <tag> 逻辑回归 </tag>
+            
+            <tag> MNIST </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MNIST手写字符集的数据解析</title>
       <link href="/2020/10/18/Data-analysis-of-MNIST-handwritten-character-set/"/>
       <url>/2020/10/18/Data-analysis-of-MNIST-handwritten-character-set/</url>
@@ -24,9 +59,9 @@
             
             <tag> Python </tag>
             
-            <tag> 机器学习 </tag>
-            
             <tag> Machine-Learning </tag>
+            
+            <tag> 机器学习 </tag>
             
             <tag> 数据解析 </tag>
             
@@ -90,9 +125,9 @@
             
             <tag> Python </tag>
             
-            <tag> 机器学习 </tag>
-            
             <tag> Machine-Learning </tag>
+            
+            <tag> 机器学习 </tag>
             
         </tags>
       
@@ -121,9 +156,9 @@
             
             <tag> Python </tag>
             
-            <tag> 机器学习 </tag>
-            
             <tag> Machine-Learning </tag>
+            
+            <tag> 机器学习 </tag>
             
             <tag> Matplotlib </tag>
             
