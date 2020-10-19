@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.xyz/"/>
-  <updated>2020-10-16T04:58:39.920Z</updated>
+  <updated>2020-10-19T01:40:06.059Z</updated>
   <id>https://wnxy.xyz/</id>
   
   <author>
@@ -17,11 +17,72 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>MNIST手写字符集的数据解析</title>
+    <link href="https://wnxy.xyz/2020/10/18/Data-analysis-of-MNIST-handwritten-character-set/"/>
+    <id>https://wnxy.xyz/2020/10/18/Data-analysis-of-MNIST-handwritten-character-set/</id>
+    <published>2020-10-18T06:56:24.000Z</published>
+    <updated>2020-10-19T01:40:06.059Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1.前言&quot;&gt;&lt;/a&gt;1.前言&lt;/h3&gt;&lt;p&gt;最近在做MNIST手写字识别，官方MNIST数据集为 .idx3-ubyte 格式，程序无法直接读取，涉及MNIST数据集的解析。&lt;/p&gt;
+&lt;p&gt;MNIST数据集：&lt;a href=&quot;http://yann.lecun.com/exdb/mnist/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://yann.lecun.com/exdb/mnist/&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Machine Learning" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Machine-Learning/"/>
+    
+    
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
+      <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Machine-Learning" scheme="https://wnxy.xyz/tags/Machine-Learning/"/>
+    
+      <category term="数据解析" scheme="https://wnxy.xyz/tags/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python中Struct模块的日常用法</title>
+    <link href="https://wnxy.xyz/2020/10/17/Daily-usage-of-Struct-module-in-Python/"/>
+    <id>https://wnxy.xyz/2020/10/17/Daily-usage-of-Struct-module-in-Python/</id>
+    <published>2020-10-17T03:15:19.000Z</published>
+    <updated>2020-10-19T01:39:56.872Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;最近在训练mnist字符集时用到二进制数据的处理，面向Google编程后稍稍搞懂了一点，故做一点笔记，以作备忘。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Python 中用来处理二进制数据时采用 Struct 模块。&lt;/p&gt;
+&lt;p&gt;Struct模块中最常用的函数为:&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Python" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
+    
+    
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
+      <category term="Struct模块" scheme="https://wnxy.xyz/tags/Struct%E6%A8%A1%E5%9D%97/"/>
+    
+      <category term="二进制处理" scheme="https://wnxy.xyz/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%A4%84%E7%90%86/"/>
+    
+      <category term="Binary" scheme="https://wnxy.xyz/tags/Binary/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器学习——逻辑回归算法（Logistic Regression）思想及算法实现</title>
     <link href="https://wnxy.xyz/2020/10/11/Machine-learning-logistic-regression-algorithm/"/>
     <id>https://wnxy.xyz/2020/10/11/Machine-learning-logistic-regression-algorithm/</id>
     <published>2020-10-11T10:57:20.000Z</published>
-    <updated>2020-10-16T04:58:39.920Z</updated>
+    <updated>2020-10-17T11:39:55.753Z</updated>
     
     <summary type="html">
     
@@ -490,53 +551,6 @@
       <category term="Linux" scheme="https://wnxy.xyz/tags/Linux/"/>
     
       <category term="socket通信" scheme="https://wnxy.xyz/tags/socket%E9%80%9A%E4%BF%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>服务器基础知识与配置</title>
-    <link href="https://wnxy.xyz/2019/06/10/Server-basics-and-configuration/"/>
-    <id>https://wnxy.xyz/2019/06/10/Server-basics-and-configuration/</id>
-    <published>2019-06-10T07:25:54.000Z</published>
-    <updated>2020-03-19T05:24:03.370Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;1、什么是守护进程？守护进程的类型和作用有哪些？&lt;/p&gt;
-&lt;p&gt;Linux 服务器在启动时需要启动很多系统服务，它们向本地和网络用户提供了Linux的系统功能接口，直接面向应用程序和用户。提供这些服务的程序是由运行在后台的守护进程来执行的。守护进程是生存期长的一种进程。它们独立于控制终端并且周期性的执行某种任务或等待处理某些发生的事件。他们常常在系统引导装入时启动，在系统关闭时终止。linux系统有很多守护进程，大多数服务器都是用守护进程实现的。同时，守护进程完成许多系统任务，比如，作业规划进程crond、打印进程lqd等。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux 学习" scheme="https://wnxy.xyz/categories/Linux-%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="Linux" scheme="https://wnxy.xyz/tags/Linux/"/>
-    
-      <category term="服务器" scheme="https://wnxy.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 编程实例</title>
-    <link href="https://wnxy.xyz/2019/06/03/Linux-programming-examples/"/>
-    <id>https://wnxy.xyz/2019/06/03/Linux-programming-examples/</id>
-    <published>2019-06-03T05:17:24.000Z</published>
-    <updated>2020-03-28T03:48:42.391Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;示例：用C语言编写一个从键盘输入10名学生的姓名、性别、学号和家庭住址，然后按照学号排序，并将排序后的结果在屏幕上按对齐的方式打印输出的程序。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux 学习" scheme="https://wnxy.xyz/categories/Linux-%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.xyz/tags/C-C/"/>
-    
-      <category term="Linux" scheme="https://wnxy.xyz/tags/Linux/"/>
     
   </entry>
   

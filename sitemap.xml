@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wnxy.xyz/2020/10/11/Machine-learning-logistic-regression-algorithm/</loc>
+    <loc>https://wnxy.xyz/2020/10/18/Data-analysis-of-MNIST-handwritten-character-set/</loc>
     
-    <lastmod>2020-10-16T04:58:39.920Z</lastmod>
+    <lastmod>2020-10-19T01:40:06.059Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.xyz/2020/10/17/Daily-usage-of-Struct-module-in-Python/</loc>
+    
+    <lastmod>2020-10-19T01:39:56.872Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://wnxy.xyz/about/index.html</loc>
     
-    <lastmod>2020-10-10T01:50:35.131Z</lastmod>
+    <lastmod>2020-10-18T06:41:00.362Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.xyz/2020/10/11/Machine-learning-logistic-regression-algorithm/</loc>
+    
+    <lastmod>2020-10-17T11:39:55.753Z</lastmod>
     
   </url>
   
