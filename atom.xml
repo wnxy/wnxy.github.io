@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.xyz/"/>
-  <updated>2020-11-10T01:39:30.328Z</updated>
+  <updated>2020-11-10T01:43:53.813Z</updated>
   <id>https://wnxy.xyz/</id>
   
   <author>
@@ -17,19 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>page</title>
-    <link href="https://wnxy.xyz/2020/11/10/page/"/>
-    <id>https://wnxy.xyz/2020/11/10/page/</id>
+    <title>朴素贝叶斯算法原理及实现</title>
+    <link href="https://wnxy.xyz/2020/11/10/Naive-bayes/"/>
+    <id>https://wnxy.xyz/2020/11/10/Naive-bayes/</id>
     <published>2020-11-10T01:39:30.000Z</published>
-    <updated>2020-11-10T01:39:30.328Z</updated>
+    <updated>2020-11-10T01:43:53.813Z</updated>
     
     <summary type="html">
     
-      莞尔日记，不能看哦！！！
+      
+      
+        
+        
+          
+        
+      
     
     </summary>
     
     
+      <category term="= 学习笔记 - Machine Learning" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Machine-Learning/"/>
+    
+    
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
+      <category term="Machine-Learning" scheme="https://wnxy.xyz/tags/Machine-Learning/"/>
+    
+      <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="朴素贝叶斯" scheme="https://wnxy.xyz/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF/"/>
     
   </entry>
   
