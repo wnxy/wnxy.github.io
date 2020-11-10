@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.xyz/"/>
-  <updated>2020-10-19T02:31:26.414Z</updated>
+  <updated>2020-11-10T01:39:30.328Z</updated>
   <id>https://wnxy.xyz/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>page</title>
+    <link href="https://wnxy.xyz/2020/11/10/page/"/>
+    <id>https://wnxy.xyz/2020/11/10/page/</id>
+    <published>2020-11-10T01:39:30.000Z</published>
+    <updated>2020-11-10T01:39:30.328Z</updated>
+    
+    <summary type="html">
+    
+      莞尔日记，不能看哦！！！
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据可视化模块Matplotlib实操</title>
+    <link href="https://wnxy.xyz/2020/11/02/Data-visualization-matplotlib/"/>
+    <id>https://wnxy.xyz/2020/11/02/Data-visualization-matplotlib/</id>
+    <published>2020-11-02T13:48:55.000Z</published>
+    <updated>2020-11-03T05:34:07.419Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;通过 Matplotlib，开发者可以仅需要几行代码，便可以生成绘图，直方图，功率谱，条形图，错误图，散点图等。&lt;/p&gt;
+&lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;&lt;strong&gt;导读&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;Matplotlib 是一个 Python 的 2D绘图库，它以各种硬拷贝格式和跨平台的交互式环境生成出版质量级别的图形。通过 Matplotlib，开发者可以仅需要几行代码，便可以生成绘图，直方图，功率谱，条形图，错误图，散点图等。&lt;/p&gt;
+&lt;p&gt;以下内容来自Github，为《PythonDataScienceHandbook[1]》(Python 数据科学手册[2])第四章Matplotlib介绍部分。全部内容都在以下环境演示通过：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Python" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
+    
+    
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
+      <category term="Matplotlib" scheme="https://wnxy.xyz/tags/Matplotlib/"/>
+    
+      <category term="数据可视化" scheme="https://wnxy.xyz/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习之神经网络实现MNIST手写字识别</title>
+    <link href="https://wnxy.xyz/2020/10/25/Neural-networks-realizes-MNIST-handwriting-recognition/"/>
+    <id>https://wnxy.xyz/2020/10/25/Neural-networks-realizes-MNIST-handwriting-recognition/</id>
+    <published>2020-10-25T15:05:00.000Z</published>
+    <updated>2020-11-04T05:20:42.773Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Machine Learning" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Machine-Learning/"/>
+    
+    
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
+      <category term="Machine-Learning" scheme="https://wnxy.xyz/tags/Machine-Learning/"/>
+    
+      <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="MNIST" scheme="https://wnxy.xyz/tags/MNIST/"/>
+    
+      <category term="神经网络" scheme="https://wnxy.xyz/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>机器学习之逻辑回归实现MNIST手写字识别</title>
@@ -484,87 +567,6 @@
     
     
       <category term="影音视频" scheme="https://wnxy.xyz/tags/%E5%BD%B1%E9%9F%B3%E8%A7%86%E9%A2%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++十进制与二进制的互相转换</title>
-    <link href="https://wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/"/>
-    <id>https://wnxy.xyz/2020/02/10/C++_decimal-and-binary-conversion/</id>
-    <published>2020-02-10T10:54:47.000Z</published>
-    <updated>2020-04-07T13:10:01.340Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;手动实现进制转换&lt;/p&gt;
-&lt;p&gt;十进制转换为二进制：&lt;/p&gt;
-&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;decTobin&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; n)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; h,w=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,sum=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (n)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		h = n % &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		sum += h * w;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		w *= &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		n = n / &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; sum;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.xyz/categories/C-C/"/>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.xyz/tags/C-C/"/>
-    
-      <category term="进制转换" scheme="https://wnxy.xyz/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++动态数组</title>
-    <link href="https://wnxy.xyz/2020/01/10/C-or-C++_dynamic-array/"/>
-    <id>https://wnxy.xyz/2020/01/10/C-or-C++_dynamic-array/</id>
-    <published>2020-01-10T10:45:25.000Z</published>
-    <updated>2020-04-04T10:53:58.117Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;近来刷题，遇到好几道题目需要动态数组解决，现在整理一下。C++中动态开辟一维、二维数组很常见，也很实用。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;h5 id=&quot;动态开辟一维数组&quot;&gt;&lt;a href=&quot;#动态开辟一维数组&quot; class=&quot;headerlink&quot; title=&quot;动态开辟一维数组&quot;&gt;&lt;/a&gt;动态开辟一维数组&lt;/h5&gt;&lt;p&gt;动态开辟一维数组简单，代码实现：&lt;/p&gt;
-&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;DynamicCreate1Array&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; len;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;cin&lt;/span&gt;&amp;gt;&amp;gt;len;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; *p = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[len];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; len; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;cin&lt;/span&gt;&amp;gt;&amp;gt;p[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;delete&lt;/span&gt;[] p;         &lt;span class=&quot;comment&quot;&gt;//动态数组使用完一定要释放&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.xyz/categories/C-C/"/>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.xyz/tags/C-C/"/>
-    
-      <category term="动态数组" scheme="https://wnxy.xyz/tags/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python函数存储在模块中的函数调用</title>
-    <link href="https://wnxy.xyz/2019/10/04/Python-function-call-and-module/"/>
-    <id>https://wnxy.xyz/2019/10/04/Python-function-call-and-module/</id>
-    <published>2019-10-04T12:51:41.000Z</published>
-    <updated>2020-10-09T04:20:18.660Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;python中常见将函数存储在被称为模块的独立文件中，再将模块导入到主程序中，import语句实现当前运行的程序文件中导入模块中的代码。&lt;/p&gt;
-&lt;p&gt;要让函数是可导入的，得先创建模块。模块是扩展名为.py的文件，包含要导入到程序中的代码。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
-    
-    
-      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
-    
-      <category term="函数调用" scheme="https://wnxy.xyz/tags/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/"/>
-    
-      <category term="模块" scheme="https://wnxy.xyz/tags/%E6%A8%A1%E5%9D%97/"/>
-    
-      <category term="import" scheme="https://wnxy.xyz/tags/import/"/>
     
   </entry>
   
