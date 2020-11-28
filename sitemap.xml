@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wnxy.xyz/2020/11/10/Naive-bayes/</loc>
+    
+    <lastmod>2020-11-28T15:31:17.545Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wnxy.xyz/2020/11/28/Matplotlib-function/</loc>
     
     <lastmod>2020-11-28T14:51:29.327Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://wnxy.xyz/2020/11/02/Data-visualization-matplotlib/</loc>
     
     <lastmod>2020-11-10T05:37:53.556Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wnxy.xyz/2020/11/10/Naive-bayes/</loc>
-    
-    <lastmod>2020-11-10T01:43:53.813Z</lastmod>
     
   </url>
   
