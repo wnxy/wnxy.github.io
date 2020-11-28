@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.xyz/"/>
-  <updated>2020-11-10T01:43:53.813Z</updated>
+  <updated>2020-11-28T14:51:29.327Z</updated>
   <id>https://wnxy.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>matplotlib函数汇总</title>
+    <link href="https://wnxy.xyz/2020/11/28/Matplotlib-function/"/>
+    <id>https://wnxy.xyz/2020/11/28/Matplotlib-function/</id>
+    <published>2020-11-28T13:22:08.000Z</published>
+    <updated>2020-11-28T14:51:29.327Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;matplotlib函数汇总&quot;&gt;&lt;a href=&quot;#matplotlib函数汇总&quot; class=&quot;headerlink&quot; title=&quot;matplotlib函数汇总&quot;&gt;&lt;/a&gt;matplotlib函数汇总&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="转载" scheme="https://wnxy.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
+    
+      <category term="matplotlib" scheme="https://wnxy.xyz/tags/matplotlib/"/>
+    
+  </entry>
   
   <entry>
     <title>朴素贝叶斯算法原理及实现</title>
@@ -54,13 +77,12 @@
     <link href="https://wnxy.xyz/2020/11/02/Data-visualization-matplotlib/"/>
     <id>https://wnxy.xyz/2020/11/02/Data-visualization-matplotlib/</id>
     <published>2020-11-02T13:48:55.000Z</published>
-    <updated>2020-11-03T05:34:07.419Z</updated>
+    <updated>2020-11-10T05:37:53.556Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;通过 Matplotlib，开发者可以仅需要几行代码，便可以生成绘图，直方图，功率谱，条形图，错误图，散点图等。&lt;/p&gt;
 &lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;&lt;strong&gt;导读&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;Matplotlib 是一个 Python 的 2D绘图库，它以各种硬拷贝格式和跨平台的交互式环境生成出版质量级别的图形。通过 Matplotlib，开发者可以仅需要几行代码，便可以生成绘图，直方图，功率谱，条形图，错误图，散点图等。&lt;/p&gt;
-&lt;p&gt;以下内容来自Github，为《PythonDataScienceHandbook[1]》(Python 数据科学手册[2])第四章Matplotlib介绍部分。全部内容都在以下环境演示通过：&lt;/p&gt;
     
     </summary>
     
@@ -83,17 +105,12 @@
     <link href="https://wnxy.xyz/2020/10/25/Neural-networks-realizes-MNIST-handwriting-recognition/"/>
     <id>https://wnxy.xyz/2020/10/25/Neural-networks-realizes-MNIST-handwriting-recognition/</id>
     <published>2020-10-25T15:05:00.000Z</published>
-    <updated>2020-11-04T05:20:42.773Z</updated>
+    <updated>2020-11-24T13:42:48.128Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      &lt;h2 id=&quot;一、神经网络原理&quot;&gt;&lt;a href=&quot;#一、神经网络原理&quot; class=&quot;headerlink&quot; title=&quot;一、神经网络原理&quot;&gt;&lt;/a&gt;一、神经网络原理&lt;/h2&gt;&lt;p&gt;线性回归（Linear Regression）和逻辑回归（Logistic Regression）通常用来处理线性模型，如果利用线性回归或逻辑回归对多特征的非线性问题进行分类，则涉及太多特征组合的计算，往往导致计算负荷增大，并不适合解决这类问题。&lt;/p&gt;
+&lt;p&gt;假设我们需要训练一个模型用来判断一张图片中是否出现汽车，可能有很多用来训练模型的数据，这些图片有的包含小汽车，有的没有，利用这些图片的一个个像素值作为特征，训练一个满足这样功能的模型。训练过程需要处理可能百万级别甚至更多的数据，对于这样问题通常采用神经网络（Neural Networks）解决。&lt;/p&gt;
     
     </summary>
     
@@ -108,45 +125,8 @@
       <category term="Machine-Learning" scheme="https://wnxy.xyz/tags/Machine-Learning/"/>
     
       <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="MNIST" scheme="https://wnxy.xyz/tags/MNIST/"/>
     
       <category term="神经网络" scheme="https://wnxy.xyz/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习之逻辑回归实现MNIST手写字识别</title>
-    <link href="https://wnxy.xyz/2020/10/19/Logistic-regression-realizes-MNIST-handwriting-recognition/"/>
-    <id>https://wnxy.xyz/2020/10/19/Logistic-regression-realizes-MNIST-handwriting-recognition/</id>
-    <published>2020-10-19T01:44:22.000Z</published>
-    <updated>2020-10-19T02:31:26.414Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Machine Learning" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Machine-Learning/"/>
-    
-    
-      <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
-    
-      <category term="Machine-Learning" scheme="https://wnxy.xyz/tags/Machine-Learning/"/>
-    
-      <category term="机器学习" scheme="https://wnxy.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="逻辑回归" scheme="https://wnxy.xyz/tags/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/"/>
     
       <category term="MNIST" scheme="https://wnxy.xyz/tags/MNIST/"/>
     

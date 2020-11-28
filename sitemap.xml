@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wnxy.xyz/2020/11/10/Naive-bayes/</loc>
+    <loc>https://wnxy.xyz/2020/11/28/Matplotlib-function/</loc>
     
-    <lastmod>2020-11-10T01:43:53.813Z</lastmod>
+    <lastmod>2020-11-28T14:51:29.327Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://wnxy.xyz/2020/10/25/Neural-networks-realizes-MNIST-handwriting-recognition/</loc>
     
-    <lastmod>2020-11-04T05:20:42.773Z</lastmod>
+    <lastmod>2020-11-24T13:42:48.128Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://wnxy.xyz/2020/11/02/Data-visualization-matplotlib/</loc>
     
-    <lastmod>2020-11-03T05:34:07.419Z</lastmod>
+    <lastmod>2020-11-10T05:37:53.556Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.xyz/2020/11/10/Naive-bayes/</loc>
+    
+    <lastmod>2020-11-10T01:43:53.813Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>https://wnxy.xyz/about/index.html</loc>
     
     <lastmod>2020-10-24T08:39:30.153Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wnxy.xyz/2020/10/19/Logistic-regression-realizes-MNIST-handwriting-recognition/</loc>
-    
-    <lastmod>2020-10-19T02:31:26.414Z</lastmod>
     
   </url>
   
