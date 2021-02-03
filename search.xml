@@ -40,7 +40,9 @@
       
       <categories>
           
-          <category> = 学习笔记 - Machine Learning </category>
+          <category> 学习笔记 </category>
+          
+          <category> Machine Learning </category>
           
       </categories>
       

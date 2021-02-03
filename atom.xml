@@ -44,7 +44,7 @@
     <link href="https://wnxy.xyz/2020/11/10/Naive-bayes/"/>
     <id>https://wnxy.xyz/2020/11/10/Naive-bayes/</id>
     <published>2020-11-10T01:39:30.000Z</published>
-    <updated>2020-11-28T15:34:26.868Z</updated>
+    <updated>2020-11-29T01:53:33.237Z</updated>
     
     <summary type="html">
     
@@ -53,7 +53,9 @@
     </summary>
     
     
-      <category term="= 学习笔记 - Machine Learning" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Machine-Learning/"/>
+      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Machine Learning" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Machine-Learning/"/>
     
     
       <category term="Python" scheme="https://wnxy.xyz/tags/Python/"/>
