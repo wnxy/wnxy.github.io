@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2021-03-18T06:50:40.308Z</updated>
+  <updated>2021-03-18T07:00:21.076Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -17,28 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>page</title>
-    <link href="https://wnxy.github.io/2021/03/18/page/"/>
-    <id>https://wnxy.github.io/2021/03/18/page/</id>
-    <published>2021-03-18T06:50:40.000Z</published>
-    <updated>2021-03-18T06:50:40.308Z</updated>
-    
-    <summary type="html">
-    
-      莞尔日记，不能看哦！！！
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>C语言typedef与#define详谈</title>
     <link href="https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/"/>
     <id>https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/</id>
     <published>2021-03-17T14:45:22.000Z</published>
-    <updated>2021-03-18T06:48:33.933Z</updated>
+    <updated>2021-03-18T07:00:21.076Z</updated>
     
     <summary type="html">
     
@@ -551,6 +534,33 @@
       <category term="C/C++" scheme="https://wnxy.github.io/tags/C-C/"/>
     
       <category term="二叉树" scheme="https://wnxy.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学校航拍</title>
+    <link href="https://wnxy.github.io/2020/03/21/Cumt-aerial/"/>
+    <id>https://wnxy.github.io/2020/03/21/Cumt-aerial/</id>
+    <published>2020-03-21T12:11:54.000Z</published>
+    <updated>2020-05-31T08:12:20.869Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="随笔/杂谈" scheme="https://wnxy.github.io/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="影音视频" scheme="https://wnxy.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   
