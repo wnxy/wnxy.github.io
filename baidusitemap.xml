@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wnxy.github.io/2021/03/18/page/</loc>
+    <lastmod>2021-03-18</lastmod>
+  </url>  <url>
+    <loc>https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/</loc>
+    <lastmod>2021-03-18</lastmod>
+  </url>  <url>
+    <loc>https://wnxy.github.io/2020/05/01/C-or-C++_two-dimensional-array-parameter-transfer/</loc>
+    <lastmod>2021-03-18</lastmod>
+  </url>  <url>
     <loc>https://wnxy.github.io/2020/11/10/Naive-bayes/</loc>
     <lastmod>2020-11-29</lastmod>
   </url>  <url>
@@ -54,9 +63,6 @@
   </url>  <url>
     <loc>https://wnxy.github.io/2020/03/21/Cumt-aerial/</loc>
     <lastmod>2020-05-31</lastmod>
-  </url>  <url>
-    <loc>https://wnxy.github.io/2020/05/01/C-or-C++_two-dimensional-array-parameter-transfer/</loc>
-    <lastmod>2020-05-01</lastmod>
   </url>  <url>
     <loc>https://wnxy.github.io/2020/04/29/Development-document-of-vehicle-trajectory-tracking-system/</loc>
     <lastmod>2020-04-29</lastmod>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2020-11-28T14:51:29.327Z</updated>
+  <updated>2021-03-18T06:50:40.308Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>page</title>
+    <link href="https://wnxy.github.io/2021/03/18/page/"/>
+    <id>https://wnxy.github.io/2021/03/18/page/</id>
+    <published>2021-03-18T06:50:40.000Z</published>
+    <updated>2021-03-18T06:50:40.308Z</updated>
+    
+    <summary type="html">
+    
+      莞尔日记，不能看哦！！！
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C语言typedef与#define详谈</title>
+    <link href="https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/"/>
+    <id>https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/</id>
+    <published>2021-03-17T14:45:22.000Z</published>
+    <updated>2021-03-18T06:48:33.933Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、typedef与-define比较&quot;&gt;&lt;a href=&quot;#一、typedef与-define比较&quot; class=&quot;headerlink&quot; title=&quot;一、typedef与#define比较&quot;&gt;&lt;/a&gt;一、&lt;strong&gt;typedef&lt;/strong&gt;与&lt;strong&gt;#define&lt;/strong&gt;比较&lt;/h2&gt;&lt;h3 id=&quot;typedef和-define功能的共同点&quot;&gt;&lt;a href=&quot;#typedef和-define功能的共同点&quot; class=&quot;headerlink&quot; title=&quot;typedef和#define功能的共同点&quot;&gt;&lt;/a&gt;&lt;code&gt;typedef&lt;/code&gt;和&lt;code&gt;#define&lt;/code&gt;功能的共同点&lt;/h3&gt;&lt;p&gt;例如：&lt;/p&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;define&lt;/span&gt; BYTE unsigned char&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;表示预处理器用&lt;code&gt;BYTE&lt;/code&gt;替换&lt;code&gt;unsigned char&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; BYTE&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;表示编译器给类型&lt;code&gt;unsigned char&lt;/code&gt;起了一个别名&lt;code&gt;BYTE&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="typedef" scheme="https://wnxy.github.io/tags/typedef/"/>
+    
+      <category term="define" scheme="https://wnxy.github.io/tags/define/"/>
+    
+      <category term="宏" scheme="https://wnxy.github.io/tags/%E5%AE%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>matplotlib函数汇总</title>
@@ -380,7 +426,7 @@
     <link href="https://wnxy.github.io/2020/05/01/C-or-C++_two-dimensional-array-parameter-transfer/"/>
     <id>https://wnxy.github.io/2020/05/01/C-or-C++_two-dimensional-array-parameter-transfer/</id>
     <published>2020-05-01T05:28:51.000Z</published>
-    <updated>2020-05-01T06:06:35.661Z</updated>
+    <updated>2021-03-18T02:17:13.210Z</updated>
     
     <summary type="html">
     
@@ -505,60 +551,6 @@
       <category term="C/C++" scheme="https://wnxy.github.io/tags/C-C/"/>
     
       <category term="二叉树" scheme="https://wnxy.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学校航拍</title>
-    <link href="https://wnxy.github.io/2020/03/21/Cumt-aerial/"/>
-    <id>https://wnxy.github.io/2020/03/21/Cumt-aerial/</id>
-    <published>2020-03-21T12:11:54.000Z</published>
-    <updated>2020-05-31T08:12:20.869Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-      <category term="随笔/杂谈" scheme="https://wnxy.github.io/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="影音视频" scheme="https://wnxy.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A7%86%E9%A2%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>金城兰州</title>
-    <link href="https://wnxy.github.io/2020/03/20/Jincheng-lanzhou/"/>
-    <id>https://wnxy.github.io/2020/03/20/Jincheng-lanzhou/</id>
-    <published>2020-03-20T12:42:32.000Z</published>
-    <updated>2020-04-10T14:04:27.758Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-      <category term="随笔/杂谈" scheme="https://wnxy.github.io/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="影音视频" scheme="https://wnxy.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   
