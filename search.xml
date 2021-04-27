@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>如何优雅的使用Git</title>
+      <link href="/2021/04/27/Git-usage/"/>
+      <url>/2021/04/27/Git-usage/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="git初始化本地仓库"><a href="#git初始化本地仓库" class="headerlink" title="git初始化本地仓库"></a>git初始化本地仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><p>此操作会生成一个.git文件，默认情况下是隐藏的。</p><h2 id="git仓库clone到本地"><a href="#git仓库clone到本地" class="headerlink" title="git仓库clone到本地"></a>git仓库clone到本地</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone HTTPS&#x2F;SSH</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="git本地项目提交到云端"><a href="#git本地项目提交到云端" class="headerlink" title="git本地项目提交到云端"></a>git本地项目提交到云端</h2><p>以下操作默认远程仓库分支为master。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add .     （git add隔空格.）</span><br><span class="line"></span><br><span class="line">git commit  -m  &quot;提交信息&quot;  （注：“提交信息”里面换成你需要，如“first commit”）</span><br><span class="line"></span><br><span class="line">git push -u origin master  （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）</span><br></pre></td></tr></table></figure><h2 id="如果push失败，可能的原因："><a href="#如果push失败，可能的原因：" class="headerlink" title="如果push失败，可能的原因："></a>如果push失败，可能的原因：</h2><p>（1）本地库与远程库内同不一致，此时需要执行命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure><p>（2）远程和本地仓库分支不一致，git更改仓库分支，把本地的 master 仓库名称修改为远端的 main</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -m oldBranchName newBranchName</span><br></pre></td></tr></table></figure><p>（3）本地的origin和remote origin/master 没有建立关联，此时重新建立本地和远端的连接</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git remote remove origin</span><br><span class="line"></span><br><span class="line">git remote add origin git@github.com:XXX&#x2F;XXX.github.io.git</span><br><span class="line"></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><p>（4）本地文件与github上的文件有冲突/本地需要提交的文件中存在空文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">touch README</span><br><span class="line"></span><br><span class="line">git add README</span><br><span class="line"></span><br><span class="line">git commit -m &quot;change&quot;</span><br><span class="line"></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> GitHub </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C语言typedef与#define详谈</title>
       <link href="/2021/03/17/C-typedef-and-define-specific-explain/"/>
       <url>/2021/03/17/C-typedef-and-define-specific-explain/</url>
@@ -845,9 +872,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> github </tag>
+            
+            <tag> hexo </tag>
             
             <tag> npm </tag>
             
@@ -876,9 +903,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> github </tag>
+            
+            <tag> hexo </tag>
             
             <tag> npm </tag>
             

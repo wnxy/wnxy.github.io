@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2021-03-18T07:00:21.076Z</updated>
+  <updated>2021-04-27T08:11:51.112Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何优雅的使用Git</title>
+    <link href="https://wnxy.github.io/2021/04/27/Git-usage/"/>
+    <id>https://wnxy.github.io/2021/04/27/Git-usage/</id>
+    <published>2021-04-27T08:01:32.000Z</published>
+    <updated>2021-04-27T08:11:51.112Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;git初始化本地仓库&quot;&gt;&lt;a href=&quot;#git初始化本地仓库&quot; class=&quot;headerlink&quot; title=&quot;git初始化本地仓库&quot;&gt;&lt;/a&gt;git初始化本地仓库&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;此操作会生成一个.git文件，默认情况下是隐藏的。&lt;/p&gt;
+&lt;h2 id=&quot;git仓库clone到本地&quot;&gt;&lt;a href=&quot;#git仓库clone到本地&quot; class=&quot;headerlink&quot; title=&quot;git仓库clone到本地&quot;&gt;&lt;/a&gt;git仓库clone到本地&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone HTTPS&amp;#x2F;SSH&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="GitHub" scheme="https://wnxy.github.io/categories/GitHub/"/>
+    
+    
+      <category term="Git" scheme="https://wnxy.github.io/tags/Git/"/>
+    
+      <category term="github" scheme="https://wnxy.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>C语言typedef与#define详谈</title>
@@ -534,33 +559,6 @@
       <category term="C/C++" scheme="https://wnxy.github.io/tags/C-C/"/>
     
       <category term="二叉树" scheme="https://wnxy.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学校航拍</title>
-    <link href="https://wnxy.github.io/2020/03/21/Cumt-aerial/"/>
-    <id>https://wnxy.github.io/2020/03/21/Cumt-aerial/</id>
-    <published>2020-03-21T12:11:54.000Z</published>
-    <updated>2020-05-31T08:12:20.869Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          
-        
-      
-    
-    </summary>
-    
-    
-      <category term="随笔/杂谈" scheme="https://wnxy.github.io/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="影音视频" scheme="https://wnxy.github.io/tags/%E5%BD%B1%E9%9F%B3%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   

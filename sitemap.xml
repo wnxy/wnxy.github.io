@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wnxy.github.io/2021/04/27/Git-usage/</loc>
+    
+    <lastmod>2021-04-27T08:11:51.112Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.github.io/links/index.html</loc>
+    
+    <lastmod>2021-04-27T08:06:12.458Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wnxy.github.io/2020/01/10/C-or-C++_dynamic-array/</loc>
     
     <lastmod>2021-03-18T07:46:44.034Z</lastmod>
@@ -110,13 +124,6 @@
     <loc>https://wnxy.github.io/2017/02/01/Begin-Hexo/</loc>
     
     <lastmod>2020-10-05T00:39:35.746Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wnxy.github.io/links/index.html</loc>
-    
-    <lastmod>2020-09-28T02:15:02.282Z</lastmod>
     
   </url>
   
