@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2021-04-27T08:11:51.112Z</updated>
+  <updated>2021-05-06T06:07:59.259Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算术表达式的前序、中序、后序表示及其转换</title>
+    <link href="https://wnxy.github.io/2021/05/06/Arithmetic-expression/"/>
+    <id>https://wnxy.github.io/2021/05/06/Arithmetic-expression/</id>
+    <published>2021-05-06T05:51:34.000Z</published>
+    <updated>2021-05-06T06:07:59.259Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;写在前面：LeetCode刷题笔记&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;中序表达式转后序表达式（从左向右读入）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;创建一个队列，存储后缀表达式；创建一个栈，存储操作符。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;遇到操作数则送入队列。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;遇到 “(“ ，入栈，遇到操作符入栈。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果遇到其他运算符，不断去除所有运算优先级大于等于当前运算符的运算符，送入队列。最后，新的符号入栈。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;遇到 “)” 括号，则将栈内从 “(“ 到 “)” 的所有操作符全部取出送入队列（左括号出栈但不入队）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;中序表达式读取结束后，如果栈不为空，则将栈内元素依次出栈送入队列。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;此时队列的表达式即为原中序表达式的后序表达式。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="栈" scheme="https://wnxy.github.io/tags/%E6%A0%88/"/>
+    
+      <category term="算术表达式" scheme="https://wnxy.github.io/tags/%E7%AE%97%E6%9C%AF%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+      <category term="中序表达式" scheme="https://wnxy.github.io/tags/%E4%B8%AD%E5%BA%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+      <category term="逆波兰式" scheme="https://wnxy.github.io/tags/%E9%80%86%E6%B3%A2%E5%85%B0%E5%BC%8F/"/>
+    
+      <category term="前序表达式" scheme="https://wnxy.github.io/tags/%E5%89%8D%E5%BA%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+      <category term="后序表达式" scheme="https://wnxy.github.io/tags/%E5%90%8E%E5%BA%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>如何优雅的使用Git</title>
@@ -529,36 +576,6 @@
       <category term="栈" scheme="https://wnxy.github.io/tags/%E6%A0%88/"/>
     
       <category term="队列" scheme="https://wnxy.github.io/tags/%E9%98%9F%E5%88%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>二叉树构建与遍历——前序和中序或中序和后序确定二叉树</title>
-    <link href="https://wnxy.github.io/2020/03/25/Bitree-construction-and-traversal/"/>
-    <id>https://wnxy.github.io/2020/03/25/Bitree-construction-and-traversal/</id>
-    <published>2020-03-25T14:58:14.000Z</published>
-    <updated>2020-07-12T14:18:06.667Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;二叉树测试用例：&quot;&gt;&lt;a href=&quot;#二叉树测试用例：&quot; class=&quot;headerlink&quot; title=&quot;二叉树测试用例：&quot;&gt;&lt;/a&gt;二叉树测试用例：&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://s1.ax1x.com/2020/04/04/GdqXuD.png&quot; alt=&quot;二叉树&quot;&gt;&lt;/p&gt;
-&lt;p&gt;preOrder: ABDGCEFH&lt;br&gt;inOrder: DGBAECHF&lt;br&gt;postOrder: GDBEHFCA&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;已知二叉树前序遍历序列和中序遍历序列可以确定一颗二叉树。&lt;/li&gt;
-&lt;li&gt;已知二叉树中序遍历序列和后序遍历序列可以确定一颗二叉树。&lt;/li&gt;
-&lt;li&gt;&lt;u&gt;已知二叉树前序遍历序列和后序遍历序列不能确定一颗二叉树。&lt;/u&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;已知二叉树前序和中序遍历序列，构造二叉树，C-实现：&quot;&gt;&lt;a href=&quot;#已知二叉树前序和中序遍历序列，构造二叉树，C-实现：&quot; class=&quot;headerlink&quot; title=&quot;已知二叉树前序和中序遍历序列，构造二叉树，C++实现：&quot;&gt;&lt;/a&gt;已知二叉树前序和中序遍历序列，构造二叉树，C++实现：&lt;/h3&gt;
-    
-    </summary>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.github.io/tags/C-C/"/>
-    
-      <category term="二叉树" scheme="https://wnxy.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
     
   </entry>
   

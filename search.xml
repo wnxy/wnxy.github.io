@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>算术表达式的前序、中序、后序表示及其转换</title>
+      <link href="/2021/05/06/Arithmetic-expression/"/>
+      <url>/2021/05/06/Arithmetic-expression/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>写在前面：LeetCode刷题笔记</p><hr><p>中序表达式转后序表达式（从左向右读入）</p><ol><li><p>创建一个队列，存储后缀表达式；创建一个栈，存储操作符。</p></li><li><p>遇到操作数则送入队列。</p></li><li><p>遇到 “(“ ，入栈，遇到操作符入栈。</p></li><li><p>如果遇到其他运算符，不断去除所有运算优先级大于等于当前运算符的运算符，送入队列。最后，新的符号入栈。</p></li><li><p>遇到 “)” 括号，则将栈内从 “(“ 到 “)” 的所有操作符全部取出送入队列（左括号出栈但不入队）。</p></li><li><p>中序表达式读取结束后，如果栈不为空，则将栈内元素依次出栈送入队列。</p></li><li><p>此时队列的表达式即为原中序表达式的后序表达式。</p><a id="more"></a></li></ol><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*代码实现中将操作数队列替换为vector*/</span></span><br><span class="line"><span class="comment">/*代码实现中只考虑了加、减运算，故没有判断优先级，如果是一个四则运算表达式可以添加优先级判断部分*/</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">inToPost</span><span class="params">(<span class="built_in">string</span> s, <span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&amp; post)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//vector&lt;char&gt; post;</span></span><br><span class="line">    <span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; op;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.length(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (s[i] == <span class="string">'('</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            op.push(s[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (s[i] == <span class="string">'+'</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span> (!op.empty() &amp;&amp; (op.top() == <span class="string">'+'</span> || op.top() == <span class="string">'-'</span>))</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">char</span> tmp = op.top();</span><br><span class="line">                op.pop();</span><br><span class="line">                post.push_back(tmp);</span><br><span class="line">            &#125;</span><br><span class="line">            op.push(s[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (s[i] == <span class="string">'-'</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span> (!op.empty() &amp;&amp; (op.top() == <span class="string">'+'</span> || op.top() == <span class="string">'-'</span>))</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">char</span> tmp = op.top();</span><br><span class="line">                op.pop();</span><br><span class="line">                post.push_back(tmp);</span><br><span class="line">            &#125;</span><br><span class="line">            op.push(s[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (s[i] == <span class="string">')'</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span> (!op.empty() &amp;&amp; op.top() != <span class="string">'('</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">char</span> tmp = op.top();</span><br><span class="line">                op.pop();</span><br><span class="line">                post.push_back(tmp);</span><br><span class="line">            &#125;</span><br><span class="line">            op.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            post.push_back(s[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> (!op.empty())</span><br><span class="line">    &#123;</span><br><span class="line">        post.push_back(op.top());</span><br><span class="line">        op.pop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>参考文章：<a href="https://oi-wiki.org/misc/expression/" target="_blank" rel="noopener">表达式求值</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> C/C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 栈 </tag>
+            
+            <tag> 算术表达式 </tag>
+            
+            <tag> 中序表达式 </tag>
+            
+            <tag> 逆波兰式 </tag>
+            
+            <tag> 前序表达式 </tag>
+            
+            <tag> 后序表达式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何优雅的使用Git</title>
       <link href="/2021/04/27/Git-usage/"/>
       <url>/2021/04/27/Git-usage/</url>
