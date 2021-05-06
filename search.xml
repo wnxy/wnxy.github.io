@@ -20,17 +20,17 @@
       
         <tags>
             
-            <tag> 栈 </tag>
-            
             <tag> 算术表达式 </tag>
-            
-            <tag> 中序表达式 </tag>
-            
-            <tag> 逆波兰式 </tag>
             
             <tag> 前序表达式 </tag>
             
+            <tag> 中序表达式 </tag>
+            
             <tag> 后序表达式 </tag>
+            
+            <tag> 逆波兰式 </tag>
+            
+            <tag> 栈 </tag>
             
         </tags>
       
@@ -55,9 +55,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> github </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
@@ -546,9 +546,9 @@
       
         <tags>
             
-            <tag> C/C++ </tag>
-            
             <tag> 栈 </tag>
+            
+            <tag> C/C++ </tag>
             
             <tag> 括号匹配 </tag>
             
@@ -575,9 +575,9 @@
       
         <tags>
             
-            <tag> C/C++ </tag>
-            
             <tag> 栈 </tag>
+            
+            <tag> C/C++ </tag>
             
             <tag> 队列 </tag>
             
@@ -907,9 +907,9 @@
       
         <tags>
             
-            <tag> github </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> github </tag>
             
             <tag> npm </tag>
             
@@ -938,9 +938,9 @@
       
         <tags>
             
-            <tag> github </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> github </tag>
             
             <tag> npm </tag>
             

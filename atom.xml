@@ -49,17 +49,17 @@
       <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
     
     
-      <category term="栈" scheme="https://wnxy.github.io/tags/%E6%A0%88/"/>
-    
       <category term="算术表达式" scheme="https://wnxy.github.io/tags/%E7%AE%97%E6%9C%AF%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-      <category term="中序表达式" scheme="https://wnxy.github.io/tags/%E4%B8%AD%E5%BA%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-      <category term="逆波兰式" scheme="https://wnxy.github.io/tags/%E9%80%86%E6%B3%A2%E5%85%B0%E5%BC%8F/"/>
     
       <category term="前序表达式" scheme="https://wnxy.github.io/tags/%E5%89%8D%E5%BA%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
+      <category term="中序表达式" scheme="https://wnxy.github.io/tags/%E4%B8%AD%E5%BA%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
       <category term="后序表达式" scheme="https://wnxy.github.io/tags/%E5%90%8E%E5%BA%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+      <category term="逆波兰式" scheme="https://wnxy.github.io/tags/%E9%80%86%E6%B3%A2%E5%85%B0%E5%BC%8F/"/>
+    
+      <category term="栈" scheme="https://wnxy.github.io/tags/%E6%A0%88/"/>
     
   </entry>
   
@@ -82,9 +82,9 @@
       <category term="GitHub" scheme="https://wnxy.github.io/categories/GitHub/"/>
     
     
-      <category term="Git" scheme="https://wnxy.github.io/tags/Git/"/>
-    
       <category term="github" scheme="https://wnxy.github.io/tags/github/"/>
+    
+      <category term="Git" scheme="https://wnxy.github.io/tags/Git/"/>
     
   </entry>
   
@@ -543,9 +543,9 @@
       <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
     
     
-      <category term="C/C++" scheme="https://wnxy.github.io/tags/C-C/"/>
-    
       <category term="栈" scheme="https://wnxy.github.io/tags/%E6%A0%88/"/>
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/tags/C-C/"/>
     
       <category term="括号匹配" scheme="https://wnxy.github.io/tags/%E6%8B%AC%E5%8F%B7%E5%8C%B9%E9%85%8D/"/>
     
@@ -571,9 +571,9 @@
       <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
     
     
-      <category term="C/C++" scheme="https://wnxy.github.io/tags/C-C/"/>
-    
       <category term="栈" scheme="https://wnxy.github.io/tags/%E6%A0%88/"/>
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/tags/C-C/"/>
     
       <category term="队列" scheme="https://wnxy.github.io/tags/%E9%98%9F%E5%88%97/"/>
     
