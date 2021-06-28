@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="经典 TopK 问题"><meta name="keywords" content="排序,堆,分治法,减治法"><meta name="author" content="wnxy"><meta name="copyright" content="wnxy"><title>经典 TopK 问题 | Wnxy's Blog</title><link rel="shortcut icon" href="/melody-favicon2.ico"><link rel="stylesheet" href="/css/index.css?version=1.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.7.0"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-5336716665297879',
+  enable_page_level_ads: 'true'
+});
+</script><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8e5307dee6403f62f804e355d883fb17";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  }
+} </script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Wnxy's Blog" type="application/atom+xml">
+</head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、排序"><span class="toc-number">1.</span> <span class="toc-text">一、排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、局部排序"><span class="toc-number">2.</span> <span class="toc-text">二、局部排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、堆"><span class="toc-number">3.</span> <span class="toc-text">三、堆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、随机选择"><span class="toc-number">4.</span> <span class="toc-text">四、随机选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、总结"><span class="toc-number">5.</span> <span class="toc-text">五、总结</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s1.ax1x.com/2020/09/19/w5744e.jpg"></div><div class="author-info__name text-center">wnxy</div><div class="author-info__description text-center">愿一切美好都能如约而至，喜欢的都能拥有</div><div class="follow-button"><a href="https://github.com/wnxy" target="_blank" rel="noopener">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">37</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">61</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">11</span></a></div><hr><div class="twopeople"><div class="container" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;">      </canvas><script src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople1.js">     </script><script src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/zdog.dist.js">      </script><script id="rendered-js" src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople.js">      </script><style>.twopeople{
+margin: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+canvas {
+display: block;
+margin: 0 auto;
+cursor: move;
+}</style></div></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://api.ixiaowai.cn/gqapi/gqapi.php)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Wnxy's Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/message">Message</a><a class="site-page" href="/links">Links</a><a class="site-page" href="/about">About</a><a class="site-page" href="/interest">Interest</a><a class="site-page" href="/clover">Clover</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> Search</span></a></span></div><div id="post-info"><div id="post-title">经典 TopK 问题</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2021-06-25</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/LeetCode%E5%88%B7%E9%A2%98/">LeetCode刷题</a><div class="post-meta-wordcount"><span>Word count: </span><span class="word-count">2.2k</span><span class="post-meta__separator">|</span><span>Reading time: 8 min</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><blockquote>
+<p>什么是 Top K 问题？简单来说就是在一堆数据里面找到前 K 大（当然也可以是前 K 小）的数。</p>
+<p>这个问题也是十分经典的算法问题，不论是面试中还是实际开发中，都非常典型。而这个问题其实也有很多种做法，你真的都懂了么？</p>
+</blockquote>
+<p><strong>栗子</strong>：</p>
+<p>从 data[1, 12]={5,3,7,1,8,2,9,4,7,2,6,6} 这n=12个数中，找出最大的k=5个。</p>
+<a id="more"></a>
+<h2 id="一、排序"><a href="#一、排序" class="headerlink" title="一、排序"></a>一、排序</h2><p>最简单也是最容易想到的方法就是排序，利用快排将数组排序，然后取前k个。</p>
+<p><strong>时间复杂度</strong>：O(nlogn)</p>
+<p><strong>分析</strong>：明明只需要TopK，却将全局都排序了，这也是这个方法复杂度非常高的原因。那能不能不全局排序，而只局部排序呢？这就引出了第二个优化方法。</p>
+<h2 id="二、局部排序"><a href="#二、局部排序" class="headerlink" title="二、局部排序"></a>二、局部排序</h2><p>不再全局排序，只对最大的k个排序。</p>
+<p><img src="/loading.gif" data-original="https://cdn.jsdelivr.net/gh/wnxy/wnxy_pic@master/img/local_sort.png" alt=""></p>
+<p>冒泡是一个很常见的排序方法，每冒一个泡，找出最大值，冒k个泡，就得到TopK。</p>
+<p><strong>简单实现</strong>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*方法一 局部冒泡排序*/</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; local_bubble_sort(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;data, <span class="keyword">int</span> k)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; k; ++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; data.<span class="built_in">size</span>(); ++j)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (data[i] &lt; data[j])</span><br><span class="line">			&#123;</span><br><span class="line">				swap(data[i], data[j]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	res = <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;(data.<span class="built_in">begin</span>(), data.<span class="built_in">begin</span>() + k);</span><br><span class="line">	<span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>时间复杂度</strong>：O(n*k)</p>
+<p><strong>分析</strong>：冒泡，将全局排序优化为了局部排序，非TopK的元素是不需要排序的，节省了计算资源。不少朋友会想到，需求是TopK，是不是这最大的k个元素也不需要排序呢？这就引出了第三个优化方法。</p>
+<h2 id="三、堆"><a href="#三、堆" class="headerlink" title="三、堆"></a>三、堆</h2><p><strong>思路</strong>：只找到TopK，不排序TopK</p>
+<p><img src="/loading.gif" data-original="https://cdn.jsdelivr.net/gh/wnxy/wnxy_pic@master/img/heap_1.png" alt=""></p>
+<p>先用前k个元素生成一个小顶堆，这个小顶堆用于存储，当前最大的k个元素。</p>
+<p><img src="/loading.gif" data-original="https://cdn.jsdelivr.net/gh/wnxy/wnxy_pic@master/img/heap_2.png" alt=""></p>
+<p>接着，从第k+1个元素开始扫描，和堆顶（堆中最小的元素）比较，如果被扫描的元素大于堆顶，则替换堆顶的元素，并调整堆，以保证堆内的k个元素，总是当前最大的k个元素。</p>
+<p><img src="/loading.gif" data-original="https://cdn.jsdelivr.net/gh/wnxy/wnxy_pic@master/img/heap_3.png" alt=""></p>
+<p>直到，扫描完所有n-k个元素，最终堆中的k个元素，就是所求的TopK。</p>
+<p><strong>简单实现</strong>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*方法二 堆*/</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; local_heap_sort(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp;data, <span class="keyword">int</span> k)</span><br><span class="line">&#123;</span><br><span class="line">	priority_queue&lt;<span class="keyword">int</span>, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;, greater&lt;<span class="keyword">int</span>&gt;&gt; heap;</span><br><span class="line">	<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> num : data)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (heap.<span class="built_in">size</span>() == k)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (heap.top() &lt; num)</span><br><span class="line">			&#123;</span><br><span class="line">				heap.pop();</span><br><span class="line">				heap.emplace(num);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			heap.emplace(num);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span> (!heap.empty())</span><br><span class="line">	&#123;</span><br><span class="line">		res.emplace_back(heap.top());</span><br><span class="line">		heap.pop();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>时间复杂度</strong>：O(n*log(k))</p>
+<p><strong>解释</strong>：n个元素扫一遍，最坏的情况下，每插入一个元素都要进行堆调整，调整时间复杂度为堆的高度，即lg(k)，故整体时间复杂度是n*lg(k)。</p>
+<p><strong>分析</strong>：堆，将冒泡的TopK排序优化为了TopK不排序，节省了计算资源。堆，是求TopK的经典算法，那还有没有更快的方案呢？</p>
+<h2 id="四、随机选择"><a href="#四、随机选择" class="headerlink" title="四、随机选择"></a>四、随机选择</h2><p>随机选择算在是《算法导论》中一个经典的算法，其时间复杂度为O(n)，是一个线性复杂度的方法。</p>
+<p>这个方法并不是所有同学都知道，为了将算法讲透，先聊一些前序知识，一个所有程序员都应该烂熟于胸的经典算法：<strong>快速排序</strong>。</p>
+<p><strong>其伪代码是</strong>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">quick_sort</span><span class="params">(<span class="keyword">int</span>[]arr, <span class="keyword">int</span> low, inthigh)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(low== high) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> i = partition(arr, low, high);</span><br><span class="line">	quick_sort(arr, low, i<span class="number">-1</span>);</span><br><span class="line">	quick_sort(arr, i+<span class="number">1</span>, high);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其核心算法思想是：<strong>分治法</strong>。</p>
+<p><strong>分治法（Divide&amp;Conquer）</strong>，把一个大的问题，转化为若干个子问题（Divide），每个子问题“都”解决，大的问题便随之解决（Conquer）。这里的关键词是“都”。从伪代码里可以看到，快速排序递归时，先通过partition把数组分隔为两个部分，两个部分“都”要再次递归。</p>
+<p>分治法有一个特例，叫<strong>减治法</strong>。 </p>
+<p><strong>减治法（Reduce&amp;Conquer）</strong>，把一个大的问题，转化为若干个子问题（Reduce），这些子问题中“只”解决一个，大的问题便随之解决（Conquer）。这里的关键词是“只”。</p>
+<p><strong>二分查找binary_search</strong>，BS，是一个典型的运用减治法思想的算法。</p>
+<p><strong>其伪代码是</strong>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">BS</span><span class="params">(<span class="keyword">int</span>[]arr, <span class="keyword">int</span> low, inthigh, <span class="keyword">int</span> target)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(low&gt; high) </span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	mid= (low+high)/<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">if</span>(arr[mid]== target) </span><br><span class="line">        <span class="keyword">return</span> mid;</span><br><span class="line">	<span class="keyword">if</span>(arr[mid]&gt; target)</span><br><span class="line">		<span class="keyword">return</span> BS(arr, low, mid<span class="number">-1</span>, target);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> BS(arr, mid+<span class="number">1</span>, high, target);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>从伪代码可以看到，二分查找，一个大的问题，可以用一个mid元素，分成左半区，右半区两个子问题。而左右两个子问题，只需要解决其中一个，递归一次，就能够解决二分查找全局的问题。</p>
+<p>通过分治法与减治法的描述，可以发现，分治法的复杂度一般来说是大于减治法的：</p>
+<p>快速排序：O(n*lg(n))</p>
+<p>二分查找：O(lg(n))</p>
+<p>话题收回来，<strong>快速排序</strong>的核心是：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i = partition(arr, low, high);</span><br></pre></td></tr></table></figure>
+<p>这个partition是干嘛的呢？</p>
+<p>顾名思义，partition会把整体分为两个部分。</p>
+<p>更具体的，会用数组 arr中 的一个元素（默认是第一个元素 t=arr[low] ）为划分依据，将数据 arr[low, high] 划分成左右两个子数组：</p>
+<ul>
+<li><p>左半部分，都比 t 大</p>
+</li>
+<li><p>右半部分，都比 t 小</p>
+</li>
+<li><p>中间位置 i 是划分元素</p>
+</li>
+</ul>
+<p><img src="/loading.gif" data-original="https://cdn.jsdelivr.net/gh/wnxy/wnxy_pic@master/img/heap_4.png" alt=""></p>
+<p>以上述TopK的数组为例，先用第一个元素 t=arr[low] 为划分依据，扫描一遍数组，把数组分成了两个半区：</p>
+<ul>
+<li>左半区比 t 大</li>
+<li>右半区比 t 小</li>
+<li>中间是 t</li>
+</ul>
+<p>partition返回的是 t 最终的位置 i 。</p>
+<p>很容易知道，partition的时间复杂度是O(n)。</p>
+<p>解释：把整个数组扫一遍，比 t 大的放左边，比 t 小的放右边，最后 t 放在中间 N[i]。</p>
+<p>partition和TopK问题有什么关系呢？</p>
+<p>TopK是希望求出 arr[1,n] 中最大的 k 个数，那如果找到了第 k 大的数，做一次partition，不就一次性找到最大的 k 个数了么？</p>
+<p>解释：即partition后左半区的 k 个数。</p>
+<p>问题变成了arr[1, n]中找到第 k 大的数。</p>
+<p>再回过头来看看第一次partition，划分之后：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i = partition(arr, <span class="number">1</span>, n);</span><br></pre></td></tr></table></figure>
+<p>如果 i 大于 k，则说明 arr[i] 左边的元素都大于 k，于是只递归 arr[1, i-1] 里第 k 大的元素即可；</p>
+<p>如果 i 小于 k，则说明说明第 k 大的元素在 arr[i] 的右边，于是只递归 arr[i+1, n] 里第 k-i 大的元素即可；</p>
+<p>这就是随机选择算法randomized_select，RS，</p>
+<p><strong>其伪代码如下</strong>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">RS</span><span class="params">(arr, low, high, k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(low== high) </span><br><span class="line">        <span class="keyword">return</span> arr[low];</span><br><span class="line">    i= partition(arr, low, high);</span><br><span class="line">    temp= i-low;                        <span class="comment">//数组前半部分元素个数</span></span><br><span class="line">    <span class="keyword">if</span>(temp&gt;=k)</span><br><span class="line">        <span class="keyword">return</span> RS(arr, low, i<span class="number">-1</span>, k);    <span class="comment">//求前半部分第k大</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> RS(arr, i+<span class="number">1</span>, high, k-i); <span class="comment">//求后半部分第k-i大</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>简单实现</strong>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*方法三 随机选择*/</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp;data, <span class="keyword">int</span> low, <span class="keyword">int</span> high)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = low, j = high, pivot = data[low];</span><br><span class="line">	<span class="keyword">while</span> (i &lt; j)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span> (i &lt; j&amp;&amp;data[j] &lt; pivot)</span><br><span class="line">		&#123;</span><br><span class="line">			j--;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (i &lt; j)</span><br><span class="line">		&#123;</span><br><span class="line">			swap(data[i], data[j]);</span><br><span class="line">			i++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span> (i&lt;j&amp;&amp;data[i]&gt;pivot)</span><br><span class="line">		&#123;</span><br><span class="line">			i++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (i &lt; j)</span><br><span class="line">		&#123;</span><br><span class="line">			swap(data[i], data[j]);</span><br><span class="line">			j--;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">randomized_select</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp;data, <span class="keyword">int</span> low, <span class="keyword">int</span> high, <span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (low == high)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> data[low];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> mid = partition(data, low, high);</span><br><span class="line">	<span class="keyword">int</span> tmp = mid - low;</span><br><span class="line">	<span class="keyword">if</span> (tmp &gt;= k)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> randomized_select(data, low, mid - <span class="number">1</span>, k);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> randomized_select(data, mid + <span class="number">1</span>, high, k - mid);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/loading.gif" data-original="https://cdn.jsdelivr.net/gh/wnxy/wnxy_pic@master/img/heap_5.png" alt=""></p>
+<p>这是一个典型的减治算法，递归内的两个分支，最终只会执行一个，它的时间复杂度是O(n)。</p>
+<p>再次强调一下：</p>
+<p><strong>分治法</strong>，大问题分解为小问题，小问题都要递归各个分支，例如：快速排序</p>
+<p><strong>减治法</strong>，大问题分解为小问题，小问题只要递归一个分支，例如：二分查找，随机选择</p>
+<p>通过随机选择（randomized_select），找到 arr[1, n] 中第 k 大的数，再进行一次 partition，就能得到 TopK 的结果。</p>
+<h2 id="五、总结"><a href="#五、总结" class="headerlink" title="五、总结"></a>五、总结</h2><p>TopK，不难；其思路优化过程，不简单：</p>
+<p>全局排序，O(n*lg(n))</p>
+<p>局部排序，只排序TopK个数，O(n*k)</p>
+<p>堆，TopK个数也不排序了，O(n*lg(k))</p>
+<p>分治法，每个分支“都要”递归，例如：快速排序，O(n*lg(n))</p>
+<p>减治法，“只要”递归一个分支，例如：二分查找O(lg(n))，随机选择O(n)</p>
+<p>TopK的另一个解法：随机选择+partition</p>
+<p><strong>原文链接</strong>：<a href="https://blog.csdn.net/z50L2O08e2u4afToR9A/article/details/82837278" target="_blank" rel="noopener">https://blog.csdn.net/z50L2O08e2u4afToR9A/article/details/82837278</a></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">wnxy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://wnxy.github.io/2021/06/25/Classic_TopK_problem/">https://wnxy.github.io/2021/06/25/Classic_TopK_problem/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%8E%92%E5%BA%8F/">排序</a><a class="post-meta__tags" href="/tags/%E5%A0%86/">堆</a><a class="post-meta__tags" href="/tags/%E5%88%86%E6%B2%BB%E6%B3%95/">分治法</a><a class="post-meta__tags" href="/tags/%E5%87%8F%E6%B2%BB%E6%B3%95/">减治法</a></div><div class="social-share pull-right"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script><nav id="pagination"><div class="prev-post pull-left"><a href="/2021/06/27/Calculate_prime_numbers/"><i class="fa fa-chevron-left">  </i><span>求解某一范围内的全部素数</span></a></div><div class="next-post pull-right"><a href="/2021/05/08/Understanding-and-use-of-monotone-stack/"><span>LeetCode 单调栈的理解与使用</span><i class="fa fa-chevron-right"></i></a></div></nav><div class="post-adv"></div><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'kVUI0yw32bG82ATvDNLwSl1d-MdYXbMMI',
+  appKey:'QrR6ONijw9qpWMGouvtT276X',
+  placeholder:'来都来了，不说点啥嘛(*≧▽≦)ﾉｼ))',
+  avatar:'wavatar',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang: 'zh-CN',
+
+  master: ' 5a251b4c3b2b67d108a284c9b0b94706',   //博主邮箱md5
+  tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+  friends:  ["af67fe681d518972c1e5ff2146b4bfb6","f37e64a613264d5dc895548c262a85b2"],  //小伙伴邮箱Md5
+
+  // 设置Bilibili表情包地址
+  emojiCDN: 'https://valinecdn.bili33.top/', 
+  // 表情title和图片映射
+  emojiMaps: {
+      "alu2": "alu/不出所料.png",
+      "alu3": "alu/不说话.png",
+      "alu4": "alu/不高兴.png",
+      "alu5": "alu/中刀.png",
+      "alu6": "alu/中指.png",
+      "alu7": "alu/中枪.png",
+      "alu8": "alu/亲亲.png",
+      "alu9": "alu/便便.png",
+      "alu10": "alu/内伤.png",
+      "alu11": "alu/击掌.png",
+      "alu12": "alu/口水.png",
+      "alu13": "alu/吐.png",
+      "alu14": "alu/吐舌.png",
+      "alu15": "alu/吐血倒地.png",
+      "alu16": "alu/呲牙.png",
+      "alu17": "alu/咽气.png",
+      "alu18": "alu/哭泣.png",
+      "alu19": "alu/喜极而泣.png",
+      "alu20": "alu/喷水.png",
+      "alu21": "alu/喷血.png",
+      "alu22": "alu/坐等.png",
+      "alu23": "alu/害羞.png",
+      "alu24": "alu/小眼睛.png",
+      "alu25": "alu/尴尬.png",
+      "alu26": "alu/得意.png",
+      "alu27": "alu/惊喜.png",
+      "alu28": "alu/想一想.png",
+      "alu29": "alu/愤怒.png",
+      "alu30": "alu/扇耳光.png",
+      "alu31": "alu/投降.png",
+      "alu32": "alu/抠鼻.png",
+      "alu33": "alu/抽烟.png",
+      "alu34": "alu/无奈.png",
+      "alu35": "alu/无所谓.png",
+      "alu36": "alu/无语.png",
+      "alu37": "alu/暗地观察.png",
+      "alu38": "alu/期待.png",
+      "alu39": "alu/欢呼.png",
+      "alu40": "alu/汗.png",
+      "alu41": "alu/深思.png",
+      "alu42": "alu/狂汗.png",
+      "alu43": "alu/献花.png",
+      "alu44": "alu/献黄瓜.png",
+      "alu45": "alu/皱眉.png",
+      "alu46": "alu/看不见.png",
+      "alu47": "alu/看热闹.png",
+      "alu48": "alu/瞅你.png",
+      "alu49": "alu/肿包.png",
+      "alu50": "alu/脸红.png",
+      "alu51": "alu/蜡烛.png",
+      "alu52": "alu/装大款.png",
+      "alu53": "alu/观察.png",
+      "alu54": "alu/赞一个.png",
+      "alu55": "alu/邪恶.png",
+      "alu56": "alu/锁眉.png",
+      "alu57": "alu/长草.png",
+      "alu58": "alu/阴暗.png",
+      "alu59": "alu/高兴.png",
+      "alu60": "alu/黑线.png",
+      "alu61": "alu/鼓掌.png",
+      "Little-Bad2": "Little-Bad/一群坏坏.jpg",
+      "Little-Bad3": "Little-Bad/中坏坏.jpg",
+      "Little-Bad4": "Little-Bad/发火的坏坏.jpg",
+      "Little-Bad5": "Little-Bad/坏坏坏.jpg",
+      "Little-Bad6": "Little-Bad/大坏坏.jpg",
+      "Little-Bad7": "Little-Bad/天使一般的坏坏.jpg",
+      "Little-Bad8": "Little-Bad/害羞坏.jpg",
+      "Little-Bad9": "Little-Bad/小坏蛋.jpg",
+      "Little-Bad10": "Little-Bad/我们一起做坏坏的事.jpg",
+      "Little-Bad11": "Little-Bad/敲板子的坏坏.gif",
+      "Little-Bad12": "Little-Bad/比地球还大的坏坏.jpg",
+      "Little-Bad13": "Little-Bad/流泪的坏坏.jpg",
+      "Little-Bad14": "Little-Bad/热炸的坏坏.jpg",
+      "aodamiao1": "aodamiao/01.gif",
+      "aodamiao2": "aodamiao/02.gif",
+      "aodamiao3": "aodamiao/03.gif",
+      "aodamiao4": "aodamiao/04.gif",
+      "aodamiao5": "aodamiao/05.gif",
+      "aodamiao6": "aodamiao/06.gif",
+      "aodamiao7": "aodamiao/07.gif",
+      "aodamiao8": "aodamiao/08.gif",
+      "aodamiao9": "aodamiao/09.gif",
+      "aodamiao10": "aodamiao/10.gif",
+      "aodamiao11": "aodamiao/11.gif",
+      "aodamiao12": "aodamiao/12.gif",
+      "aodamiao13": "aodamiao/13.gif",
+      "aodamiao14": "aodamiao/14.gif",
+      "aodamiao15": "aodamiao/15.gif",
+      "aodamiao16": "aodamiao/16.gif",
+      "aodamiao17": "aodamiao/17.gif",
+      "aodamiao18": "aodamiao/18.gif",
+      "aodamiao19": "aodamiao/19.gif",
+      "aodamiao20": "aodamiao/20.gif",
+      "aodamiao21": "aodamiao/21.gif",
+      "aodamiao22": "aodamiao/22.gif",
+      "aodamiao23": "aodamiao/23.gif",
+      "aodamiao24": "aodamiao/24.gif",
+      "aodamiao25": "aodamiao/25.gif",
+      "aodamiao26": "aodamiao/26.gif",
+      "aodamiao27": "aodamiao/27.gif",
+      "aodamiao28": "aodamiao/28.gif",
+      "aodamiao29": "aodamiao/29.gif",
+      "aodamiao30": "aodamiao/30.gif",
+      "aodamiao31": "aodamiao/31.gif",
+      "aodamiao32": "aodamiao/32.gif",
+      "aodamiao33": "aodamiao/33.gif",
+      "aodamiao34": "aodamiao/34.gif",
+      "aodamiao35": "aodamiao/35.gif",
+      "aodamiao36": "aodamiao/36.gif",
+      "aodamiao37": "aodamiao/37.gif",
+      "aodamiao38": "aodamiao/38.gif",
+      "aodamiao39": "aodamiao/39.gif",
+      "aodamiao40": "aodamiao/40.gif",
+      "Yurui-Neko1": "Yurui-Neko/001.png",
+      "Yurui-Neko2": "Yurui-Neko/002.png",
+      "Yurui-Neko3": "Yurui-Neko/003.png",
+      "Yurui-Neko4": "Yurui-Neko/004.png",
+      "Yurui-Neko5": "Yurui-Neko/005.png",
+      "Yurui-Neko6": "Yurui-Neko/006.png",
+      "Yurui-Neko7": "Yurui-Neko/007.png",
+      "Yurui-Neko8": "Yurui-Neko/008.png",
+      "Yurui-Neko9": "Yurui-Neko/009.png",
+      "Yurui-Neko10": "Yurui-Neko/010.png",
+      "Yurui-Neko11": "Yurui-Neko/011.png",
+      "Yurui-Neko12": "Yurui-Neko/012.png",
+      "Yurui-Neko13": "Yurui-Neko/013.png",
+      "Yurui-Neko14": "Yurui-Neko/014.png",
+      "Yurui-Neko15": "Yurui-Neko/015.png",
+      "Yurui-Neko16": "Yurui-Neko/016.png",
+      "Yurui-Neko17": "Yurui-Neko/017.png",
+      "Yurui-Neko18": "Yurui-Neko/018.png",
+      "Yurui-Neko19": "Yurui-Neko/019.png",
+      "Yurui-Neko20": "Yurui-Neko/020.png",
+      "Yurui-Neko21": "Yurui-Neko/021.png",
+      "Yurui-Neko22": "Yurui-Neko/022.png",
+      "Yurui-Neko23": "Yurui-Neko/023.png",
+      "Yurui-Neko24": "Yurui-Neko/024.png",
+      "Yurui-Neko25": "Yurui-Neko/025.png",
+      "Yurui-Neko26": "Yurui-Neko/026.png",
+      "Yurui-Neko27": "Yurui-Neko/027.png",
+      "Yurui-Neko28": "Yurui-Neko/028.png",
+      "Yurui-Neko29": "Yurui-Neko/029.png",
+      "Yurui-Neko30": "Yurui-Neko/030.png",
+      "Yurui-Neko31": "Yurui-Neko/031.png",
+      "Yurui-Neko32": "Yurui-Neko/032.png",
+      "Yurui-Neko33": "Yurui-Neko/033.png",
+      "Yurui-Neko34": "Yurui-Neko/034.png",
+      "Yurui-Neko35": "Yurui-Neko/035.png",
+      "Yurui-Neko36": "Yurui-Neko/036.png",
+      "Yurui-Neko37": "Yurui-Neko/037.png",
+      "Yurui-Neko38": "Yurui-Neko/038.png",
+      "Yurui-Neko39": "Yurui-Neko/039.png",
+      "Yurui-Neko40": "Yurui-Neko/040.png"
+    }
+})</script></div></div><footer class="footer-bg" style="background-image: url(https://api.ixiaowai.cn/gqapi/gqapi.php)"><div class="layout" id="footer"><div class="copyright">&copy;2017 - 2021 By wnxy</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.7.0"></script><script src="/js/fancybox.js?version=1.7.0"></script><script src="/js/sidebar.js?version=1.7.0"></script><script src="/js/copy.js?version=1.7.0"></script><script src="/js/fireworks.js?version=1.7.0"></script><script src="/js/transition.js?version=1.7.0"></script><script src="/js/scroll.js?version=1.7.0"></script><script src="/js/head.js?version=1.7.0"></script><script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fish.js?version=1.7.0"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script type="text/javascript" src="/js/crash_cheat.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-koharu"},"display":{"superSample":2,"width":210,"height":420,"position":"right","hOffset":0,"vOffset":-20},"log":false,"tagMode":false});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}();var t,e}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body></html>
