@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wnxy.github.io/2021/07/22/cpp_this_pointer/</loc>
+    <lastmod>2021-07-23</lastmod>
+  </url>  <url>
+    <loc>https://wnxy.github.io/2021/07/20/cpp_leftvalue_and_rightvalue/</loc>
+    <lastmod>2021-07-23</lastmod>
+  </url>  <url>
+    <loc>https://wnxy.github.io/2021/07/17/cpp_file_stream/</loc>
+    <lastmod>2021-07-23</lastmod>
+  </url>  <url>
+    <loc>https://wnxy.github.io/2021/07/15/cpp_constructor_and_destructor/</loc>
+    <lastmod>2021-07-22</lastmod>
+  </url>  <url>
     <loc>https://wnxy.github.io/2021/06/28/Priority_queue_and_heap/</loc>
     <lastmod>2021-06-29</lastmod>
   </url>  <url>

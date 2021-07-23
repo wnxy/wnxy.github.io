@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wnxy.github.io/2021/07/22/cpp_this_pointer/</loc>
+    
+    <lastmod>2021-07-23T02:22:55.936Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.github.io/2021/07/20/cpp_leftvalue_and_rightvalue/</loc>
+    
+    <lastmod>2021-07-23T02:19:17.954Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.github.io/2021/07/17/cpp_file_stream/</loc>
+    
+    <lastmod>2021-07-23T02:15:53.986Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.github.io/2021/07/15/cpp_constructor_and_destructor/</loc>
+    
+    <lastmod>2021-07-22T14:09:09.258Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wnxy.github.io/2021/06/28/Priority_queue_and_heap/</loc>
     
     <lastmod>2021-06-29T13:06:05.469Z</lastmod>

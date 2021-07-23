@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2021-06-29T13:06:05.469Z</updated>
+  <updated>2021-07-23T02:22:55.936Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,118 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++ this指针</title>
+    <link href="https://wnxy.github.io/2021/07/22/cpp_this_pointer/"/>
+    <id>https://wnxy.github.io/2021/07/22/cpp_this_pointer/</id>
+    <published>2021-07-22T14:14:16.000Z</published>
+    <updated>2021-07-23T02:22:55.936Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="this指针" scheme="https://wnxy.github.io/tags/this%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 中的左值、右值</title>
+    <link href="https://wnxy.github.io/2021/07/20/cpp_leftvalue_and_rightvalue/"/>
+    <id>https://wnxy.github.io/2021/07/20/cpp_leftvalue_and_rightvalue/</id>
+    <published>2021-07-20T14:10:55.000Z</published>
+    <updated>2021-07-23T02:19:17.954Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="左值" scheme="https://wnxy.github.io/tags/%E5%B7%A6%E5%80%BC/"/>
+    
+      <category term="右值" scheme="https://wnxy.github.io/tags/%E5%8F%B3%E5%80%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 文件操作与文件流</title>
+    <link href="https://wnxy.github.io/2021/07/17/cpp_file_stream/"/>
+    <id>https://wnxy.github.io/2021/07/17/cpp_file_stream/</id>
+    <published>2021-07-17T14:09:54.000Z</published>
+    <updated>2021-07-23T02:15:53.986Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、文件的概念&quot;&gt;&lt;a href=&quot;#一、文件的概念&quot; class=&quot;headerlink&quot; title=&quot;一、文件的概念&quot;&gt;&lt;/a&gt;一、文件的概念&lt;/h2&gt;&lt;p&gt;对于用户来说，常用到的文件有两大类：程序文件和数据文件。而根据文件中数据的组织方式，则可以将文件分为&lt;strong&gt;ASCII 文件&lt;/strong&gt;和&lt;strong&gt;二进制文件&lt;/strong&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ASCII 文件，又称字符文件或者文本文件，它的每一个字节放一个 ASCII 代码，代表一个字符。&lt;/li&gt;
+&lt;li&gt;二进制文件，又称内部格式文件或字节文件，是把内存中的数据按其在内存中的存储形式原样输出到磁盘上存放。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="文件流" scheme="https://wnxy.github.io/tags/%E6%96%87%E4%BB%B6%E6%B5%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++中的构造函数与析构函数</title>
+    <link href="https://wnxy.github.io/2021/07/15/cpp_constructor_and_destructor/"/>
+    <id>https://wnxy.github.io/2021/07/15/cpp_constructor_and_destructor/</id>
+    <published>2021-07-15T13:36:42.000Z</published>
+    <updated>2021-07-22T14:09:09.258Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;原文链接：&lt;a href=&quot;https://www.cnblogs.com/mr-wid/archive/2013/02/19/2917911.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblogs.com/mr-wid/archive/2013/02/19/2917911.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;一、构造函数介绍&quot;&gt;&lt;a href=&quot;#一、构造函数介绍&quot; class=&quot;headerlink&quot; title=&quot;一、构造函数介绍&quot;&gt;&lt;/a&gt;一、构造函数介绍&lt;/h2&gt;&lt;h3 id=&quot;1-构造函数的作用&quot;&gt;&lt;a href=&quot;#1-构造函数的作用&quot; class=&quot;headerlink&quot; title=&quot;1.构造函数的作用&quot;&gt;&lt;/a&gt;1.构造函数的作用&lt;/h3&gt;&lt;p&gt;构造函数主要用来在创建对象时完成对对象属性的一些初始化等操作, 当创建对象时, 对象会自动调用它的构造函数。一般来说, 构造函数有以下三个方面的作用:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;给创建的对象建立一个标识符;&lt;/li&gt;
+&lt;li&gt;为对象数据成员开辟内存空间;&lt;/li&gt;
+&lt;li&gt;完成对象数据成员的初始化。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="构造函数" scheme="https://wnxy.github.io/tags/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="析构函数" scheme="https://wnxy.github.io/tags/%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>STL中的优先级队列和堆问题</title>
@@ -499,101 +611,6 @@
       <category term="melody" scheme="https://wnxy.github.io/tags/melody/"/>
     
       <category term="博客美化" scheme="https://wnxy.github.io/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>星光不负赶路人...</title>
-    <link href="https://wnxy.github.io/2020/08/11/Starlight-lives-up-to-the-traveler/"/>
-    <id>https://wnxy.github.io/2020/08/11/Starlight-lives-up-to-the-traveler/</id>
-    <published>2020-08-11T11:09:40.000Z</published>
-    <updated>2020-08-11T14:07:41.316Z</updated>
-    
-    <summary type="html">
-    
-      莞尔日记，不能看哦！！！
-    
-    </summary>
-    
-    
-      <category term="随笔/杂谈" scheme="https://wnxy.github.io/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="莞尔日记" scheme="https://wnxy.github.io/tags/%E8%8E%9E%E5%B0%94%E6%97%A5%E8%AE%B0/"/>
-    
-      <category term="考研" scheme="https://wnxy.github.io/tags/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="rain杂货" scheme="https://wnxy.github.io/tags/rain%E6%9D%82%E8%B4%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>github-readme-stats制作个性GitHub简介page</title>
-    <link href="https://wnxy.github.io/2020/07/20/github-readme-stats-Make-a-personalized-GitHub-profile-page/"/>
-    <id>https://wnxy.github.io/2020/07/20/github-readme-stats-Make-a-personalized-GitHub-profile-page/</id>
-    <published>2020-07-20T02:59:37.000Z</published>
-    <updated>2020-07-20T03:59:59.256Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在GitHub创建一个跟用户名一样的项目，最终会在自己的GitHub首页生成一个个性介绍板块。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You found a secret! &lt;strong&gt;nxyrain/nxyrain&lt;/strong&gt;is a ✨&lt;em&gt;special&lt;/em&gt; ✨ repository that you can use to add a &lt;code&gt;README.md&lt;/code&gt; to your GitHub profile. Make sure it’s public and initialize it with a &lt;strong&gt;README&lt;/strong&gt; to get started.&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="GitHub" scheme="https://wnxy.github.io/categories/GitHub/"/>
-    
-    
-      <category term="Git" scheme="https://wnxy.github.io/tags/Git/"/>
-    
-      <category term="GitHub" scheme="https://wnxy.github.io/tags/GitHub/"/>
-    
-      <category term="开源" scheme="https://wnxy.github.io/tags/%E5%BC%80%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>毕业季——大学路1号的时光</title>
-    <link href="https://wnxy.github.io/2020/06/22/Graduation-season-Time-at-No.1-University-Road/"/>
-    <id>https://wnxy.github.io/2020/06/22/Graduation-season-Time-at-No.1-University-Road/</id>
-    <published>2020-06-22T14:28:04.000Z</published>
-    <updated>2020-08-11T14:18:45.192Z</updated>
-    
-    <summary type="html">
-    
-      莞尔日记，不能看哦！！！
-    
-    </summary>
-    
-    
-      <category term="随笔/杂谈" scheme="https://wnxy.github.io/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="莞尔日记" scheme="https://wnxy.github.io/tags/%E8%8E%9E%E5%B0%94%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>要毕业了</title>
-    <link href="https://wnxy.github.io/2020/05/30/School-celebration/"/>
-    <id>https://wnxy.github.io/2020/05/30/School-celebration/</id>
-    <published>2020-05-30T14:51:11.000Z</published>
-    <updated>2020-08-11T14:25:00.633Z</updated>
-    
-    <summary type="html">
-    
-      莞尔日记，不能看哦！！！
-    
-    </summary>
-    
-    
-      <category term="随笔/杂谈" scheme="https://wnxy.github.io/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="莞尔日记" scheme="https://wnxy.github.io/tags/%E8%8E%9E%E5%B0%94%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
