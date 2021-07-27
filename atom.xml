@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2021-07-27T03:09:27.027Z</updated>
+  <updated>2021-07-27T03:12:08.309Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="https://wnxy.github.io/2021/07/26/cpp_algorithm_analysis/"/>
     <id>https://wnxy.github.io/2021/07/26/cpp_algorithm_analysis/</id>
     <published>2021-07-26T07:52:39.000Z</published>
-    <updated>2021-07-27T03:09:27.027Z</updated>
+    <updated>2021-07-27T03:12:08.309Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      &lt;h2 id=&quot;一、-算法-accumulate&quot;&gt;&lt;a href=&quot;#一、-算法-accumulate&quot; class=&quot;headerlink&quot; title=&quot;一、 算法 accumulate&quot;&gt;&lt;/a&gt;一、 算法 accumulate&lt;/h2&gt;&lt;h3 id=&quot;1-功能&quot;&gt;&lt;a href=&quot;#1-功能&quot; class=&quot;headerlink&quot; title=&quot;1. 功能&quot;&gt;&lt;/a&gt;1. 功能&lt;/h3&gt;&lt;p&gt;对容器内的元素进行累计（不限于累加运算，可以是自己传进去的运算）。&lt;/p&gt;
     
     </summary>
     
