@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wnxy.github.io/2021/07/26/cpp_algorithm_analysis/</loc>
+    
+    <lastmod>2021-07-27T03:09:27.027Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wnxy.github.io/2021/07/22/cpp_this_pointer/</loc>
     
     <lastmod>2021-07-23T02:22:55.936Z</lastmod>
