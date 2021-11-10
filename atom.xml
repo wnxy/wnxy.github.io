@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2021-07-27T03:12:08.309Z</updated>
+  <updated>2021-11-10T14:44:56.877Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件设计模式之单例模式</title>
+    <link href="https://wnxy.github.io/2021/11/10/cpp_singleton_pattern/"/>
+    <id>https://wnxy.github.io/2021/11/10/cpp_singleton_pattern/</id>
+    <published>2021-11-10T13:09:36.000Z</published>
+    <updated>2021-11-10T14:44:56.877Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;什么是单例模式？&quot;&gt;&lt;a href=&quot;#什么是单例模式？&quot; class=&quot;headerlink&quot; title=&quot;什么是单例模式？&quot;&gt;&lt;/a&gt;什么是单例模式？&lt;/h2&gt;&lt;p&gt;有的时候我们需要应用程序中的某个实例在运行期间有且只能有一个实例，程序运行时没有任何方法实现创建多于一个的实例，这种情况我们称之为软件设计模式——单例模式。&lt;/p&gt;
+&lt;p&gt;比如我们软件运行时，有且只能有一个日志对象…….&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="设计模式" scheme="https://wnxy.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="单例模式" scheme="https://wnxy.github.io/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="DCLP" scheme="https://wnxy.github.io/tags/DCLP/"/>
+    
+      <category term="锁机制" scheme="https://wnxy.github.io/tags/%E9%94%81%E6%9C%BA%E5%88%B6/"/>
+    
+      <category term="多线程" scheme="https://wnxy.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git常用命令</title>
+    <link href="https://wnxy.github.io/2021/10/27/Git_common_commands/"/>
+    <id>https://wnxy.github.io/2021/10/27/Git_common_commands/</id>
+    <published>2021-10-27T03:14:44.000Z</published>
+    <updated>2021-11-10T14:43:02.928Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;常用命令&quot;&gt;&lt;a href=&quot;#常用命令&quot; class=&quot;headerlink&quot; title=&quot;常用命令&quot;&gt;&lt;/a&gt;常用命令&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir &amp;lt;filename&amp;gt;           &amp;#x2F;&amp;#x2F;创建目录  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd &amp;lt;filename&amp;gt;              &amp;#x2F;&amp;#x2F;进入指定文件夹&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rm &amp;lt;filename&amp;gt;              &amp;#x2F;&amp;#x2F;工作区删除文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rm -rf &amp;lt;foldername&amp;gt;        &amp;#x2F;&amp;#x2F;工作区删除文件夹&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pwd                        &amp;#x2F;&amp;#x2F;打印当前路径&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cat &amp;lt;filename&amp;gt;             &amp;#x2F;&amp;#x2F;查看指定文件的内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ls -a                      &amp;#x2F;&amp;#x2F;查看隐藏的.git文件，.git文件是git版本库，里面的stage就是暂存区&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git init                   &amp;#x2F;&amp;#x2F;将命令运行的目录变成git可以管理的仓库&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git add &amp;lt;filename&amp;gt;         &amp;#x2F;&amp;#x2F;将指定文件从工作区添加到暂存区&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;提交说明&amp;quot;    &amp;#x2F;&amp;#x2F;将暂存区的所有文件提交到版本库，-m后面添加说明&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git status                 &amp;#x2F;&amp;#x2F;查看当前版本库状态&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git log                    &amp;#x2F;&amp;#x2F;查看历史版本记录&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git log --pretty&amp;#x3D;oneline   &amp;#x2F;&amp;#x2F;查看历史记录，只不过一行显示更加清晰&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git reflog                 &amp;#x2F;&amp;#x2F;查看你的历史命令，可以看到历史版本的版本号，利用历史版本的版本号可以实现代码版本的回退&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git diff &amp;lt;filename&amp;gt;        &amp;#x2F;&amp;#x2F;查看该文件的具体修改内容&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git diff HEAD &amp;lt;filename&amp;gt;   &amp;#x2F;&amp;#x2F;查看工作区与版本库里面的最新版本的区别&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git reset --hard &amp;lt;版本号&amp;gt;   &amp;#x2F;&amp;#x2F;回退到指定版本号的版本&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git reset --hard HEAD^     &amp;#x2F;&amp;#x2F;回退到上一个版本&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="GitHub" scheme="https://wnxy.github.io/categories/GitHub/"/>
+    
+    
+      <category term="Git" scheme="https://wnxy.github.io/tags/Git/"/>
+    
+      <category term="GitHub" scheme="https://wnxy.github.io/tags/GitHub/"/>
+    
+  </entry>
   
   <entry>
     <title>C++ 标准库算法源代码剖析</title>
@@ -545,70 +598,6 @@
       <category term="二进制处理" scheme="https://wnxy.github.io/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%A4%84%E7%90%86/"/>
     
       <category term="Binary" scheme="https://wnxy.github.io/tags/Binary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习——逻辑回归算法（Logistic Regression）思想及算法实现</title>
-    <link href="https://wnxy.github.io/2020/10/11/Machine-learning-logistic-regression-algorithm/"/>
-    <id>https://wnxy.github.io/2020/10/11/Machine-learning-logistic-regression-algorithm/</id>
-    <published>2020-10-11T10:57:20.000Z</published>
-    <updated>2020-10-17T11:39:55.753Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;1-分类原理&quot;&gt;&lt;a href=&quot;#1-分类原理&quot; class=&quot;headerlink&quot; title=&quot;1.分类原理&quot;&gt;&lt;/a&gt;1.分类原理&lt;/h1&gt;&lt;h2 id=&quot;1-1-逻辑回归&quot;&gt;&lt;a href=&quot;#1-1-逻辑回归&quot; class=&quot;headerlink&quot; title=&quot;1.1 逻辑回归&quot;&gt;&lt;/a&gt;1.1 逻辑回归&lt;/h2&gt;&lt;p&gt;逻辑回归算法是一个分类算法，其性质是它的输出值永远在0到1之间，是目前最流行、最广泛使用的一直学习算法。&lt;/p&gt;
-&lt;h2 id=&quot;1-2-Sigmoid函数&quot;&gt;&lt;a href=&quot;#1-2-Sigmoid函数&quot; class=&quot;headerlink&quot; title=&quot;1.2 Sigmoid函数&quot;&gt;&lt;/a&gt;1.2 Sigmoid函数&lt;/h2&gt;&lt;p&gt;根据线性回归模型我们只能预测连续的值，然而对于分类问题，我们需要输出0或1，此时引入逻辑回归模型，模型核心为Sigmoid函数，公式为：$g(z)=\frac{1}{1+e^{-z}}$&lt;/p&gt;
-&lt;p&gt;其中：$z=-\Theta^{T} X$&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Machine Learning" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Machine-Learning/"/>
-    
-    
-      <category term="Python" scheme="https://wnxy.github.io/tags/Python/"/>
-    
-      <category term="Machine-Learning" scheme="https://wnxy.github.io/tags/Machine-Learning/"/>
-    
-      <category term="机器学习" scheme="https://wnxy.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python数据可视化——函数图像绘制</title>
-    <link href="https://wnxy.github.io/2020/10/09/Python-data-visualization/"/>
-    <id>https://wnxy.github.io/2020/10/09/Python-data-visualization/</id>
-    <published>2020-10-09T02:08:31.000Z</published>
-    <updated>2020-10-09T04:19:21.003Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;利用python的matplotlib库进行数据可视化，绘制定义函数的图像。&lt;/p&gt;
-&lt;p&gt;以机器学习逻辑回归的sigmoid函数为例：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.codecogs.com/eqnedit.php?latex=g\left&amp;space;(&amp;space;z&amp;space;\right&amp;space;)=\frac{1}{1&amp;plus;e^{-z}}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://latex.codecogs.com/gif.latex?g\left&amp;space;(&amp;space;z&amp;space;\right&amp;space;)=\frac{1}{1&amp;plus;e^{-z}}&quot; title=&quot;g\left ( z \right )=\frac{1}{1+e^{-z}}&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;python代码实现：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#定义sigmoid函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sigmoid&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(z)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;/(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;+np.exp(-z))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
-    
-    
-      <category term="Python" scheme="https://wnxy.github.io/tags/Python/"/>
-    
-      <category term="Machine-Learning" scheme="https://wnxy.github.io/tags/Machine-Learning/"/>
-    
-      <category term="机器学习" scheme="https://wnxy.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="Matplotlib" scheme="https://wnxy.github.io/tags/Matplotlib/"/>
-    
-      <category term="函数图像" scheme="https://wnxy.github.io/tags/%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F/"/>
     
   </entry>
   
