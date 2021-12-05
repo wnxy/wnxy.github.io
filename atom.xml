@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2021-11-10T14:44:56.877Z</updated>
+  <updated>2021-12-05T05:35:40.016Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>语义化版本控制</title>
+    <link href="https://wnxy.github.io/2021/12/05/Semantic_version_control/"/>
+    <id>https://wnxy.github.io/2021/12/05/Semantic_version_control/</id>
+    <published>2021-12-05T05:28:50.000Z</published>
+    <updated>2021-12-05T05:35:40.016Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="随笔/杂谈" scheme="https://wnxy.github.io/categories/%E9%9A%8F%E7%AC%94-%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="版本控制" scheme="https://wnxy.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>软件设计模式之单例模式</title>
@@ -567,37 +594,6 @@
       <category term="机器学习" scheme="https://wnxy.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="数据解析" scheme="https://wnxy.github.io/tags/%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python中Struct模块的日常用法</title>
-    <link href="https://wnxy.github.io/2020/10/17/Daily-usage-of-Struct-module-in-Python/"/>
-    <id>https://wnxy.github.io/2020/10/17/Daily-usage-of-Struct-module-in-Python/</id>
-    <published>2020-10-17T03:15:19.000Z</published>
-    <updated>2020-10-19T01:39:56.872Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;最近在训练mnist字符集时用到二进制数据的处理，面向Google编程后稍稍搞懂了一点，故做一点笔记，以作备忘。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Python 中用来处理二进制数据时采用 Struct 模块。&lt;/p&gt;
-&lt;p&gt;Struct模块中最常用的函数为:&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
-    
-    
-      <category term="Python" scheme="https://wnxy.github.io/tags/Python/"/>
-    
-      <category term="Struct模块" scheme="https://wnxy.github.io/tags/Struct%E6%A8%A1%E5%9D%97/"/>
-    
-      <category term="二进制处理" scheme="https://wnxy.github.io/tags/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%A4%84%E7%90%86/"/>
-    
-      <category term="Binary" scheme="https://wnxy.github.io/tags/Binary/"/>
     
   </entry>
   

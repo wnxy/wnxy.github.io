@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wnxy.github.io/2021/12/05/Semantic_version_control/</loc>
+    
+    <lastmod>2021-12-05T05:35:40.016Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wnxy.github.io/2021/11/10/cpp_singleton_pattern/</loc>
     
     <lastmod>2021-11-10T14:44:56.877Z</lastmod>
