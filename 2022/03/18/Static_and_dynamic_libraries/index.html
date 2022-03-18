@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="学习静态库和动态库"><meta name="keywords" content="Linux,Windows,静态库,动态库"><meta name="author" content="wnxy"><meta name="copyright" content="wnxy"><title>学习静态库和动态库 | Wnxy's Blog</title><link rel="shortcut icon" href="/melody-favicon2.ico"><link rel="stylesheet" href="/css/index.css?version=1.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.7.0"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-5336716665297879',
+  enable_page_level_ads: 'true'
+});
+</script><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8e5307dee6403f62f804e355d883fb17";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  }
+} </script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Wnxy's Blog" type="application/atom+xml">
+</head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、什么是库？"><span class="toc-number">1.</span> <span class="toc-text">1、什么是库？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一、什么是库？"><span class="toc-number">2.</span> <span class="toc-text">一、什么是库？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、库的分类"><span class="toc-number">3.</span> <span class="toc-text">二、库的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-静态库"><span class="toc-number">3.1.</span> <span class="toc-text">1.静态库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-动态库"><span class="toc-number">3.2.</span> <span class="toc-text">2.动态库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-区别"><span class="toc-number">3.3.</span> <span class="toc-text">3.区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-优缺点"><span class="toc-number">3.4.</span> <span class="toc-text">4.优缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、库文件的制作"><span class="toc-number">4.</span> <span class="toc-text">三、库文件的制作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-库文件的命名"><span class="toc-number">4.1.</span> <span class="toc-text">1.库文件的命名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-制作库文件常用参数"><span class="toc-number">4.2.</span> <span class="toc-text">2.制作库文件常用参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-库源文件"><span class="toc-number">4.3.</span> <span class="toc-text">3.库源文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-制作静态库并使用"><span class="toc-number">4.4.</span> <span class="toc-text">4.制作静态库并使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-制作动态库并使用"><span class="toc-number">4.5.</span> <span class="toc-text">5.制作动态库并使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文章："><span class="toc-number">5.</span> <span class="toc-text">参考文章：</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s1.ax1x.com/2020/09/19/w5744e.jpg"></div><div class="author-info__name text-center">wnxy</div><div class="author-info__description text-center">愿一切美好都能如约而至，喜欢的都能拥有</div><div class="follow-button"><a href="https://github.com/wnxy" target="_blank" rel="noopener">Follow Me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">48</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">79</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">10</span></a></div><hr><div class="twopeople"><div class="container" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;">      </canvas><script src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople1.js">     </script><script src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/zdog.dist.js">      </script><script id="rendered-js" src="https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/js/twopeople.js">      </script><style>.twopeople{
+margin: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+canvas {
+display: block;
+margin: 0 auto;
+cursor: move;
+}</style></div></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://api.ixiaowai.cn/gqapi/gqapi.php)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Wnxy's Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/message">Message</a><a class="site-page" href="/links">Links</a><a class="site-page" href="/about">About</a><a class="site-page" href="/interest">Interest</a><a class="site-page" href="/clover">Clover</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> Search</span></a></span></div><div id="post-info"><div id="post-title">学习静态库和动态库</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2022-03-18</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Linux-%E5%AD%A6%E4%B9%A0/">Linux 学习</a><div class="post-meta-wordcount"><span>Word count: </span><span class="word-count">2k</span><span class="post-meta__separator">|</span><span>Reading time: 6 min</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h2 id="1、什么是库？"><a href="#1、什么是库？" class="headerlink" title="1、什么是库？"></a>1、什么是库？</h2><h2 id="一、什么是库？"><a href="#一、什么是库？" class="headerlink" title="一、什么是库？"></a>一、什么是库？</h2><p>在windows平台和linux平台下都大量存在着库。一般是软件作者为了发布方便、替换方便或二次开发目的，而发布的一组可以单独与应用程序进行compile time或runtime链接的二进制可重定位目标码文件。</p>
+<p>本质上来说库是一种可执行代码的二进制形式，这个文件可以在编译时由编译器直接链接到可执行程序中，也可以在运行时由操作系统的runtime enviroment根据需要动态加载到内存中。</p>
+<p>一组库，就形成了一个发布包，当然，具体发布多少个库，完全由库提供商自己决定。</p>
+<p>由于windows和linux的本质不同，因此二者库的二进制是不兼容的。</p>
+<p>现实中每个程序都要依赖很多基础的底层库，不可能每个人的代码都从零开始，因此库的存在意义非同寻常。</p>
+<p>共享库的好处是，不同的应用程序如果调用相同的库，那么在内存里只需要有一份该共享库的实例。</p>
+<a id="more"></a>
+<h2 id="二、库的分类"><a href="#二、库的分类" class="headerlink" title="二、库的分类"></a>二、库的分类</h2><p>库有两种：静态库和动态库（共享库）。</p>
+<p>windows平台下，静态库通常后缀为 .lib，动态库为 .dll；</p>
+<p>linux平台下，静态库通常后缀为 .a，动态库为 .so；</p>
+<p>从本质上来说，由同一段程序编译出来的静态库和动态库，在功能上是没有区别的。不同之处仅仅在于其名字上，也就是“静态”和“动态”。</p>
+<p>二者均以文件的形式存在，其本质上是一种可执行代码的二进制格式，可以被载入内存中执行。无论是动态链接库还是静态链接库，它们无非是向其调用者提供变量、函数和类。</p>
+<h3 id="1-静态库"><a href="#1-静态库" class="headerlink" title="1.静态库"></a>1.静态库</h3><p>所谓静态库，就是在静态编译时由编译器到指定目录寻找并且进行链接，一旦链接完成，最终的可执行程序中就包含了该库文件中的所有有用信息，包括代码段、数据段等。</p>
+<h3 id="2-动态库"><a href="#2-动态库" class="headerlink" title="2.动态库"></a>2.动态库</h3><p>所谓动态库，就是在应用程序运行时，由操作系统根据应用程序的请求，动态到指定目录下寻找并装载入内存中，同时需要进行地址重定向。</p>
+<h3 id="3-区别"><a href="#3-区别" class="headerlink" title="3.区别"></a>3.区别</h3><p>我们以编译链接、载入时刻两点来讨论静态库和动态库的区别。</p>
+<p><strong>编译链接：</strong></p>
+<p>静态链接库在程序编译时会被链接到目标代码中，目标程序运行时将不再需要改动库，移植方便，体积较大，浪费空间和资源，因为所有相关的对象文件与牵涉到库都被链接合成一个可执行文件，这样导致可执行文件的体积较大。</p>
+<p>动态库在程序编译时并不会被链接到目标代码中，而是在程序运行时才被载入，因为可执行文件体积较小。有了动态库，程序的升级会相对比较简单，比如某个动态库升级了，只需要更换这个动态库的文件，而不需要去更换可执行文件。但要注意的是，可执行程序在运行时需要能找到动态库文件。可执行文件是动态库的调用者。</p>
+<p><img src="/loading.gif" data-original="https://cdn.jsdelivr.net/gh/wnxy/wnxy_pic@master/img/静态库和动态库.png" alt=""></p>
+<p><strong>载入时刻</strong></p>
+<p>二者的不同点在于代码被载入的时刻不同。静态库的代码在编译过程中已经被载入可执行程序，因此体积较大。共享库的代码是在可执行程序运行时才载入内存的，在编译过程中仅简单的引用，因此代码体积较小。</p>
+<h3 id="4-优缺点"><a href="#4-优缺点" class="headerlink" title="4.优缺点"></a>4.优缺点</h3><p>相对于动态库，静态库的优点在于直接被链接进可执行程序中，之后，该可执行程序就不再依赖于运行环境的设置了(当然仍然会依赖于 CPU指令集和操作系统支持的可执行文件格式等硬性限制)。</p>
+<p>而动态库的优点在于，用户甚至可以在程序运行时随时替换该动态库，这就构成了动态插件系统的基础。具体使用静态库和动态库，由程序员根据需要自己决定。</p>
+<h2 id="三、库文件的制作"><a href="#三、库文件的制作" class="headerlink" title="三、库文件的制作"></a>三、库文件的制作</h2><h3 id="1-库文件的命名"><a href="#1-库文件的命名" class="headerlink" title="1.库文件的命名"></a>1.库文件的命名</h3><p>静态库的名字一般为libxxxx.a，其中xxxx是该lib的名称。动态库的名字一般为libxxxx.so.x.y.z，含义如下所示：</p>
+<p><strong>libname.so.x.y.z</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>lib</th>
+<th>name</th>
+<th>.so</th>
+<th>.x</th>
+<th>.y</th>
+<th>.z</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固定代表共享库</td>
+<td>共享库名称</td>
+<td>固定后缀</td>
+<td>主版本号</td>
+<td>次版本号</td>
+<td>发行版本号</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="2-制作库文件常用参数"><a href="#2-制作库文件常用参数" class="headerlink" title="2.制作库文件常用参数"></a>2.制作库文件常用参数</h3><p>首先需要了解gcc编译库要用到一些参数，很重要。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-shared</td>
+<td>指定生成动态链接库</td>
+</tr>
+<tr>
+<td>-static</td>
+<td>指定生成静态链接库</td>
+</tr>
+<tr>
+<td>-fPIC</td>
+<td>表示编译为位置独立的代码，用于编译共享库。目标文件需要创建成位置无关码，概念上就是在可执行程序装载它们的时候，它们可以放在可执行程序内存的任何地方</td>
+</tr>
+<tr>
+<td>-L</td>
+<td>表示要链接的库在当前目录中</td>
+</tr>
+<tr>
+<td>-I</td>
+<td>指定需要连接的动态库。编译器查找动态链接库时有隐含的命名规则，即在给出的名字前面加上lib，后面加上.so来确定库的名称</td>
+</tr>
+<tr>
+<td>-Wall</td>
+<td>生成所有警告信息</td>
+</tr>
+<tr>
+<td>-ggdb</td>
+<td>尽可能的生成gdb可用的调试信息</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>编译器在编译时产生调试信息</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>只产生与处理、编译、汇编之后的代码，不链接，结果为.o文件</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="3-库源文件"><a href="#3-库源文件" class="headerlink" title="3.库源文件"></a>3.库源文件</h3><p>编写calc.c文件：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sub</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a - b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>calc.h文件：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span>, <span class="keyword">int</span>)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sub</span><span class="params">(<span class="keyword">int</span>, <span class="keyword">int</span>)</span></span>;</span><br></pre></td></tr></table></figure>
+<h3 id="4-制作静态库并使用"><a href="#4-制作静态库并使用" class="headerlink" title="4.制作静态库并使用"></a>4.制作静态库并使用</h3><p>(1) 需要把calc.c编译成.o文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -c calc.c</span><br></pre></td></tr></table></figure>
+<p>(2) 使用 ar 命令生成静态库 libcalc.a</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ar -rc libcalc.a calc.o</span><br></pre></td></tr></table></figure>
+<p>(3) 使用静态库libcalc.a，只需要包含 calc.h 就可以使用函数 add() 和 sub()</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"calc.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"add(5, 4) is %d\n"</span>, add(<span class="number">5</span>, <span class="number">4</span>));</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"sub(5, 4) is %d\n"</span>, sub(<span class="number">5</span>, <span class="number">4</span>));</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>静态库文件可以放在任意的位置，编译时只需要找到该文件即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc main.c -o main libcalc.a</span><br></pre></td></tr></table></figure>
+<p>(4) 库和头文件如果在其他目录下，使用以下命令编译</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gcc -c -l &#x2F;home&#x2F;xxxx&#x2F;include test.c    &#x2F;&#x2F;假设test.c要使用对应的静态库</span><br><span class="line">gcc -o test -L &#x2F;home&#x2F;xxxxx&#x2F;lib test.o libcalc.a</span><br></pre></td></tr></table></figure>
+<p>或者：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -c -I &#x2F;home&#x2F;xxxx&#x2F;include -L &#x2F;home&#x2F;xxxxx&#x2F;lib libcalc.a test.c</span><br></pre></td></tr></table></figure>
+<p>1). 通过-I(是大i)指定对应的头文件</p>
+<p>2). 通过-L制定库文件的路径,libcalc.a就是要用的静态库。</p>
+<p>3). 在test.c中要包含静态库的头文件。</p>
+<h3 id="5-制作动态库并使用"><a href="#5-制作动态库并使用" class="headerlink" title="5.制作动态库并使用"></a>5.制作动态库并使用</h3><p>(1) 把 calc.c 编译成动态链接库 libcalc.so</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gcc -fPIC -o libcalc.o -c calc.c</span><br><span class="line">gcc -shared -o libcalc.so libcalc.o</span><br></pre></td></tr></table></figure>
+<p>也可以直接使用一条命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -fPIC -shared -o libcalc.so calc.c</span><br></pre></td></tr></table></figure>
+<p>(2) 动态库的安装，通常动态库拷贝到 /lib 下即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp libcalc.so &#x2F;lib</span><br></pre></td></tr></table></figure>
+<p>(3) 使用动态库</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"calc.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"add(5, 4) is %d\n"</span>, add(<span class="number">5</span>, <span class="number">4</span>));</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"sub(5, 4) is %d\n"</span>, sub(<span class="number">5</span>, <span class="number">4</span>));</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译动态库：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc main.c -o main -lcalc</span><br></pre></td></tr></table></figure>
+<p>编译时动态库的名字与库文件对应关系</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">libcalc.so ---------- -lcalc</span><br></pre></td></tr></table></figure>
+<p>去掉 .so，lib简化成l，其他字母保留。</p>
+<h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><p><a href="https://zhuanlan.zhihu.com/p/270640487" target="_blank" rel="noopener">Linux 下的静态库和动态库</a></p>
+<p><a href="https://colobu.com/2018/08/28/15-Most-Frequently-Used-GCC-Compiler-Command-Line-Options/#%E4%BD%BF%E7%94%A8-l%E5%8F%82%E6%95%B0%E9%93%BE%E6%8E%A5%E5%85%B1%E4%BA%AB%E5%BA%93" target="_blank" rel="noopener">常用的GCC编译器参数</a></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">wnxy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://wnxy.github.io/2022/03/18/Static_and_dynamic_libraries/">https://wnxy.github.io/2022/03/18/Static_and_dynamic_libraries/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a><a class="post-meta__tags" href="/tags/Windows/">Windows</a><a class="post-meta__tags" href="/tags/%E9%9D%99%E6%80%81%E5%BA%93/">静态库</a><a class="post-meta__tags" href="/tags/%E5%8A%A8%E6%80%81%E5%BA%93/">动态库</a></div><div class="social-share pull-right"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script><nav id="pagination"><div class="next-post pull-right"><a href="/2022/01/10/cpp_constructor_and_assign/"><span>C++拷贝构造函数和赋值运算符</span><i class="fa fa-chevron-right"></i></a></div></nav><div class="post-adv"></div><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'kVUI0yw32bG82ATvDNLwSl1d-MdYXbMMI',
+  appKey:'QrR6ONijw9qpWMGouvtT276X',
+  placeholder:'来都来了，不说点啥嘛(*≧▽≦)ﾉｼ))',
+  avatar:'wavatar',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang: 'zh-CN',
+
+  master: ' 5a251b4c3b2b67d108a284c9b0b94706',   //博主邮箱md5
+  tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+  friends:  ["af67fe681d518972c1e5ff2146b4bfb6","f37e64a613264d5dc895548c262a85b2"],  //小伙伴邮箱Md5
+
+  // 设置Bilibili表情包地址
+  emojiCDN: 'https://valinecdn.bili33.top/', 
+  // 表情title和图片映射
+  emojiMaps: {
+      "alu2": "alu/不出所料.png",
+      "alu3": "alu/不说话.png",
+      "alu4": "alu/不高兴.png",
+      "alu5": "alu/中刀.png",
+      "alu6": "alu/中指.png",
+      "alu7": "alu/中枪.png",
+      "alu8": "alu/亲亲.png",
+      "alu9": "alu/便便.png",
+      "alu10": "alu/内伤.png",
+      "alu11": "alu/击掌.png",
+      "alu12": "alu/口水.png",
+      "alu13": "alu/吐.png",
+      "alu14": "alu/吐舌.png",
+      "alu15": "alu/吐血倒地.png",
+      "alu16": "alu/呲牙.png",
+      "alu17": "alu/咽气.png",
+      "alu18": "alu/哭泣.png",
+      "alu19": "alu/喜极而泣.png",
+      "alu20": "alu/喷水.png",
+      "alu21": "alu/喷血.png",
+      "alu22": "alu/坐等.png",
+      "alu23": "alu/害羞.png",
+      "alu24": "alu/小眼睛.png",
+      "alu25": "alu/尴尬.png",
+      "alu26": "alu/得意.png",
+      "alu27": "alu/惊喜.png",
+      "alu28": "alu/想一想.png",
+      "alu29": "alu/愤怒.png",
+      "alu30": "alu/扇耳光.png",
+      "alu31": "alu/投降.png",
+      "alu32": "alu/抠鼻.png",
+      "alu33": "alu/抽烟.png",
+      "alu34": "alu/无奈.png",
+      "alu35": "alu/无所谓.png",
+      "alu36": "alu/无语.png",
+      "alu37": "alu/暗地观察.png",
+      "alu38": "alu/期待.png",
+      "alu39": "alu/欢呼.png",
+      "alu40": "alu/汗.png",
+      "alu41": "alu/深思.png",
+      "alu42": "alu/狂汗.png",
+      "alu43": "alu/献花.png",
+      "alu44": "alu/献黄瓜.png",
+      "alu45": "alu/皱眉.png",
+      "alu46": "alu/看不见.png",
+      "alu47": "alu/看热闹.png",
+      "alu48": "alu/瞅你.png",
+      "alu49": "alu/肿包.png",
+      "alu50": "alu/脸红.png",
+      "alu51": "alu/蜡烛.png",
+      "alu52": "alu/装大款.png",
+      "alu53": "alu/观察.png",
+      "alu54": "alu/赞一个.png",
+      "alu55": "alu/邪恶.png",
+      "alu56": "alu/锁眉.png",
+      "alu57": "alu/长草.png",
+      "alu58": "alu/阴暗.png",
+      "alu59": "alu/高兴.png",
+      "alu60": "alu/黑线.png",
+      "alu61": "alu/鼓掌.png",
+      "Little-Bad2": "Little-Bad/一群坏坏.jpg",
+      "Little-Bad3": "Little-Bad/中坏坏.jpg",
+      "Little-Bad4": "Little-Bad/发火的坏坏.jpg",
+      "Little-Bad5": "Little-Bad/坏坏坏.jpg",
+      "Little-Bad6": "Little-Bad/大坏坏.jpg",
+      "Little-Bad7": "Little-Bad/天使一般的坏坏.jpg",
+      "Little-Bad8": "Little-Bad/害羞坏.jpg",
+      "Little-Bad9": "Little-Bad/小坏蛋.jpg",
+      "Little-Bad10": "Little-Bad/我们一起做坏坏的事.jpg",
+      "Little-Bad11": "Little-Bad/敲板子的坏坏.gif",
+      "Little-Bad12": "Little-Bad/比地球还大的坏坏.jpg",
+      "Little-Bad13": "Little-Bad/流泪的坏坏.jpg",
+      "Little-Bad14": "Little-Bad/热炸的坏坏.jpg",
+      "aodamiao1": "aodamiao/01.gif",
+      "aodamiao2": "aodamiao/02.gif",
+      "aodamiao3": "aodamiao/03.gif",
+      "aodamiao4": "aodamiao/04.gif",
+      "aodamiao5": "aodamiao/05.gif",
+      "aodamiao6": "aodamiao/06.gif",
+      "aodamiao7": "aodamiao/07.gif",
+      "aodamiao8": "aodamiao/08.gif",
+      "aodamiao9": "aodamiao/09.gif",
+      "aodamiao10": "aodamiao/10.gif",
+      "aodamiao11": "aodamiao/11.gif",
+      "aodamiao12": "aodamiao/12.gif",
+      "aodamiao13": "aodamiao/13.gif",
+      "aodamiao14": "aodamiao/14.gif",
+      "aodamiao15": "aodamiao/15.gif",
+      "aodamiao16": "aodamiao/16.gif",
+      "aodamiao17": "aodamiao/17.gif",
+      "aodamiao18": "aodamiao/18.gif",
+      "aodamiao19": "aodamiao/19.gif",
+      "aodamiao20": "aodamiao/20.gif",
+      "aodamiao21": "aodamiao/21.gif",
+      "aodamiao22": "aodamiao/22.gif",
+      "aodamiao23": "aodamiao/23.gif",
+      "aodamiao24": "aodamiao/24.gif",
+      "aodamiao25": "aodamiao/25.gif",
+      "aodamiao26": "aodamiao/26.gif",
+      "aodamiao27": "aodamiao/27.gif",
+      "aodamiao28": "aodamiao/28.gif",
+      "aodamiao29": "aodamiao/29.gif",
+      "aodamiao30": "aodamiao/30.gif",
+      "aodamiao31": "aodamiao/31.gif",
+      "aodamiao32": "aodamiao/32.gif",
+      "aodamiao33": "aodamiao/33.gif",
+      "aodamiao34": "aodamiao/34.gif",
+      "aodamiao35": "aodamiao/35.gif",
+      "aodamiao36": "aodamiao/36.gif",
+      "aodamiao37": "aodamiao/37.gif",
+      "aodamiao38": "aodamiao/38.gif",
+      "aodamiao39": "aodamiao/39.gif",
+      "aodamiao40": "aodamiao/40.gif",
+      "Yurui-Neko1": "Yurui-Neko/001.png",
+      "Yurui-Neko2": "Yurui-Neko/002.png",
+      "Yurui-Neko3": "Yurui-Neko/003.png",
+      "Yurui-Neko4": "Yurui-Neko/004.png",
+      "Yurui-Neko5": "Yurui-Neko/005.png",
+      "Yurui-Neko6": "Yurui-Neko/006.png",
+      "Yurui-Neko7": "Yurui-Neko/007.png",
+      "Yurui-Neko8": "Yurui-Neko/008.png",
+      "Yurui-Neko9": "Yurui-Neko/009.png",
+      "Yurui-Neko10": "Yurui-Neko/010.png",
+      "Yurui-Neko11": "Yurui-Neko/011.png",
+      "Yurui-Neko12": "Yurui-Neko/012.png",
+      "Yurui-Neko13": "Yurui-Neko/013.png",
+      "Yurui-Neko14": "Yurui-Neko/014.png",
+      "Yurui-Neko15": "Yurui-Neko/015.png",
+      "Yurui-Neko16": "Yurui-Neko/016.png",
+      "Yurui-Neko17": "Yurui-Neko/017.png",
+      "Yurui-Neko18": "Yurui-Neko/018.png",
+      "Yurui-Neko19": "Yurui-Neko/019.png",
+      "Yurui-Neko20": "Yurui-Neko/020.png",
+      "Yurui-Neko21": "Yurui-Neko/021.png",
+      "Yurui-Neko22": "Yurui-Neko/022.png",
+      "Yurui-Neko23": "Yurui-Neko/023.png",
+      "Yurui-Neko24": "Yurui-Neko/024.png",
+      "Yurui-Neko25": "Yurui-Neko/025.png",
+      "Yurui-Neko26": "Yurui-Neko/026.png",
+      "Yurui-Neko27": "Yurui-Neko/027.png",
+      "Yurui-Neko28": "Yurui-Neko/028.png",
+      "Yurui-Neko29": "Yurui-Neko/029.png",
+      "Yurui-Neko30": "Yurui-Neko/030.png",
+      "Yurui-Neko31": "Yurui-Neko/031.png",
+      "Yurui-Neko32": "Yurui-Neko/032.png",
+      "Yurui-Neko33": "Yurui-Neko/033.png",
+      "Yurui-Neko34": "Yurui-Neko/034.png",
+      "Yurui-Neko35": "Yurui-Neko/035.png",
+      "Yurui-Neko36": "Yurui-Neko/036.png",
+      "Yurui-Neko37": "Yurui-Neko/037.png",
+      "Yurui-Neko38": "Yurui-Neko/038.png",
+      "Yurui-Neko39": "Yurui-Neko/039.png",
+      "Yurui-Neko40": "Yurui-Neko/040.png"
+    }
+})</script></div></div><footer class="footer-bg" style="background-image: url(https://api.ixiaowai.cn/gqapi/gqapi.php)"><div class="layout" id="footer"><div class="copyright">&copy;2017 - 2022 By wnxy</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.7.0"></script><script src="/js/fancybox.js?version=1.7.0"></script><script src="/js/sidebar.js?version=1.7.0"></script><script src="/js/copy.js?version=1.7.0"></script><script src="/js/fireworks.js?version=1.7.0"></script><script src="/js/transition.js?version=1.7.0"></script><script src="/js/scroll.js?version=1.7.0"></script><script src="/js/head.js?version=1.7.0"></script><script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fish.js?version=1.7.0"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script type="text/javascript" src="/js/crash_cheat.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-koharu"},"display":{"superSample":2,"width":210,"height":420,"position":"right","hOffset":0,"vOffset":-20},"log":false,"tagMode":false});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}();var t,e}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body></html>

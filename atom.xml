@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2022-01-10T13:25:19.412Z</updated>
+  <updated>2022-03-18T12:10:01.130Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习静态库和动态库</title>
+    <link href="https://wnxy.github.io/2022/03/18/Static_and_dynamic_libraries/"/>
+    <id>https://wnxy.github.io/2022/03/18/Static_and_dynamic_libraries/</id>
+    <published>2022-03-18T03:57:52.000Z</published>
+    <updated>2022-03-18T12:10:01.130Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1、什么是库？&quot;&gt;&lt;a href=&quot;#1、什么是库？&quot; class=&quot;headerlink&quot; title=&quot;1、什么是库？&quot;&gt;&lt;/a&gt;1、什么是库？&lt;/h2&gt;&lt;h2 id=&quot;一、什么是库？&quot;&gt;&lt;a href=&quot;#一、什么是库？&quot; class=&quot;headerlink&quot; title=&quot;一、什么是库？&quot;&gt;&lt;/a&gt;一、什么是库？&lt;/h2&gt;&lt;p&gt;在windows平台和linux平台下都大量存在着库。一般是软件作者为了发布方便、替换方便或二次开发目的，而发布的一组可以单独与应用程序进行compile time或runtime链接的二进制可重定位目标码文件。&lt;/p&gt;
+&lt;p&gt;本质上来说库是一种可执行代码的二进制形式，这个文件可以在编译时由编译器直接链接到可执行程序中，也可以在运行时由操作系统的runtime enviroment根据需要动态加载到内存中。&lt;/p&gt;
+&lt;p&gt;一组库，就形成了一个发布包，当然，具体发布多少个库，完全由库提供商自己决定。&lt;/p&gt;
+&lt;p&gt;由于windows和linux的本质不同，因此二者库的二进制是不兼容的。&lt;/p&gt;
+&lt;p&gt;现实中每个程序都要依赖很多基础的底层库，不可能每个人的代码都从零开始，因此库的存在意义非同寻常。&lt;/p&gt;
+&lt;p&gt;共享库的好处是，不同的应用程序如果调用相同的库，那么在内存里只需要有一份该共享库的实例。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux 学习" scheme="https://wnxy.github.io/categories/Linux-%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Linux" scheme="https://wnxy.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://wnxy.github.io/tags/Windows/"/>
+    
+      <category term="静态库" scheme="https://wnxy.github.io/tags/%E9%9D%99%E6%80%81%E5%BA%93/"/>
+    
+      <category term="动态库" scheme="https://wnxy.github.io/tags/%E5%8A%A8%E6%80%81%E5%BA%93/"/>
+    
+  </entry>
   
   <entry>
     <title>C++拷贝构造函数和赋值运算符</title>
@@ -185,7 +217,7 @@
     <link href="https://wnxy.github.io/2021/07/22/cpp_this_pointer/"/>
     <id>https://wnxy.github.io/2021/07/22/cpp_this_pointer/</id>
     <published>2021-07-22T14:14:16.000Z</published>
-    <updated>2021-07-23T02:22:55.936Z</updated>
+    <updated>2022-03-18T11:42:59.348Z</updated>
     
     <summary type="html">
     
@@ -563,34 +595,6 @@
       <category term="机器学习" scheme="https://wnxy.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="朴素贝叶斯" scheme="https://wnxy.github.io/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据可视化模块Matplotlib实操</title>
-    <link href="https://wnxy.github.io/2020/11/02/Data-visualization-matplotlib/"/>
-    <id>https://wnxy.github.io/2020/11/02/Data-visualization-matplotlib/</id>
-    <published>2020-11-02T13:48:55.000Z</published>
-    <updated>2020-11-10T05:37:53.556Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;通过 Matplotlib，开发者可以仅需要几行代码，便可以生成绘图，直方图，功率谱，条形图，错误图，散点图等。&lt;/p&gt;
-&lt;h1 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;&lt;strong&gt;导读&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;Matplotlib 是一个 Python 的 2D绘图库，它以各种硬拷贝格式和跨平台的交互式环境生成出版质量级别的图形。通过 Matplotlib，开发者可以仅需要几行代码，便可以生成绘图，直方图，功率谱，条形图，错误图，散点图等。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Python/"/>
-    
-    
-      <category term="Python" scheme="https://wnxy.github.io/tags/Python/"/>
-    
-      <category term="Matplotlib" scheme="https://wnxy.github.io/tags/Matplotlib/"/>
-    
-      <category term="数据可视化" scheme="https://wnxy.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   

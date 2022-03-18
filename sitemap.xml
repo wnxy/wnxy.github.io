@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wnxy.github.io/2022/03/18/Static_and_dynamic_libraries/</loc>
+    
+    <lastmod>2022-03-18T12:10:01.130Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.github.io/2021/07/22/cpp_this_pointer/</loc>
+    
+    <lastmod>2022-03-18T11:42:59.348Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.github.io/links/index.html</loc>
+    
+    <lastmod>2022-03-17T08:29:51.039Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.github.io/2020/03/27/Stack-application-bracket-matching/</loc>
+    
+    <lastmod>2022-02-20T03:50:06.640Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.github.io/2020/01/10/C-or-C++_dynamic-array/</loc>
+    
+    <lastmod>2022-02-20T03:44:39.481Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.github.io/2020/09/19/Hexo-melody-blog-beautification1/</loc>
+    
+    <lastmod>2022-02-19T10:50:49.102Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wnxy.github.io/2022/01/10/cpp_constructor_and_assign/</loc>
     
     <lastmod>2022-01-10T13:25:19.412Z</lastmod>
@@ -37,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://wnxy.github.io/links/index.html</loc>
-    
-    <lastmod>2021-10-27T02:28:01.787Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://wnxy.github.io/2021/04/27/Git-usage/</loc>
     
     <lastmod>2021-10-27T02:01:41.303Z</lastmod>
@@ -54,13 +89,6 @@
     <loc>https://wnxy.github.io/2021/07/26/cpp_algorithm_analysis/</loc>
     
     <lastmod>2021-07-27T03:12:08.309Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wnxy.github.io/2021/07/22/cpp_this_pointer/</loc>
-    
-    <lastmod>2021-07-23T02:22:55.936Z</lastmod>
     
   </url>
   
@@ -117,13 +145,6 @@
     <loc>https://wnxy.github.io/2021/05/06/Arithmetic-expression/</loc>
     
     <lastmod>2021-05-08T11:18:40.809Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wnxy.github.io/2020/01/10/C-or-C++_dynamic-array/</loc>
-    
-    <lastmod>2021-05-06T06:22:56.146Z</lastmod>
     
   </url>
   
@@ -254,13 +275,6 @@
   </url>
   
   <url>
-    <loc>https://wnxy.github.io/2020/09/19/Hexo-melody-blog-beautification1/</loc>
-    
-    <lastmod>2020-09-19T06:29:35.502Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://wnxy.github.io/message/index.html</loc>
     
     <lastmod>2020-09-19T02:27:37.254Z</lastmod>
@@ -369,13 +383,6 @@
     <loc>https://wnxy.github.io/404.html</loc>
     
     <lastmod>2020-04-06T03:59:35.701Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wnxy.github.io/2020/03/27/Stack-application-bracket-matching/</loc>
-    
-    <lastmod>2020-04-04T07:31:32.927Z</lastmod>
     
   </url>
   
