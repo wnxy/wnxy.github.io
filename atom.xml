@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2022-03-18T12:10:01.130Z</updated>
+  <updated>2022-03-18T12:36:25.380Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://wnxy.github.io/2022/03/18/Static_and_dynamic_libraries/"/>
     <id>https://wnxy.github.io/2022/03/18/Static_and_dynamic_libraries/</id>
     <published>2022-03-18T03:57:52.000Z</published>
-    <updated>2022-03-18T12:10:01.130Z</updated>
+    <updated>2022-03-18T12:36:25.380Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1、什么是库？&quot;&gt;&lt;a href=&quot;#1、什么是库？&quot; class=&quot;headerlink&quot; title=&quot;1、什么是库？&quot;&gt;&lt;/a&gt;1、什么是库？&lt;/h2&gt;&lt;h2 id=&quot;一、什么是库？&quot;&gt;&lt;a href=&quot;#一、什么是库？&quot; class=&quot;headerlink&quot; title=&quot;一、什么是库？&quot;&gt;&lt;/a&gt;一、什么是库？&lt;/h2&gt;&lt;p&gt;在windows平台和linux平台下都大量存在着库。一般是软件作者为了发布方便、替换方便或二次开发目的，而发布的一组可以单独与应用程序进行compile time或runtime链接的二进制可重定位目标码文件。&lt;/p&gt;
+      &lt;h2 id=&quot;一、什么是库？&quot;&gt;&lt;a href=&quot;#一、什么是库？&quot; class=&quot;headerlink&quot; title=&quot;一、什么是库？&quot;&gt;&lt;/a&gt;一、什么是库？&lt;/h2&gt;&lt;p&gt;在windows平台和linux平台下都大量存在着库。一般是软件作者为了发布方便、替换方便或二次开发目的，而发布的一组可以单独与应用程序进行compile time或runtime链接的二进制可重定位目标码文件。&lt;/p&gt;
 &lt;p&gt;本质上来说库是一种可执行代码的二进制形式，这个文件可以在编译时由编译器直接链接到可执行程序中，也可以在运行时由操作系统的runtime enviroment根据需要动态加载到内存中。&lt;/p&gt;
 &lt;p&gt;一组库，就形成了一个发布包，当然，具体发布多少个库，完全由库提供商自己决定。&lt;/p&gt;
 &lt;p&gt;由于windows和linux的本质不同，因此二者库的二进制是不兼容的。&lt;/p&gt;
