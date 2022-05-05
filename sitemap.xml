@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wnxy.github.io/links/index.html</loc>
+    
+    <lastmod>2022-05-05T13:36:49.599Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wnxy.github.io/2022/03/18/Static_and_dynamic_libraries/</loc>
     
     <lastmod>2022-03-18T12:36:25.380Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://wnxy.github.io/2021/07/22/cpp_this_pointer/</loc>
     
     <lastmod>2022-03-18T11:42:59.348Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wnxy.github.io/links/index.html</loc>
-    
-    <lastmod>2022-03-17T08:29:51.039Z</lastmod>
     
   </url>
   
