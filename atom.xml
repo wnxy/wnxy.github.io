@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2022-03-18T12:36:25.380Z</updated>
+  <updated>2022-05-07T14:00:37.538Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++ main函数处理命令行选项</title>
+    <link href="https://wnxy.github.io/2022/05/07/cpp_main_function_parameters/"/>
+    <id>https://wnxy.github.io/2022/05/07/cpp_main_function_parameters/</id>
+    <published>2022-05-07T13:00:30.000Z</published>
+    <updated>2022-05-07T14:00:37.538Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一般情况下，我们定义的main函数都只有空的形参列表：&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123; ... &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然而，有时我们确实需要给main函数传递实参，一种常见的情况就是用户需要设置一组选项来确定函数所要执行的操作。此时，main函数定义为：&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; argc, &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt;* argc[])&lt;/span&gt; &lt;/span&gt;&amp;#123; ... &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="函数" scheme="https://wnxy.github.io/tags/%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="参数传递" scheme="https://wnxy.github.io/tags/%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/"/>
+    
+      <category term="main形参" scheme="https://wnxy.github.io/tags/main%E5%BD%A2%E5%8F%82/"/>
+    
+  </entry>
   
   <entry>
     <title>学习静态库和动态库</title>
@@ -566,35 +594,6 @@
       <category term="Python" scheme="https://wnxy.github.io/tags/Python/"/>
     
       <category term="matplotlib" scheme="https://wnxy.github.io/tags/matplotlib/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>朴素贝叶斯算法原理及实现</title>
-    <link href="https://wnxy.github.io/2020/11/10/Naive-bayes/"/>
-    <id>https://wnxy.github.io/2020/11/10/Naive-bayes/</id>
-    <published>2020-11-10T01:39:30.000Z</published>
-    <updated>2020-11-29T01:53:33.237Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、贝叶斯算法原理&quot;&gt;&lt;a href=&quot;#一、贝叶斯算法原理&quot; class=&quot;headerlink&quot; title=&quot;一、贝叶斯算法原理&quot;&gt;&lt;/a&gt;一、贝叶斯算法原理&lt;/h2&gt;&lt;h3 id=&quot;1-条件概率公式&quot;&gt;&lt;a href=&quot;#1-条件概率公式&quot; class=&quot;headerlink&quot; title=&quot;1.条件概率公式&quot;&gt;&lt;/a&gt;1.条件概率公式&lt;/h3&gt;&lt;p&gt;根据文氏图，可以看到在事件B发生的情况下，事件A发生的概率为：&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Machine Learning" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Machine-Learning/"/>
-    
-    
-      <category term="Python" scheme="https://wnxy.github.io/tags/Python/"/>
-    
-      <category term="Machine-Learning" scheme="https://wnxy.github.io/tags/Machine-Learning/"/>
-    
-      <category term="机器学习" scheme="https://wnxy.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="朴素贝叶斯" scheme="https://wnxy.github.io/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF/"/>
     
   </entry>
   

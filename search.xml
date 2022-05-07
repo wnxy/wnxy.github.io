@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>C++ main函数处理命令行选项</title>
+      <link href="/2022/05/07/cpp_main_function_parameters/"/>
+      <url>/2022/05/07/cpp_main_function_parameters/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>一般情况下，我们定义的main函数都只有空的形参列表：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; ... &#125;</span><br></pre></td></tr></table></figure><p>然而，有时我们确实需要给main函数传递实参，一种常见的情况就是用户需要设置一组选项来确定函数所要执行的操作。此时，main函数定义为：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>* argc[])</span> </span>&#123; ... &#125;</span><br></pre></td></tr></table></figure><a id="more"></a><p>其中第二个形参argc是一个数组，它的元素是指向C风格字符串的指针；第一个形参argc表示数组中字符串的数量。因为第二个形参是数组，所以main函数也可以定义为：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>** argv)</span> </span>&#123; ... &#125;</span><br></pre></td></tr></table></figure><p>其中argv指向char*。</p><p>当实参传给main函数之后，argv的第一个元素指向<strong>程序的名字或者一个空字符串</strong>，接下来的元素依次传递命令行提供的实参。</p><p>编写一个简单的测试程序：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>* argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(argc-- &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"argc = %d, argv[%d] = %s\n"</span>, argc, argc, argv[argc]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>在cmd中运行生成的测试程序：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PS D:\xxx&gt; .&#x2F;mainfunpara.exe</span><br><span class="line">argc &#x3D; 0, argv[0] &#x3D; D:\xxx\mainfunpara.exe</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">PS D:\xxx&gt; .&#x2F;mainfunpara.exe 我 你 他</span><br><span class="line">argc &#x3D; 3, argv[3] &#x3D; 他</span><br><span class="line">argc &#x3D; 2, argv[2] &#x3D; 你</span><br><span class="line">argc &#x3D; 1, argv[1] &#x3D; 我</span><br><span class="line">argc &#x3D; 0, argv[0] &#x3D; D:\xxx\mainfunpara.exe</span><br></pre></td></tr></table></figure><p>argc的实参数组中第一个字符串均为程序的名字，后续的字符串为传入main函数的字符串（以空格分隔），如果没有向main函数传入字符串，则argc为0。</p><h3 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h3><p>《Primer c++》第5版 page196</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> C/C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 函数 </tag>
+            
+            <tag> 参数传递 </tag>
+            
+            <tag> main形参 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>学习静态库和动态库</title>
       <link href="/2022/03/18/Static_and_dynamic_libraries/"/>
       <url>/2022/03/18/Static_and_dynamic_libraries/</url>
