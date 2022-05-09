@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2022-05-07T14:00:37.538Z</updated>
+  <updated>2022-05-09T13:49:23.062Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++ 含有可变形参的函数</title>
+    <link href="https://wnxy.github.io/2022/05/09/cpp_function_with_variable_parameters/"/>
+    <id>https://wnxy.github.io/2022/05/09/cpp_function_with_variable_parameters/</id>
+    <published>2022-05-09T13:41:36.000Z</published>
+    <updated>2022-05-09T13:49:23.062Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有时我们无法提前预知应该向函数传递几个实参。例如，我们想要编写代码输出程序产生的错误信息，此时最好用同一个函数实现该项功能，以便对所有的错误处理能够整齐划一。然而，错误信息的种类不同，所以调用错误输出函数时传递的实参也各不相同。&lt;/p&gt;
+&lt;p&gt;为了编写能处理不同数量实参的函数，c++11新标准提供了两种主要的方法：如果所有的实参类型相同，可以一个名为&lt;code&gt;initializer_list&lt;/code&gt;的标准库类型；如果实参的类型不同，我们可以编写一种特殊的函数，也就是所谓的可变参数模板。&lt;/p&gt;
+&lt;p&gt;c++还有一种特殊的形参类型（即省略符），可以用它传递可变数量的实参，不过需要注意，此功能&lt;strong&gt;一般只用于与c函数交互的接口程序&lt;/strong&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="可变形参" scheme="https://wnxy.github.io/tags/%E5%8F%AF%E5%8F%98%E5%BD%A2%E5%8F%82/"/>
+    
+      <category term="initializer_list" scheme="https://wnxy.github.io/tags/initializer-list/"/>
+    
+      <category term="省略符形参" scheme="https://wnxy.github.io/tags/%E7%9C%81%E7%95%A5%E7%AC%A6%E5%BD%A2%E5%8F%82/"/>
+    
+  </entry>
   
   <entry>
     <title>C++ main函数处理命令行选项</title>
@@ -550,11 +577,12 @@
     <link href="https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/"/>
     <id>https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/</id>
     <published>2021-03-17T14:45:22.000Z</published>
-    <updated>2021-03-18T07:00:21.076Z</updated>
+    <updated>2022-05-09T14:03:19.246Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;一、typedef与-define比较&quot;&gt;&lt;a href=&quot;#一、typedef与-define比较&quot; class=&quot;headerlink&quot; title=&quot;一、typedef与#define比较&quot;&gt;&lt;/a&gt;一、&lt;strong&gt;typedef&lt;/strong&gt;与&lt;strong&gt;#define&lt;/strong&gt;比较&lt;/h2&gt;&lt;h3 id=&quot;typedef和-define功能的共同点&quot;&gt;&lt;a href=&quot;#typedef和-define功能的共同点&quot; class=&quot;headerlink&quot; title=&quot;typedef和#define功能的共同点&quot;&gt;&lt;/a&gt;&lt;code&gt;typedef&lt;/code&gt;和&lt;code&gt;#define&lt;/code&gt;功能的共同点&lt;/h3&gt;&lt;p&gt;例如：&lt;/p&gt;
+      &lt;p&gt;最近更新：2022/5/9 &lt;/p&gt;
+&lt;h2 id=&quot;一、typedef与-define比较&quot;&gt;&lt;a href=&quot;#一、typedef与-define比较&quot; class=&quot;headerlink&quot; title=&quot;一、typedef与#define比较&quot;&gt;&lt;/a&gt;一、&lt;strong&gt;typedef&lt;/strong&gt;与&lt;strong&gt;#define&lt;/strong&gt;比较&lt;/h2&gt;&lt;h3 id=&quot;typedef和-define功能的共同点&quot;&gt;&lt;a href=&quot;#typedef和-define功能的共同点&quot; class=&quot;headerlink&quot; title=&quot;typedef和#define功能的共同点&quot;&gt;&lt;/a&gt;&lt;code&gt;typedef&lt;/code&gt;和&lt;code&gt;#define&lt;/code&gt;功能的共同点&lt;/h3&gt;&lt;p&gt;例如：&lt;/p&gt;
 &lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;define&lt;/span&gt; BYTE unsigned char&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;表示预处理器用&lt;code&gt;BYTE&lt;/code&gt;替换&lt;code&gt;unsigned char&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; BYTE&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -571,29 +599,6 @@
       <category term="define" scheme="https://wnxy.github.io/tags/define/"/>
     
       <category term="宏" scheme="https://wnxy.github.io/tags/%E5%AE%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>matplotlib函数汇总</title>
-    <link href="https://wnxy.github.io/2020/11/28/Matplotlib-function/"/>
-    <id>https://wnxy.github.io/2020/11/28/Matplotlib-function/</id>
-    <published>2020-11-28T13:22:08.000Z</published>
-    <updated>2020-11-28T14:51:29.327Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;matplotlib函数汇总&quot;&gt;&lt;a href=&quot;#matplotlib函数汇总&quot; class=&quot;headerlink&quot; title=&quot;matplotlib函数汇总&quot;&gt;&lt;/a&gt;matplotlib函数汇总&lt;/h2&gt;
-    
-    </summary>
-    
-    
-      <category term="转载" scheme="https://wnxy.github.io/categories/%E8%BD%AC%E8%BD%BD/"/>
-    
-    
-      <category term="Python" scheme="https://wnxy.github.io/tags/Python/"/>
-    
-      <category term="matplotlib" scheme="https://wnxy.github.io/tags/matplotlib/"/>
     
   </entry>
   
