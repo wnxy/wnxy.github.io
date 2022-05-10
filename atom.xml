@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2022-05-09T13:49:23.062Z</updated>
+  <updated>2022-05-10T13:54:28.257Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -17,9 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>C++ 类成员函数与内联函数</title>
+    <link href="https://wnxy.github.io/2022/05/10/cpp_class_mem_func_and_inline_func/"/>
+    <id>https://wnxy.github.io/2022/05/10/cpp_class_mem_func_and_inline_func/</id>
+    <published>2022-05-10T13:50:53.000Z</published>
+    <updated>2022-05-10T13:54:28.257Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;类定义的内联函数分为以下3种：&lt;/p&gt;
+&lt;h2 id=&quot;1-隐式内联&quot;&gt;&lt;a href=&quot;#1-隐式内联&quot; class=&quot;headerlink&quot; title=&quot;1. 隐式内联&quot;&gt;&lt;/a&gt;1. 隐式内联&lt;/h2&gt;&lt;p&gt;类里面定义的函数隐式内联，有利于类内部实现细节的隐藏。&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Person&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	Person(&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;string&lt;/span&gt; &amp;amp;name)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		Name = name;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;printName&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;//printName 定义在类里面是隐式内联函数&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;	&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; Name &amp;lt;&amp;lt; &lt;span class=&quot;built_in&quot;&gt;endl&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;string&lt;/span&gt; Name;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
+    
+    
+      <category term="内联函数" scheme="https://wnxy.github.io/tags/%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="成员函数" scheme="https://wnxy.github.io/tags/%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="类" scheme="https://wnxy.github.io/tags/%E7%B1%BB/"/>
+    
+      <category term="隐式内联" scheme="https://wnxy.github.io/tags/%E9%9A%90%E5%BC%8F%E5%86%85%E8%81%94/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C++ 含有可变形参的函数</title>
-    <link href="https://wnxy.github.io/2022/05/09/cpp_function_with_variable_parameters/"/>
-    <id>https://wnxy.github.io/2022/05/09/cpp_function_with_variable_parameters/</id>
+    <link href="https://wnxy.github.io/2022/05/09/cpp_func_with_variable_parameters/"/>
+    <id>https://wnxy.github.io/2022/05/09/cpp_func_with_variable_parameters/</id>
     <published>2022-05-09T13:41:36.000Z</published>
     <updated>2022-05-09T13:49:23.062Z</updated>
     
@@ -569,38 +598,6 @@
       <category term="github" scheme="https://wnxy.github.io/tags/github/"/>
     
       <category term="Git" scheme="https://wnxy.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C语言typedef与#define详谈</title>
-    <link href="https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/"/>
-    <id>https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/</id>
-    <published>2021-03-17T14:45:22.000Z</published>
-    <updated>2022-05-09T14:35:20.197Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近更新：2022/5/9 &lt;/p&gt;
-&lt;h2 id=&quot;一、typedef与-define比较&quot;&gt;&lt;a href=&quot;#一、typedef与-define比较&quot; class=&quot;headerlink&quot; title=&quot;一、typedef与#define比较&quot;&gt;&lt;/a&gt;一、&lt;strong&gt;typedef&lt;/strong&gt;与&lt;strong&gt;#define&lt;/strong&gt;比较&lt;/h2&gt;&lt;h3 id=&quot;typedef和-define功能的共同点&quot;&gt;&lt;a href=&quot;#typedef和-define功能的共同点&quot; class=&quot;headerlink&quot; title=&quot;typedef和#define功能的共同点&quot;&gt;&lt;/a&gt;&lt;code&gt;typedef&lt;/code&gt;和&lt;code&gt;#define&lt;/code&gt;功能的共同点&lt;/h3&gt;&lt;p&gt;例如：&lt;/p&gt;
-&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;define&lt;/span&gt; BYTE unsigned char&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;表示预处理器用&lt;code&gt;BYTE&lt;/code&gt;替换&lt;code&gt;unsigned char&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; BYTE&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;表示编译器给类型&lt;code&gt;unsigned char&lt;/code&gt;起了一个别名&lt;code&gt;BYTE&lt;/code&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="C/C++" scheme="https://wnxy.github.io/categories/C-C/"/>
-    
-    
-      <category term="typedef" scheme="https://wnxy.github.io/tags/typedef/"/>
-    
-      <category term="define" scheme="https://wnxy.github.io/tags/define/"/>
-    
-      <category term="using" scheme="https://wnxy.github.io/tags/using/"/>
-    
-      <category term="宏" scheme="https://wnxy.github.io/tags/%E5%AE%8F/"/>
     
   </entry>
   
