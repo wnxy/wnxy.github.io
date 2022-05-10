@@ -577,7 +577,7 @@
     <link href="https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/"/>
     <id>https://wnxy.github.io/2021/03/17/C-typedef-and-define-specific-explain/</id>
     <published>2021-03-17T14:45:22.000Z</published>
-    <updated>2022-05-09T14:03:19.246Z</updated>
+    <updated>2022-05-09T14:35:20.197Z</updated>
     
     <summary type="html">
     
@@ -597,6 +597,8 @@
       <category term="typedef" scheme="https://wnxy.github.io/tags/typedef/"/>
     
       <category term="define" scheme="https://wnxy.github.io/tags/define/"/>
+    
+      <category term="using" scheme="https://wnxy.github.io/tags/using/"/>
     
       <category term="宏" scheme="https://wnxy.github.io/tags/%E5%AE%8F/"/>
     
