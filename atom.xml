@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.github.io/"/>
-  <updated>2022-05-15T14:03:38.000Z</updated>
+  <updated>2022-05-15T15:10:07.000Z</updated>
   <id>https://wnxy.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pages</title>
+    <link href="https://wnxy.github.io/2022/05/15/pages/"/>
+    <id>https://wnxy.github.io/2022/05/15/pages/</id>
+    <published>2022-05-15T15:10:07.000Z</published>
+    <updated>2022-05-15T15:10:07.000Z</updated>
+    
+    <summary type="html">
+    
+      莞尔日记，不能看哦！！！
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo Melody博客添加文章更新和多评论系统</title>
@@ -549,32 +566,6 @@
       <category term="分治法" scheme="https://wnxy.github.io/tags/%E5%88%86%E6%B2%BB%E6%B3%95/"/>
     
       <category term="减治法" scheme="https://wnxy.github.io/tags/%E5%87%8F%E6%B2%BB%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode 单调栈的理解与使用</title>
-    <link href="https://wnxy.github.io/2021/05/08/Understanding-and-use-of-monotone-stack/"/>
-    <id>https://wnxy.github.io/2021/05/08/Understanding-and-use-of-monotone-stack/</id>
-    <published>2021-05-08T06:26:41.000Z</published>
-    <updated>2021-05-09T01:02:29.597Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;写在前面：LeetCode刷题笔记&lt;/p&gt;
-&lt;p&gt;近来刷题，遇到单调栈，感觉这是个宝藏解题思想，在此记录一下！&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;单调栈定义&quot;&gt;&lt;a href=&quot;#单调栈定义&quot; class=&quot;headerlink&quot; title=&quot;单调栈定义&quot;&gt;&lt;/a&gt;单调栈定义&lt;/h2&gt;&lt;p&gt;单调栈是指：站内元素保持一定单调性（单调递增或单调递减）的栈。这里的单调递增或递减是指从栈顶到栈底单调递增或递减。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="LeetCode刷题" scheme="https://wnxy.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="单调栈" scheme="https://wnxy.github.io/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
     
   </entry>
   

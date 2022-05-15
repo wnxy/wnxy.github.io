@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wnxy.github.io/2020/09/19/Hexo-melody-blog-beautification1/</loc>
+    <loc>https://wnxy.github.io/2022/05/15/pages/</loc>
     <lastmod>2022-05-15</lastmod>
   </url>  <url>
     <loc>https://wnxy.github.io/2022/05/15/Hexo-melody-blog-beautification2/</loc>
@@ -114,6 +114,9 @@
   </url>  <url>
     <loc>https://wnxy.github.io/2017/02/01/Begin-Hexo/</loc>
     <lastmod>2020-10-05</lastmod>
+  </url>  <url>
+    <loc>https://wnxy.github.io/2020/09/19/Hexo-melody-blog-beautification1/</loc>
+    <lastmod>2020-09-19</lastmod>
   </url>  <url>
     <loc>https://wnxy.github.io/2020/05/30/School-celebration/</loc>
     <lastmod>2020-08-11</lastmod>
