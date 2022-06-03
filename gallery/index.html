@@ -112,7 +112,16 @@ cursor: move;
       </div>
     </div>
   
-</div></article><nav id="pagination"><div class="pagination"></div></nav><span class="post-meta__comment">注：本站配置Disqus和Valine双评论系统，可选其中之一使用！🧐🧐🧐</span><div id="vcomment"></div><!--script(src='https://cdn1.lncld.net/static/js/3.0.4/av-min.js')  --><script src="https://code.bdstatic.com/npm/leancloud-storage@4.12.2/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+</div></article><nav id="pagination"><div class="pagination"></div></nav><span class="post-meta__comment">注：本站配置Disqus和Valine双评论系统，可选其中之一使用！🧐🧐🧐</span><div id="disqus_thread"></div><script>var unused = null;
+var disqus_config = function () {
+  this.page.url = 'https://wnxy.xyz/gallery/index.html';
+  this.page.identifier = 'gallery/index.html';
+  this.page.title = 'Gallery';
+}
+var d = document, s = d.createElement('script');
+s.src = "https://" + 'wnxy' +".disqus.com/embed.js";
+s.setAttribute('data-timestamp', '' + +new Date());
+(d.head || d.body).appendChild(s);</script><script id="dsq-count-scr" src="https://wnxy.disqus.com/count.js" async></script><div id="vcomment"></div><!--script(src='https://cdn1.lncld.net/static/js/3.0.4/av-min.js')  --><script src="https://code.bdstatic.com/npm/leancloud-storage@4.12.2/dist/av-min.js"></script><!--script(src='https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js')--><script src="https://fastly.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
 var verify = 'false' == true ? true : false;
 var GUEST_INFO = ['nick','mail','link'];
 var guest_info = 'nick,mail,link'.split(',').filter(function(item){
