@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wnxy.xyz/2022/05/15/pages/</loc>
-    <lastmod>2022-05-15</lastmod>
+    <loc>https://wnxy.xyz/2021/04/27/Git-usage/</loc>
+    <lastmod>2022-06-19</lastmod>
+  </url>  <url>
+    <loc>https://wnxy.xyz/2022/03/18/Static_and_dynamic_libraries/</loc>
+    <lastmod>2022-06-09</lastmod>
   </url>  <url>
     <loc>https://wnxy.xyz/2022/05/15/Hexo-melody-blog-beautification2/</loc>
     <lastmod>2022-05-15</lastmod>
@@ -21,9 +24,6 @@
   </url>  <url>
     <loc>https://wnxy.xyz/2022/05/07/cpp_main_function_parameters/</loc>
     <lastmod>2022-05-07</lastmod>
-  </url>  <url>
-    <loc>https://wnxy.xyz/2022/03/18/Static_and_dynamic_libraries/</loc>
-    <lastmod>2022-03-18</lastmod>
   </url>  <url>
     <loc>https://wnxy.xyz/2021/07/22/cpp_this_pointer/</loc>
     <lastmod>2022-03-18</lastmod>
@@ -48,9 +48,6 @@
   </url>  <url>
     <loc>https://wnxy.xyz/2021/10/27/Git_common_commands/</loc>
     <lastmod>2021-11-10</lastmod>
-  </url>  <url>
-    <loc>https://wnxy.xyz/2021/04/27/Git-usage/</loc>
-    <lastmod>2021-10-27</lastmod>
   </url>  <url>
     <loc>https://wnxy.xyz/2021/07/26/cpp_algorithm_analysis/</loc>
     <lastmod>2021-07-27</lastmod>
