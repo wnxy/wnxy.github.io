@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.xyz/"/>
-  <updated>2022-07-26T15:05:55.000Z</updated>
+  <updated>2023-04-04T02:16:45.000Z</updated>
   <id>https://wnxy.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何使用Qt+C++撸一个待办事项提醒软件？</title>
+    <link href="https://wnxy.xyz/2023/04/04/page/"/>
+    <id>https://wnxy.xyz/2023/04/04/page/</id>
+    <published>2023-04-04T02:16:45.000Z</published>
+    <updated>2023-04-04T02:16:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h1&gt;&lt;p&gt;最近大论文已经修改的差不多了，即将提交盲审，所以接下来的一个月时间算是一段比较空闲的日子吧。&lt;/p&gt;
+&lt;p&gt;也不知道是不是熬夜熬多了，最近记性真不好，前一秒还记着要干什么，后面就忘了。想过用便签记录待办事项，把便签贴到实验室的电脑上，这样每次就能看到了，时刻提醒自己处理事情。但是，咱程序员天生就不会用纸记录事情😎😎（好吧，事实是我没有纸质便签，还得买，有那钱咱买瓶脉动喝不香么🤷‍♂️🤷‍♂️），所以，必须发挥咱代码搬运工的优势，写一个待办事项软件！！！&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C/C++" scheme="https://wnxy.xyz/categories/C-C/"/>
+    
+    
+      <category term="QT" scheme="https://wnxy.xyz/tags/QT/"/>
+    
+      <category term="待办软件" scheme="https://wnxy.xyz/tags/%E5%BE%85%E5%8A%9E%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="电子便签" scheme="https://wnxy.xyz/tags/%E7%94%B5%E5%AD%90%E4%BE%BF%E7%AD%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>C++ 中 “split” 函数的实现</title>
@@ -548,41 +574,6 @@
     
     
       <category term="素数" scheme="https://wnxy.xyz/tags/%E7%B4%A0%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>经典 TopK 问题</title>
-    <link href="https://wnxy.xyz/2021/06/25/Classic_TopK_problem/"/>
-    <id>https://wnxy.xyz/2021/06/25/Classic_TopK_problem/</id>
-    <published>2021-06-25T12:00:52.000Z</published>
-    <updated>2021-06-29T08:10:49.295Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;什么是 Top K 问题？简单来说就是在一堆数据里面找到前 K 大（当然也可以是前 K 小）的数。&lt;/p&gt;
-&lt;p&gt;这个问题也是十分经典的算法问题，不论是面试中还是实际开发中，都非常典型。而这个问题其实也有很多种做法，你真的都懂了么？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;经典的 Top K 问题有：最大（小） K 个数、前 K 个高频元素、第 K 个最大（小）元素，下面举例子说明：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;栗子(以下所有方法均使用这个栗子)&lt;/strong&gt;：&lt;/p&gt;
-&lt;p&gt;从 data[1, 12]={5,3,7,1,8,2,9,4,7,2,6,6} 这n=12个数中，找出最大的k=5个。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="LeetCode刷题" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="排序" scheme="https://wnxy.xyz/tags/%E6%8E%92%E5%BA%8F/"/>
-    
-      <category term="堆" scheme="https://wnxy.xyz/tags/%E5%A0%86/"/>
-    
-      <category term="分治法" scheme="https://wnxy.xyz/tags/%E5%88%86%E6%B2%BB%E6%B3%95/"/>
-    
-      <category term="减治法" scheme="https://wnxy.xyz/tags/%E5%87%8F%E6%B2%BB%E6%B3%95/"/>
     
   </entry>
   
