@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wnxy.xyz/2024/01/07/Design_pattern_study_notes/</loc>
+    
+    <lastmod>2024-01-07T03:30:19.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wnxy.xyz/2021/10/27/Git_common_commands/</loc>
+    
+    <lastmod>2023-04-16T13:23:39.362Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wnxy.xyz/2021/06/25/Classic_TopK_problem/</loc>
     
     <lastmod>2023-04-04T09:34:14.422Z</lastmod>
@@ -9,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://wnxy.xyz/2023/04/04/page/</loc>
+    <loc>https://wnxy.xyz/2023/04/04/Qt_and_cpp_implementation_TODO/</loc>
     
     <lastmod>2023-04-04T02:16:45.000Z</lastmod>
     
@@ -131,13 +145,6 @@
     <loc>https://wnxy.xyz/2021/11/10/cpp_singleton_pattern/</loc>
     
     <lastmod>2021-11-10T14:44:56.877Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wnxy.xyz/2021/10/27/Git_common_commands/</loc>
-    
-    <lastmod>2021-11-10T14:43:02.928Z</lastmod>
     
   </url>
   

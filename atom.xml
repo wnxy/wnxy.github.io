@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wnxy.xyz/"/>
-  <updated>2023-04-04T02:16:45.000Z</updated>
+  <updated>2024-01-07T03:30:19.000Z</updated>
   <id>https://wnxy.xyz/</id>
   
   <author>
@@ -17,9 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>设计模式（Java为例）学习笔记</title>
+    <link href="https://wnxy.xyz/2024/01/07/Design_pattern_study_notes/"/>
+    <id>https://wnxy.xyz/2024/01/07/Design_pattern_study_notes/</id>
+    <published>2024-01-07T03:30:19.000Z</published>
+    <updated>2024-01-07T03:30:19.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、UML类图&quot;&gt;&lt;a href=&quot;#一、UML类图&quot; class=&quot;headerlink&quot; title=&quot;一、UML类图&quot;&gt;&lt;/a&gt;一、UML类图&lt;/h1&gt;&lt;h2 id=&quot;1、依赖&quot;&gt;&lt;a href=&quot;#1、依赖&quot; class=&quot;headerlink&quot; title=&quot;1、依赖&quot;&gt;&lt;/a&gt;1、依赖&lt;/h2&gt;&lt;p&gt;【依赖关系】：是一种使用的关系，即一个类的实现需要另一个类的协助，所以要尽量不使用双向的互相依赖.&lt;br&gt;【代码表现】：局部变量、方法的参数或者对静态方法的调用&lt;br&gt;【箭头及指向】：带箭头的虚线，指向被使用者&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="软件设计与重构" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E4%B8%8E%E9%87%8D%E6%9E%84/"/>
+    
+    
+      <category term="设计模式" scheme="https://wnxy.xyz/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="UML类图" scheme="https://wnxy.xyz/tags/UML%E7%B1%BB%E5%9B%BE/"/>
+    
+      <category term="设计原则" scheme="https://wnxy.xyz/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何使用Qt+C++撸一个待办事项提醒软件？</title>
-    <link href="https://wnxy.xyz/2023/04/04/page/"/>
-    <id>https://wnxy.xyz/2023/04/04/page/</id>
+    <link href="https://wnxy.xyz/2023/04/04/Qt_and_cpp_implementation_TODO/"/>
+    <id>https://wnxy.xyz/2023/04/04/Qt_and_cpp_implementation_TODO/</id>
     <published>2023-04-04T02:16:45.000Z</published>
     <updated>2023-04-04T02:16:45.000Z</updated>
     
@@ -364,7 +391,7 @@
     <link href="https://wnxy.xyz/2021/10/27/Git_common_commands/"/>
     <id>https://wnxy.xyz/2021/10/27/Git_common_commands/</id>
     <published>2021-10-27T03:14:44.000Z</published>
-    <updated>2021-11-10T14:43:02.928Z</updated>
+    <updated>2023-04-16T13:23:39.362Z</updated>
     
     <summary type="html">
     
@@ -548,32 +575,6 @@
       <category term="priority_queue" scheme="https://wnxy.xyz/tags/priority-queue/"/>
     
       <category term="优先级队列" scheme="https://wnxy.xyz/tags/%E4%BC%98%E5%85%88%E7%BA%A7%E9%98%9F%E5%88%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>求解某一范围内的全部素数</title>
-    <link href="https://wnxy.xyz/2021/06/27/Calculate_prime_numbers/"/>
-    <id>https://wnxy.xyz/2021/06/27/Calculate_prime_numbers/</id>
-    <published>2021-06-27T12:28:04.000Z</published>
-    <updated>2021-06-29T12:20:54.631Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;素数&lt;/strong&gt;又称质数，是指大于1的&lt;a href=&quot;https://baike.baidu.com/item/自然数&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;自然数&lt;/a&gt;中，除了1和它本身，不能被其它自然数整除的数字。1被定义为非素数。大于1的自然数，如果不是素数则为&lt;strong&gt;合数&lt;/strong&gt;。&lt;strong&gt;2是最小的素数&lt;/strong&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;：给定一个范围，求解这个范围内的全部素数。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="LeetCode刷题" scheme="https://wnxy.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/LeetCode%E5%88%B7%E9%A2%98/"/>
-    
-    
-      <category term="素数" scheme="https://wnxy.xyz/tags/%E7%B4%A0%E6%95%B0/"/>
     
   </entry>
   
